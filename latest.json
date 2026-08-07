@@ -1,0 +1,7 @@
+{
+  "versionCode": 10,
+  "versionName": "0.5.1",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.1/GFlyer-v0.5.1.apk",
+  "sha256": "這裡填入真正的64字元SHA-256",
+  "releaseNotes": "修正問題及改善穩定性"
+}
