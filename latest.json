@@ -1,7 +1,7 @@
 {
-    "versionCode":  12,
-    "versionName":  "0.5.3",
-    "apkUrl":  "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.3/GFlyer-v0.5.3.apk",
-    "sha256":  "21BAD46250E37E154EF14438F7DF3A8C92E4C224EE7A30DB6824018BA6668957",
-    "releaseNotes":  "懸浮控制列常駐並新增地點搜尋、停止鍵、共用搖桿與新圖示；路線錄製改為按 + 才加入第一點，並修正懸浮傳送後 App 內座標同步。"
+  "versionCode": 13,
+  "versionName": "0.5.4",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.4/GFlyer-v0.5.4.apk",
+  "sha256": "F9DC99B8D7123FEE56052F07D0BC7ACC0723861A4A83426DD4095BF2DBAD53D2",
+  "releaseNotes": "新增可調整數量的 Health Connect 步數補錄；懸浮控制列改為雙行配置並加入搜尋圖示與按壓回饋；修正懸浮地圖位置圖示攔截點擊；Health Connect 授權只會在主動補錄步數後詢問。"
 }
