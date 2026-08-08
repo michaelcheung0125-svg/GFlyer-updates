@@ -1,7 +1,7 @@
-{
-  "versionCode": 11,
-  "versionName": "0.5.2",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.2/GFlyer-v0.5.2.apk",
-  "sha256": "B05CCE0451BBACA31205FF681C00B215B769C9FCABE52FF0864B7636078DE533",
-  "releaseNotes": "新增懸浮虛擬遙桿與路線建立功能，可在遊戲畫面手動加入、復原、循環、命名儲存及直接開始路線。"
+﻿{
+    "versionCode":  12,
+    "versionName":  "0.5.3",
+    "apkUrl":  "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.3/GFlyer-v0.5.3.apk",
+    "sha256":  "21BAD46250E37E154EF14438F7DF3A8C92E4C224EE7A30DB6824018BA6668957",
+    "releaseNotes":  "懸浮控制列常駐並新增地點搜尋、停止鍵、共用搖桿與新圖示；路線錄製改為按 + 才加入第一點，並修正懸浮傳送後 App 內座標同步。"
 }
