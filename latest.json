@@ -1,7 +1,7 @@
 {
-  "versionCode": 10,
-  "versionName": "0.5.1",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.1/GFlyer-v0.5.1.apk",
-  "sha256": "6A410F8596F342457D70E4C72DB7855AA65145E8C46FBFD0500536C7E09A2349",
-  "releaseNotes": "探索模式改回阿基米德螺旋，圈距固定為 1,000 公尺；所有速度統一使用 km/h。"
+  "versionCode": 11,
+  "versionName": "0.5.2",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.2/GFlyer-v0.5.2.apk",
+  "sha256": "B05CCE0451BBACA31205FF681C00B215B769C9FCABE52FF0864B7636078DE533",
+  "releaseNotes": "新增懸浮虛擬遙桿與路線建立功能，可在遊戲畫面手動加入、復原、循環、命名儲存及直接開始路線。"
 }
