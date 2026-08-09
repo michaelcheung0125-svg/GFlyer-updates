@@ -1,7 +1,7 @@
 {
-  "versionCode": 13,
-  "versionName": "0.5.4",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.4/GFlyer-v0.5.4.apk",
-  "sha256": "F9DC99B8D7123FEE56052F07D0BC7ACC0723861A4A83426DD4095BF2DBAD53D2",
-  "releaseNotes": "新增可調整數量的 Health Connect 步數補錄；懸浮控制列改為雙行配置並加入搜尋圖示與按壓回饋；修正懸浮地圖位置圖示攔截點擊；Health Connect 授權只會在主動補錄步數後詢問。"
+  "versionCode": 14,
+  "versionName": "0.5.5",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.5/GFlyer-v0.5.5.apk",
+  "sha256": "758F6723E2A8C33482F6C0BE44C6826CA627785210CF70401D1A626C88C283E9",
+  "releaseNotes": "Add selectable Google Maps and OpenStreetMap providers, including floating map support."
 }
