@@ -1,7 +1,7 @@
 {
-  "versionCode": 15,
-  "versionName": "0.5.6",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.6/GFlyer-v0.5.6.apk",
-  "sha256": "0966742984DED8B319E5BB6BD2835B20F69AFFDE9E97AEE4A956797E586A4A9B",
-  "releaseNotes": "新增私人留言板：管理員自訂共用邀請碼、使用者名稱與裝置綁定、座標及收藏路線分享、文章回覆和管理功能；加入登入嘗試限制。"
+  "versionCode": 16,
+  "versionName": "0.5.7",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.7/GFlyer-v0.5.7.apk",
+  "sha256": "37834198F71D2A52EAB191B4C88FBBA6282463F84A49A2B0BBD589C92B8AB823",
+  "releaseNotes": "將留言板入口移至左側功能列並放在匯入 GPX 上方，同時修正正式環境的管理員啟用碼驗證設定。"
 }
