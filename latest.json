@@ -1,7 +1,7 @@
 {
-  "versionCode": 14,
-  "versionName": "0.5.5",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.5/GFlyer-v0.5.5.apk",
-  "sha256": "758F6723E2A8C33482F6C0BE44C6826CA627785210CF70401D1A626C88C283E9",
-  "releaseNotes": "Add selectable Google Maps and OpenStreetMap providers, including floating map support."
+  "versionCode": 15,
+  "versionName": "0.5.6",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.6/GFlyer-v0.5.6.apk",
+  "sha256": "0966742984DED8B319E5BB6BD2835B20F69AFFDE9E97AEE4A956797E586A4A9B",
+  "releaseNotes": "新增私人留言板：管理員自訂共用邀請碼、使用者名稱與裝置綁定、座標及收藏路線分享、文章回覆和管理功能；加入登入嘗試限制。"
 }
