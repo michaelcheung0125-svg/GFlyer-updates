@@ -1,7 +1,7 @@
 {
-  "versionCode": 18,
-  "versionName": "0.5.9",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.9/GFlyer-v0.5.9.apk",
-  "sha256": "D1D655B3D80A846C37A6AA470A18EE8D4B278DB3B16A099DF84C6F45018E10D7",
-  "releaseNotes": "新增固定 530 米橫向間距的蛇形探索路線，支援調整 Y 值及選擇向西或向東；重整步數補錄頁面，加入 1,000／3,000／5,000 步預設、立即可補錄上限與今日總計；改用每分鐘 200 步的不重疊時段，午夜空間不足時顯示可重試時間。"
+  "versionCode": 19,
+  "versionName": "0.5.10",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.10/GFlyer-v0.5.10.apk",
+  "sha256": "A7AC01C9AE1C29422092B6DD2A18B55D25658EDF4BBEF01CAFCC59FC9A02591C",
+  "releaseNotes": "改善虛擬定位穩定性：首次傳送座標前會等待模擬模式完成啟用；位置靜止、路線暫停或移動結束時，每秒重新送出最後座標，降低雲手機被真實定位拉回原位置的情況。"
 }
