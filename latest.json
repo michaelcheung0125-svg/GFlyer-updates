@@ -1,7 +1,7 @@
 {
-  "versionCode": 17,
-  "versionName": "0.5.8",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.8/GFlyer-v0.5.8.apk",
-  "sha256": "520249C874559D1A09D7D106F13F210524D7C0802EB0F9EC46921422C71E1BF0",
-  "releaseNotes": "改善即時、不重疊的步數補錄；新增剪貼簿多座標辨識、收藏資料夾、快速速度預設及資料備份／還原；強化留言板未讀、標籤、置頂、公告與地圖預覽；改善懸浮列調速、輸入、圖示狀態及不同螢幕尺寸顯示。"
+  "versionCode": 18,
+  "versionName": "0.5.9",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.5.9/GFlyer-v0.5.9.apk",
+  "sha256": "D1D655B3D80A846C37A6AA470A18EE8D4B278DB3B16A099DF84C6F45018E10D7",
+  "releaseNotes": "新增固定 530 米橫向間距的蛇形探索路線，支援調整 Y 值及選擇向西或向東；重整步數補錄頁面，加入 1,000／3,000／5,000 步預設、立即可補錄上限與今日總計；改用每分鐘 200 步的不重疊時段，午夜空間不足時顯示可重試時間。"
 }
