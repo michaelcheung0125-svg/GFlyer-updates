@@ -1,7 +1,1 @@
-{
-  "versionCode": 20,
-  "versionName": "0.6.0",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.6.0/GFlyer-v0.6.0.apk",
-  "sha256": "CEC33F7B69053A27099FC41C08DAB6E04F2D4D5D4E6FCF9541B924305046B161",
-  "releaseNotes": "新增禮物定位：輸入遊戲顯示的距離後，在全螢幕取角度層把方向線對準禮物，即可瞬移到估計位置；十字自動放在回中後的藍點位置，並會記住手動修正。禮物定位以專屬頁面呈現（半屏寬、半透明、可縮小），減少對遊戲畫面的遮擋。主畫面地圖恢復雙指縮放手勢。"
-}
+{"versionCode":21,"versionName":"0.6.1","apkUrl":"https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.6.1/app-release.apk","sha256":"7DE7E3157E8A2495B99F35312D1214F9699E94CC4418439EE156BC868E031996","releaseNotes":"修復應用內地圖雙指縮放功能。修復路線錄製中按下開始移動時會彈出確認對話框，讓使用者選擇取消錄製並開始移動或繼續錄製。"}
