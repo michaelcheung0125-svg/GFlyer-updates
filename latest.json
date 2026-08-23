@@ -1,1 +1,7 @@
-{"versionCode":24,"versionName":"0.6.4","apkUrl":"https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.6.4/GFlyer-v0.6.4.apk","sha256":"2e81441373694bd417a2687453812d409610bee612ff4e0e0f20becc8d23aaab","releaseNotes":"新增：種花路線獨立懸浮面板（可拖曳／縮小）、重複點位確認、儲存路線摘要與循環路線選項；花朵連結支援預設瀏覽器攔截模式，並修復角色授權流程。"}
+{
+  "versionCode": 25,
+  "versionName": "0.6.5",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.6.5/GFlyer-v0.6.5.apk",
+  "sha256": "0d3e2795b68e73fd16779fac9a734b2881e68a5b396d7f3f23a67c2860ba1352",
+  "releaseNotes": "多點路線強化：到點流程改為傳送→停留倒數→繞圈→等待前進；手動前進確實停在原地；繞圈半徑可在設定頁自訂（1~4 圈，預設 20m＋30m）；新增右下角「跳過繞圈」懸浮鈕；修正倒數速度、點位編號與停止模擬後的本機定位問題；移除速度快捷預設。"
+}
