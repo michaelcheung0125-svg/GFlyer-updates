@@ -1,7 +1,7 @@
 {
-  "versionCode": 28,
-  "versionName": "0.7.2",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.7.2/GFlyer-v0.7.2.apk",
-  "sha256": "6E5ED13B99C881E53AB4CFCD5D57F4EC767011390108418DD676CDE84840EA8C",
-  "releaseNotes": "收合懸浮列只剩飛豬人小圖示；展開後搜尋欄即時出現；再點一次圖示即可收合（移除箭頭鈕）；速度加減改為 1 km/h、長按間距漸進加大並修正文字閃爍；禮物定位步驟 1 改為輸入與禮物的距離；座標圖鑑列表已標記座標直接顯示下次可去時間。"
+  "versionCode": 29,
+  "versionName": "0.7.3",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.7.3/GFlyer-v0.7.3.apk",
+  "sha256": "1CCDA970033EA632B40E331C859951B2A8A18574AC2BA5952E8D2EA342109AB6",
+  "releaseNotes": "虛擬定位生效時可直接選下一點並傳送，不用先停止；多點路線倒數可點一下跳過；多點模式新增「傳送到第一點」按鈕；文字狀態列可自訂位置／字體大小／顏色（附即時預覽、支援自由定位微調）；修正懸浮圖示白色邊框。"
 }
