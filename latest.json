@@ -1,7 +1,7 @@
 {
-  "versionCode": 25,
-  "versionName": "0.6.5",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.6.5/GFlyer-v0.6.5.apk",
-  "sha256": "0d3e2795b68e73fd16779fac9a734b2881e68a5b396d7f3f23a67c2860ba1352",
-  "releaseNotes": "多點路線強化：到點流程改為傳送→停留倒數→繞圈→等待前進；手動前進確實停在原地；繞圈半徑可在設定頁自訂（1~4 圈，預設 20m＋30m）；新增右下角「跳過繞圈」懸浮鈕；修正倒數速度、點位編號與停止模擬後的本機定位問題；移除速度快捷預設。"
+  "versionCode": 26,
+  "versionName": "0.7.0",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.7.0/GFlyer-v0.7.0.apk",
+  "sha256": "C30239A1C00C151B13D5487F8E082954BCF6A208A714903CF6DA19E7FB1525A4",
+  "releaseNotes": "新增座標圖鑑（活動／純點／明信片，含最愛、造訪提醒、過時回報）；禮物定位改為獨立懸浮面板並移除懸浮列舊面板；圓心拖動改良；多點模擬行走到點直接前進；跳過繞圈鈕可拖動／隱藏；補錄訊息帶批次編號；懸浮列 UI 重整。"
 }
