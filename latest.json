@@ -1,7 +1,7 @@
 {
-  "versionCode": 29,
-  "versionName": "0.7.3",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.7.3/GFlyer-v0.7.3.apk",
-  "sha256": "1CCDA970033EA632B40E331C859951B2A8A18574AC2BA5952E8D2EA342109AB6",
-  "releaseNotes": "虛擬定位生效時可直接選下一點並傳送，不用先停止；多點路線倒數可點一下跳過；多點模式新增「傳送到第一點」按鈕；文字狀態列可自訂位置／字體大小／顏色（附即時預覽、支援自由定位微調）；修正懸浮圖示白色邊框。"
+  "versionCode": 30,
+  "versionName": "0.7.4",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.7.4/GFlyer-v0.7.4.apk",
+  "sha256": "A3FEBF53861F2299945938C85F17CBDA71E1435F84DDB77EBD542E66E9045E78",
+  "releaseNotes": "主頁搖桿可移動（⠿ 把手）；多點模式預設速度 19 km/h；禮物定位：✓ 只記錄距離、按選角度才出現十字並自動縮成橫條、距離統一用米；懸浮列搜尋欄即時出現；更新機制強化：主頁自動檢查＋懸浮服務每 8 小時提示，對話框可選「今日不再顯示」。"
 }
