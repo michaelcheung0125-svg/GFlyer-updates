@@ -1,7 +1,7 @@
 {
-  "versionCode": 30,
-  "versionName": "0.7.4",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.7.4/GFlyer-v0.7.4.apk",
-  "sha256": "A3FEBF53861F2299945938C85F17CBDA71E1435F84DDB77EBD542E66E9045E78",
-  "releaseNotes": "主頁搖桿可移動（⠿ 把手）；多點模式預設速度 19 km/h；禮物定位：✓ 只記錄距離、按選角度才出現十字並自動縮成橫條、距離統一用米；懸浮列搜尋欄即時出現；更新機制強化：主頁自動檢查＋懸浮服務每 8 小時提示，對話框可選「今日不再顯示」。"
+  "versionCode": 31,
+  "versionName": "0.8.0",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.0/GFlyer-v0.8.0.apk",
+  "sha256": "A75268E5FBF7DEE3FB20C058BAEF64B8916B3C94DB2B0E40FCB76AB98300FAB5",
+  "releaseNotes": "禮物定位改為底部小按鈕列＋觸控穿透字幕，面板存在時遊戲畫面幾乎全域可直接操作；OCR 測距按下立即擷取，不再倒數 3 秒；修正選角度按取消後整個卡住無法操作；「已足夠近」仍可繼續用三邊定位或選角度；地名查到多個同名地點時列出國家／城市讓你選，避免傳送到別國反而離禮物更遠；螢幕擷取授權改為整個服務期間有效，不必每輪重新授權，可從懸浮列「取消授權」收回；懸浮文字顏色一律以你的設定為準，不再自己變綠變黃。"
 }
