@@ -1,7 +1,7 @@
 {
-  "versionCode": 32,
-  "versionName": "0.8.1",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.1/GFlyer-v0.8.1.apk",
-  "sha256": "168E2C3C5D60934F645954567F37CE415FAD8B7221F7AB361E2033546E2575B7",
-  "releaseNotes": "新增「一鍵補錄步數」：設定步數後畫面出現可拖曳的補錄鈕，點一下即補錄、長按關閉。修正更新安裝或系統回收行程後殘留模擬定位，導致全系統（含 Google 地圖）都定位不到的問題。另有懸浮面板精簡、小地圖與捲動效能修正，以及地名查詢支援拉丁地址。"
+  "versionCode": 33,
+  "versionName": "0.8.2",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.2/GFlyer-v0.8.2.apk",
+  "sha256": "703A6704BE76946034748BA36121FE928AD44FDBDC45D25209B2DEEA8203EC0A",
+  "releaseNotes": "修正主畫面左側功能列無法捲動，小螢幕上按不到「備份資料」與「還原資料」的問題。"
 }
