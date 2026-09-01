@@ -129,6 +129,50 @@ tr:last-child td{border-bottom:none}
 .order svg{flex:none}
 
 footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;line-height:1.9}
+
+/* ---------- side navigation (desktop) ---------- */
+.layout{max-width:880px;margin:0 auto}
+.sidenav{display:none}
+@media(min-width:1120px){
+  .layout{display:grid;grid-template-columns:212px minmax(0,1fr);gap:30px;
+    max-width:1160px;padding:0 20px}
+  .layout .wrap{padding-left:0;padding-right:0;max-width:none}
+  .sidenav{display:block;position:sticky;top:22px;align-self:start;
+    max-height:calc(100vh - 44px);overflow-y:auto;padding:16px 0 16px 0;margin-top:30px}
+  .sidenav .snbox{background:var(--paper);border:1px solid var(--line);
+    border-radius:14px;padding:14px 8px}
+  .sidenav h4{font-size:.78rem;color:var(--muted);letter-spacing:.16em;
+    padding:0 12px 8px}
+  .sidenav a{display:block;padding:6px 12px;border-radius:8px;color:var(--muted);
+    text-decoration:none;font-size:.88rem;line-height:1.5;border-left:3px solid transparent}
+  .sidenav a:hover{background:var(--accent-soft);color:var(--accent)}
+  .sidenav a.active{background:var(--accent-soft);color:var(--accent);
+    font-weight:700;border-left-color:var(--accent)}
+}
+
+/* ---------- floating buttons ---------- */
+.fab{position:fixed;right:18px;z-index:60;width:46px;height:46px;border-radius:50%;
+  border:1px solid var(--line);background:var(--paper);color:var(--accent);
+  box-shadow:0 4px 16px rgba(20,40,70,.18);display:flex;align-items:center;
+  justify-content:center;cursor:pointer;opacity:0;pointer-events:none;
+  transition:opacity .25s ease,transform .25s ease;transform:translateY(8px)}
+.fab.show{opacity:1;pointer-events:auto;transform:none}
+#topBtn{bottom:20px}
+#tocBtn{bottom:76px}
+@media(min-width:1120px){#tocBtn{display:none}}
+
+/* ---------- mobile TOC sheet ---------- */
+#tocSheet{position:fixed;inset:0;z-index:70;display:none}
+#tocSheet.open{display:block}
+#tocSheet .scrim{position:absolute;inset:0;background:rgba(12,20,32,.45)}
+#tocSheet .panel{position:absolute;right:0;top:0;bottom:0;width:min(300px,82vw);
+  background:var(--paper);box-shadow:-8px 0 30px rgba(12,20,32,.25);
+  padding:20px 14px;overflow-y:auto}
+#tocSheet h4{font-size:.8rem;color:var(--muted);letter-spacing:.16em;
+  padding:0 10px 10px}
+#tocSheet a{display:block;padding:9px 10px;border-radius:9px;color:var(--ink);
+  text-decoration:none;font-size:.95rem}
+#tocSheet a.active{background:var(--accent-soft);color:var(--accent);font-weight:700}
 </style>
 </head>
 <body>
@@ -146,6 +190,27 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <span class="badge">不需要 Mac</span>
   </div>
 </div>
+
+<div class="layout">
+
+<nav class="sidenav" aria-label="章節導覽">
+  <div class="snbox">
+    <h4>章節導覽</h4>
+      <a href="#faq" data-nav="faq">先看結論</a>
+      <a href="#gloss" data-nav="gloss">名詞解釋</a>
+      <a href="#flow" data-nav="flow">流程圖</a>
+      <a href="#p1" data-nav="p1">P1 · 準備清單</a>
+      <a href="#p2" data-nav="p2">P2 · 電腦端設定</a>
+      <a href="#p3" data-nav="p3">P3 · iPhone 端設定</a>
+      <a href="#p4" data-nav="p4">P4 · 安裝 GFlyer</a>
+      <a href="#p5" data-nav="p5">P5 · 首次設定</a>
+      <a href="#p6" data-nav="p6">P6 · 日常使用</a>
+      <a href="#p7" data-nav="p7">P7 · 更新與重簽</a>
+      <a href="#p8" data-nav="p8">P8 · 疑難排解</a>
+      <a href="#p9" data-nav="p9">P9 · 規則與限制</a>
+      <a href="#p10" data-nav="p10">P10 · 檢查表</a>
+  </div>
+</nav>
 
 <div class="wrap">
 
@@ -583,6 +648,35 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
 
 </div>
 
+</div><!-- /.layout -->
+
+<button id="tocBtn" class="fab" aria-label="開啟目錄">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+<button id="topBtn" class="fab" aria-label="回到頂部">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div id="tocSheet" role="dialog" aria-label="目錄">
+  <div class="scrim"></div>
+  <div class="panel">
+    <h4>章節導覽</h4>
+    <a href="#faq" data-nav="faq">先看結論</a>
+    <a href="#gloss" data-nav="gloss">名詞解釋</a>
+    <a href="#flow" data-nav="flow">流程圖</a>
+    <a href="#p1" data-nav="p1">P1 · 準備清單</a>
+    <a href="#p2" data-nav="p2">P2 · 電腦端設定</a>
+    <a href="#p3" data-nav="p3">P3 · iPhone 端設定</a>
+    <a href="#p4" data-nav="p4">P4 · 安裝 GFlyer</a>
+    <a href="#p5" data-nav="p5">P5 · 首次設定</a>
+    <a href="#p6" data-nav="p6">P6 · 日常使用</a>
+    <a href="#p7" data-nav="p7">P7 · 更新與重簽</a>
+    <a href="#p8" data-nav="p8">P8 · 疑難排解</a>
+    <a href="#p9" data-nav="p9">P9 · 規則與限制</a>
+    <a href="#p10" data-nav="p10">P10 · 檢查表</a>
+  </div>
+</div>
+
 <script>
 (function(){
   var items = document.querySelectorAll('.rv');
@@ -596,6 +690,40 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     });
   }, {threshold: 0.08});
   items.forEach(function(el){ io.observe(el); });
+})();
+
+/* 章節導覽：高亮目前章節、置頂鍵、手機目錄面板 */
+(function(){
+  var ids = ["faq","gloss","flow","p1","p2","p3","p4","p5","p6","p7","p8","p9","p10"];
+  var links = document.querySelectorAll('[data-nav]');
+  function setActive(id){
+    links.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('data-nav') === id);
+    });
+  }
+  var sections = ids.map(function(i){ return document.getElementById(i); }).filter(Boolean);
+  function spy(){
+    var y = window.scrollY + 130, current = ids[0];
+    sections.forEach(function(sec){ if (sec.offsetTop <= y) current = sec.id; });
+    setActive(current);
+  }
+  var topBtn = document.getElementById('topBtn');
+  var tocBtn = document.getElementById('tocBtn');
+  var sheet = document.getElementById('tocSheet');
+  function onScroll(){
+    spy();
+    var show = window.scrollY > 500;
+    topBtn.classList.toggle('show', show);
+    tocBtn.classList.toggle('show', show);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  topBtn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  tocBtn.addEventListener('click', function(){ sheet.classList.add('open'); });
+  sheet.querySelector('.scrim').addEventListener('click', function(){ sheet.classList.remove('open'); });
+  sheet.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ sheet.classList.remove('open'); });
+  });
 })();
 </script>
 </body>
