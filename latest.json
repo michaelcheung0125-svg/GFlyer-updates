@@ -1,7 +1,7 @@
 {
-  "versionCode": 33,
-  "versionName": "0.8.2",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.2/GFlyer-v0.8.2.apk",
-  "sha256": "703A6704BE76946034748BA36121FE928AD44FDBDC45D25209B2DEEA8203EC0A",
-  "releaseNotes": "修正主畫面左側功能列無法捲動，小螢幕上按不到「備份資料」與「還原資料」的問題。"
+  "versionCode": 34,
+  "versionName": "0.8.3",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.3/GFlyer-v0.8.3.apk",
+  "sha256": "364629BF892E0FAA18FFFAF266BA867724F5115C7E89E10D278CD5664797B6FC",
+  "releaseNotes": "修正 App 剛打開時取不到本機位置、要先模擬一次再停止才能救回的問題。補錄步數改為點步數就直接補錄，補錄後不再收合面板；懸浮補錄鈕是否顯示改由獨立開關決定。另有禮物定位按鈕列預設位置上移，不再擋住「距離」資訊。"
 }
