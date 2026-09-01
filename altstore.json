@@ -24,6 +24,16 @@
       },
       "versions": [
         {
+          "version": "0.4.0",
+          "buildVersion": "6",
+          "date": "2026-09-01",
+          "localizedDescription": "新增：設定頁最上方顯示 App 版本、App 內更新檢查（讀取 SideStore 同一份來源，有新版時提示並交給 SideStore 安裝）。修正：留言板等畫面的錯誤訊息不再中斷進行中的路線；地圖工具列不再被點穿到後方地圖；底部控制列不再被鍵盤推到畫面中間；搜尋鍵盤可以關閉。",
+          "downloadURL": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.4.0/GFlyerIOS-0.4.0-unsigned.ipa",
+          "size": 5519450,
+          "sha256": "2a4f8a1081d90989af9514252bd48356416f4c5fe6c6b9e1c72ec47e041dd610",
+          "minOSVersion": "17.4"
+        },
+        {
           "version": "0.3.0",
           "buildVersion": "5",
           "date": "2026-09-01",
