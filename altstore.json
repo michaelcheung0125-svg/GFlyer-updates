@@ -1,0 +1,40 @@
+{
+  "name": "GFlyer iOS",
+  "subtitle": "GFlyer 個人側載來源",
+  "description": "GFlyer iOS 的個人側載更新來源。加入這個來源後，AltStore 或 SideStore 會在有新版時提示更新，不需要再用電腦重新側載。",
+  "iconURL": "https://michaelcheung0125-svg.github.io/GFlyer-updates/icons/gflyer-ios.png",
+  "website": "https://michaelcheung0125-svg.github.io/GFlyer-updates/USER_GUIDE_ZH_HK.html",
+  "tintColor": "315C83",
+  "apps": [
+    {
+      "name": "GFlyer",
+      "bundleIdentifier": "com.geopilot.gflyer.ios",
+      "developerName": "GFlyer",
+      "subtitle": "地圖定位模擬與路線播放",
+      "localizedDescription": "GFlyer iOS 是供個人側載使用的定位模擬工具。\n\n主要功能：\n• 地圖選點、地點與座標搜尋\n• 傳送、單點、多點路線與螺旋探索\n• 1.8-900 km/h 非線性速度、速度預設\n• 路線播放選項：逐點傳送、到點停留、繞圈、微動、手動前進、開始倒數、自動停止\n• 前景搖桿控制\n• 收藏、歷史、資料夾、命名路線與草稿恢復\n• GPX 匯入匯出，以及與 Android 版互通的備份還原\n• 座標圖鑑與到訪提醒\n• 與 Android 版共用的私人留言板\n\n注意事項：\n• 全機定位模擬需要匯入本機的 Pairing File，並開啟 LocalDevVPN。\n• 這是研究與個人用途的側載版本，不支援 App Store 發佈。\n• 本專案不提供反偵測功能，第三方 App 可以拒絕模擬位置。",
+      "iconURL": "https://michaelcheung0125-svg.github.io/GFlyer-updates/icons/gflyer-ios.png",
+      "tintColor": "315C83",
+      "category": "utilities",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocationWhenInUseUsageDescription": "移動地圖到目前位置，並在路線模擬進行時維持可見的背景定位活動。",
+          "NSLocalNetworkUsageDescription": "透過 LocalDevVPN 的本機通道連接這部 iPhone 的開發服務。"
+        }
+      },
+      "versions": [
+        {
+          "version": "0.3.0",
+          "buildVersion": "5",
+          "date": "2026-09-01",
+          "localizedDescription": "從 Android 版移植的功能：跨日期傳送提醒、路線播放選項（逐點傳送、到點停留、繞圈與微動、手動前進、開始倒數、自動停止）、搖桿位移動力學與獨立限速、GPX 匯入匯出、與 Android 互通的備份還原、座標圖鑑與到訪提醒、中斷後恢復提示。\n\n修正：留言板等其他畫面的錯誤訊息不再中斷進行中的路線；地圖工具列不再被點穿到後方地圖；底部控制列不再被鍵盤推到畫面中間；搜尋鍵盤可以關閉。",
+          "downloadURL": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.3.0/GFlyerIOS-0.3.0-unsigned.ipa",
+          "size": 5470200,
+          "sha256": "2332a708b2838ae69366c456526e62fb0df997a5de6269f7ad5a49a1a37c0a15",
+          "minOSVersion": "17.4"
+        }
+      ]
+    }
+  ],
+  "news": []
+}
