@@ -1,7 +1,7 @@
 {
-  "versionCode": 34,
-  "versionName": "0.8.3",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.3/GFlyer-v0.8.3.apk",
-  "sha256": "364629BF892E0FAA18FFFAF266BA867724F5115C7E89E10D278CD5664797B6FC",
-  "releaseNotes": "修正 App 剛打開時取不到本機位置、要先模擬一次再停止才能救回的問題。補錄步數改為點步數就直接補錄，補錄後不再收合面板；懸浮補錄鈕是否顯示改由獨立開關決定。另有禮物定位按鈕列預設位置上移，不再擋住「距離」資訊。"
+  "versionCode": 35,
+  "versionName": "0.8.4",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.4/GFlyer-v0.8.4.apk",
+  "sha256": "A28B645E9794AD5231A046DE98A7FCFB0338FBE4BE4C1815E58126AA66F906BD",
+  "releaseNotes": "新增「座標模式」：本機 DNS 過濾讓皮克敏新點開的卡片顯示座標而非地名，收皮克敏、看卡片前先開著即可。新增「座標快拍」：懸浮鈕一點即擷取畫面辨識座標，確認距離後一鍵前往。另有剪貼簿偵測改為展開懸浮面板即讀取並直接列出，螢幕擷取授權改為獨立的共用狀態列。"
 }
