@@ -492,11 +492,11 @@ tr.hl td{background:var(--ok-soft)}
       <td><a href="https://www.apple.com/itunes/download/win64" target="_blank" rel="noopener">Apple 網站版（64 位元）</a>
       ——<b>不要</b>用 Microsoft Store 版，那一版不會帶入 iloader 需要的 USB 驅動。</td></tr>
     <tr><td><b>iloader</b></td><td>電腦</td>
-      <td><a href="https://github.com/nab138/iloader/releases" target="_blank" rel="noopener">GitHub releases</a>
-      或 <a href="https://iloader.app" target="_blank" rel="noopener">iloader.app</a>——<b>只有這兩個是官方</b>。</td></tr>
+      <td><a href="https://github.com/nab138/iloader/releases/latest/download/iloader-windows-x64.exe" target="_blank" rel="noopener">直接下載 Windows 版</a>（約 5.8 MB），檔名是 <code>iloader-windows-x64.exe</code>。
+      <span class="small">自己到 <a href="https://github.com/nab138/iloader/releases" target="_blank" rel="noopener">releases 頁</a>或 <a href="https://iloader.app" target="_blank" rel="noopener">iloader.app</a> 找也可以（<b>只有這兩個是官方</b>），但那裡一次列二十幾個檔案：認 <code>windows-x64</code> 這一段，<b>不要</b>點結尾是 <code>.sig</code> 的（那是簽章檔，不是程式）。<code>.msi</code> 版也一樣能用。</span></td></tr>
     <tr><td><b>idevice_pair</b></td><td>電腦</td>
-      <td><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--windows-x86_64.exe" target="_blank" rel="noopener">直接下載 Windows 版</a>
-      ·<a href="https://github.com/jkcoxson/idevice_pair/releases" target="_blank" rel="noopener">全部版本</a></td></tr>
+      <td><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--windows-x86_64.exe" target="_blank" rel="noopener">直接下載 Windows 版</a>（約 38 MB），檔名是 <code>idevice_pair--windows-x86_64.exe</code>。
+      <span class="small">其他平台在 <a href="https://github.com/jkcoxson/idevice_pair/releases" target="_blank" rel="noopener">releases 頁</a>。</span></td></tr>
     <tr><td><b>LocalDevVPN</b></td><td>iPhone</td>
       <td><a href="https://apps.apple.com/app/id6755608044" target="_blank" rel="noopener">App Store 頁面</a>——從 App Store 安裝，不佔側載名額。</td></tr>
     <tr><td><b>LocalSend</b><br><span class="small">選用</span></td><td>兩邊</td>
@@ -549,7 +549,11 @@ tr.hl td{background:var(--ok-soft)}
   </div>
 
   <h3>2.3 用 iloader 安裝</h3>
-  <p>iloader 只有兩個官方下載渠道：<a href="https://github.com/nab138/iloader/releases" target="_blank" rel="noopener">GitHub 的 <code>nab138/iloader</code> releases 頁</a>，以及 <a href="https://iloader.app" target="_blank" rel="noopener"><code>iloader.app</code></a>。Homebrew、AUR 等是社群維護，非官方。</p>
+  <p>Windows 用這一個：<a href="https://github.com/nab138/iloader/releases/latest/download/iloader-windows-x64.exe" target="_blank" rel="noopener"><b>iloader-windows-x64.exe</b></a>（約 5.8 MB，點下去就開始下載）。</p>
+  <div class="box info">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fb3" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
+    <div><b>想自己到官方頁面找？</b>官方只有兩個地方：<a href="https://github.com/nab138/iloader/releases" target="_blank" rel="noopener">GitHub 的 <code>nab138/iloader</code> releases 頁</a> 與 <a href="https://iloader.app" target="_blank" rel="noopener"><code>iloader.app</code></a>（Homebrew、AUR 等是社群維護，非官方）。releases 頁一次列出二十幾個檔案，包括 macOS 和 Linux 的，很容易點錯。認這兩點就不會：檔名要有 <code>windows-x64</code>，<b>而且不能以 <code>.sig</code> 結尾</b>（那是簽章檔，每個安裝檔旁邊都有一個，不是程式）。想用 <code>iloader-windows-x64.msi</code> 也可以，兩者裝出來一樣。</div>
+  </div>
   <ol class="steps">
     <li>開啟 iloader。介面語言可以自己切換；下面每一步都同時列出中文與英文字樣，你看到哪一種都對得上。</li>
     <li>在「帳戶」<span class="ui en">Account</span> 區<b class="act">登入你自己的 Apple ID</b>，照提示輸入雙重認證碼。</li>
@@ -687,7 +691,7 @@ tr.hl td{background:var(--ok-soft)}
 
   <h3>5.1 在電腦上建立配對檔</h3>
   <ol class="steps">
-    <li>在電腦下載 <a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--windows-x86_64.exe" target="_blank" rel="noopener"><b>idevice_pair（Windows x86_64 版）</b></a>，放在只有你能存取的資料夾。<span class="small">其他平台或舊版在 <a href="https://github.com/jkcoxson/idevice_pair/releases" target="_blank" rel="noopener">releases 頁</a>。</span></li>
+    <li>在電腦下載 <a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--windows-x86_64.exe" target="_blank" rel="noopener"><b>idevice_pair--windows-x86_64.exe</b></a>（約 38 MB），放在只有你能存取的資料夾。<span class="small">自己到 <a href="https://github.com/jkcoxson/idevice_pair/releases" target="_blank" rel="noopener">releases 頁</a> 找的話，認檔名裡的 <code>windows</code>；其他是 macOS 與 Linux 的。</span></li>
     <li>iPhone 解鎖、停留在主畫面，用 USB 接上電腦；出現「信任此電腦？」就按<b class="act">信任</b>。</li>
     <li>開啟 idevice_pair，在裝置清單選你的 iPhone。</li>
     <li>選 <b class="act">Remote pairing</b>（<b>不要</b>選 Lockdown）。</li>
