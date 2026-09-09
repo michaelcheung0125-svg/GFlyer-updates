@@ -483,6 +483,28 @@ tr.hl td{background:var(--ok-soft)}
       <li>網絡連線（首次會下載約 16 MB 的 DDI）</li>
     </ul>
   </div>
+
+  <h3>要下載的東西（全部免費）</h3>
+  <p>下面每一個都有直接連結，不用自己去搜。<b>電腦</b>那三個建議先一次下載好；<b>iPhone</b> 的到那一步再裝也可以。</p>
+  <div class="tablewrap"><table>
+    <tr><th style="width:22%">工具</th><th style="width:13%">裝在哪</th><th>下載</th></tr>
+    <tr><td><b>iTunes</b></td><td>電腦</td>
+      <td><a href="https://www.apple.com/itunes/download/win64" target="_blank" rel="noopener">Apple 網站版（64 位元）</a>
+      ——<b>不要</b>用 Microsoft Store 版，那一版不會帶入 iloader 需要的 USB 驅動。</td></tr>
+    <tr><td><b>iCloud</b></td><td>電腦</td>
+      <td><a href="https://support.apple.com/zh-hk/103232" target="_blank" rel="noopener">Apple 的官方下載說明頁</a>，照該頁指示安裝。</td></tr>
+    <tr><td><b>iloader</b></td><td>電腦</td>
+      <td><a href="https://github.com/nab138/iloader/releases" target="_blank" rel="noopener">GitHub releases</a>
+      或 <a href="https://iloader.app" target="_blank" rel="noopener">iloader.app</a>——<b>只有這兩個是官方</b>。</td></tr>
+    <tr><td><b>idevice_pair</b></td><td>電腦</td>
+      <td><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--windows-x86_64.exe" target="_blank" rel="noopener">直接下載 Windows 版</a>
+      ·<a href="https://github.com/jkcoxson/idevice_pair/releases" target="_blank" rel="noopener">全部版本</a></td></tr>
+    <tr><td><b>LocalDevVPN</b></td><td>iPhone</td>
+      <td><a href="https://apps.apple.com/app/id6755608044" target="_blank" rel="noopener">App Store 頁面</a>——從 App Store 安裝，不佔側載名額。</td></tr>
+    <tr><td><b>LocalSend</b><br><span class="small">選用</span></td><td>兩邊</td>
+      <td><a href="https://localsend.org" target="_blank" rel="noopener">電腦版</a>
+      ·<a href="https://apps.apple.com/app/id1661733229" target="_blank" rel="noopener">iPhone 版</a>——只用來把配對檔傳上手機，用 USB 傳也可以。</td></tr>
+  </table></div>
   <div class="box danger">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b3372f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
     <div><b>安全底線</b>Apple ID 密碼與雙重認證碼只輸入在<b>你自己電腦／手機上</b>的官方流程（iloader / SideStore）。不要把密碼、憑證或配對檔交給任何人。</div>
@@ -499,7 +521,7 @@ tr.hl td{background:var(--ok-soft)}
   <p>iloader 依賴 Apple 的 USB 驅動程式，而驅動要靠 iTunes／iCloud 帶進來。注意：要用 <b>Apple 網站版</b>，不是 Microsoft Store 版。</p>
   <ol class="steps">
     <li>如果電腦已裝了 <b>Microsoft Store 版</b>的 iTunes 或 iCloud，先到 Windows「已安裝的應用程式」把它們移除。</li>
-    <li>到 Apple 網站下載並安裝 <b>Web 版 iTunes</b> 與 <b>Web 版 iCloud</b>，然後重新啟動電腦。</li>
+    <li>下載並安裝 <a href="https://www.apple.com/itunes/download/win64" target="_blank" rel="noopener"><b>Apple 網站版 iTunes</b></a>，以及 <a href="https://support.apple.com/zh-hk/103232" target="_blank" rel="noopener"><b>Windows 版 iCloud</b></a>（照 Apple 該頁的指示），然後重新啟動電腦。</li>
     <li>開啟 iTunes，用 USB 線把 iPhone 接上電腦。</li>
     <li>iPhone 出現「信任此電腦？」→ 按<b class="act">信任</b>，輸入 iPhone 密碼。</li>
   </ol>
@@ -529,7 +551,7 @@ tr.hl td{background:var(--ok-soft)}
   </div>
 
   <h3>2.3 用 iloader 安裝</h3>
-  <p>iloader 只有兩個官方下載渠道：GitHub 的 <code>nab138/iloader</code> releases 頁，以及 <code>iloader.app</code>。Homebrew、AUR 等是社群維護，非官方。</p>
+  <p>iloader 只有兩個官方下載渠道：<a href="https://github.com/nab138/iloader/releases" target="_blank" rel="noopener">GitHub 的 <code>nab138/iloader</code> releases 頁</a>，以及 <a href="https://iloader.app" target="_blank" rel="noopener"><code>iloader.app</code></a>。Homebrew、AUR 等是社群維護，非官方。</p>
   <ol class="steps">
     <li>開啟 iloader。介面語言可以自己切換；下面每一步都同時列出中文與英文字樣，你看到哪一種都對得上。</li>
     <li>在「帳戶」<span class="ui en">Account</span> 區<b class="act">登入你自己的 Apple ID</b>，照提示輸入雙重認證碼。</li>
@@ -573,7 +595,7 @@ tr.hl td{background:var(--ok-soft)}
 
   <h3>3.3 安裝 LocalDevVPN</h3>
   <ol class="steps">
-    <li>在 iPhone 的 <b>App Store</b> 搜尋並安裝 <b>LocalDevVPN</b>（免費）。<span class="small">它從 App Store 安裝，不佔側載名額。</span></li>
+    <li>在 iPhone 開啟 <a href="https://apps.apple.com/app/id6755608044" target="_blank" rel="noopener"><b>LocalDevVPN 的 App Store 頁面</b></a>並安裝（免費）。<span class="small">它從 App Store 安裝，不佔側載名額。</span></li>
     <li>開啟它，首次會要求「加入 VPN 設定」→ 允許，輸入鎖機密碼。</li>
     <li>裝置／目標 IP 保持預設 <code>10.7.0.1</code>，按連接。</li>
   </ol>
@@ -602,6 +624,16 @@ tr.hl td{background:var(--ok-soft)}
   <div class="sec-head">
     <div class="sec-num">4</div>
     <div><span class="part">PART 4</span><h2>安裝 GFlyer</h2></div>
+  </div>
+  <div class="card dlcard">
+    <div class="dlmeta">
+      <b>用 iPhone 看這一頁？可以一鍵加入</b>
+      <span class="small">直接叫 SideStore 加入上面那個來源，不用複製貼上。在電腦上按沒有作用。</span>
+    </div>
+    <a class="dlbtn" href="sidestore://source?url=https://michaelcheung0125-svg.github.io/GFlyer-updates/altstore.json">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+      在 SideStore 加入來源
+    </a>
   </div>
   <ol class="steps">
     <li>開啟 SideStore → <b>Browse</b> → <b>Sources</b> → 右上角 <b class="act">＋</b>。</li>
@@ -657,7 +689,7 @@ tr.hl td{background:var(--ok-soft)}
 
   <h3>5.1 在電腦上建立配對檔</h3>
   <ol class="steps">
-    <li>在電腦下載 <b>idevice_pair</b>（Windows x86_64 版），放在只有你能存取的資料夾。</li>
+    <li>在電腦下載 <a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--windows-x86_64.exe" target="_blank" rel="noopener"><b>idevice_pair（Windows x86_64 版）</b></a>，放在只有你能存取的資料夾。<span class="small">其他平台或舊版在 <a href="https://github.com/jkcoxson/idevice_pair/releases" target="_blank" rel="noopener">releases 頁</a>。</span></li>
     <li>iPhone 解鎖、停留在主畫面，用 USB 接上電腦；出現「信任此電腦？」就按<b class="act">信任</b>。</li>
     <li>開啟 idevice_pair，在裝置清單選你的 iPhone。</li>
     <li>選 <b class="act">Remote pairing</b>（<b>不要</b>選 Lockdown）。</li>
@@ -671,7 +703,7 @@ tr.hl td{background:var(--ok-soft)}
 
   <h3>5.2 把配對檔傳到 iPhone 並匯入</h3>
   <ol class="steps">
-    <li>用 <b>LocalSend</b>（電腦與 iPhone 都免費安裝，連同一 Wi-Fi）把配對檔傳到 iPhone，存進「檔案」App。<span class="small">USB 傳輸也可以；不要經公開連結或聊天群組。</span></li>
+    <li>用 <b>LocalSend</b>（<a href="https://localsend.org" target="_blank" rel="noopener">電腦版</a>、<a href="https://apps.apple.com/app/id1661733229" target="_blank" rel="noopener">iPhone 版</a>，都免費，連同一 Wi-Fi）把配對檔傳到 iPhone，存進「檔案」App。<span class="small">USB 傳輸也可以；不要經公開連結或聊天群組。</span></li>
     <li>開啟 GFlyer → 右上角齒輪進「設定」→「首次設定」→ <b class="act">匯入 Pairing File</b>。</li>
     <li>在檔案選擇器選剛傳入的檔案，狀態變成「<b>已匯入</b>」。</li>
   </ol>
