@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GFlyer iOS 安裝與使用教學（SideStore 版）</title>
+<title>GFlyer iOS 安裝與使用教學</title>
 <style>
 :root{
   --bg:#f7f8fa; --paper:#ffffff; --ink:#1c2733; --muted:#5b6b7c;
@@ -150,6 +150,61 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     font-weight:700;border-left-color:var(--accent)}
 }
 
+/* ---------- 導覽分組：把「要跟著做」與「補充資料」分開 ---------- */
+/* 編號圓圈本身就是訊息：實心藍圓＝需要你動手的步驟，
+   灰色空圓＝需要時再查的參考章節。 */
+.navgroup + .navgroup{margin-top:13px;padding-top:12px;border-top:1px solid var(--line)}
+.navgroup > h4{font-size:.76rem;font-weight:700;letter-spacing:.08em;
+  color:var(--muted);padding:0 12px 8px;line-height:1.4}
+.navgroup > h4 em{display:block;font-style:normal;font-weight:400;
+  font-size:.72rem;letter-spacing:0;color:#93a2b2;margin-top:2px}
+.navgroup.act > h4{color:var(--accent)}
+.sidenav .navgroup a,
+#tocSheet .navgroup a{display:flex;align-items:center;gap:8px}
+.navgroup a .n{display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;border-radius:50%;flex:none;
+  font-size:.7rem;font-weight:700;font-variant-numeric:tabular-nums}
+.navgroup.act a .n{background:var(--accent-soft);color:var(--accent)}
+.navgroup.ref a .n{border:1px solid var(--line);color:var(--muted)}
+.navgroup.act a.active .n{background:var(--accent);color:#fff}
+
+/* ---------- 頁首目錄：同一套分組，並排顯示 ---------- */
+.tocgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px 24px;margin-top:14px}
+@media(max-width:640px){.tocgrid{grid-template-columns:1fr;gap:14px}}
+.tocgroup h3{font-size:.86rem;font-weight:700;letter-spacing:.06em;margin:0 0 8px;
+  color:var(--muted);line-height:1.4}
+.tocgroup h3 em{display:block;font-style:normal;font-weight:400;font-size:.76rem;
+  letter-spacing:0;color:#93a2b2;margin-top:2px}
+.tocgroup.act h3{color:var(--accent)}
+.tocgroup ul{list-style:none;margin:0;display:flex;flex-direction:column;gap:5px}
+.tocgroup li{display:flex;align-items:flex-start;gap:9px;font-size:.93rem;margin:0}
+.tocgroup .n{display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;margin-top:2px;border-radius:50%;flex:none;
+  font-size:.7rem;font-weight:700;font-variant-numeric:tabular-nums}
+.tocgroup.act .n{background:var(--accent-soft);color:var(--accent)}
+.tocgroup.ref .n{border:1px solid var(--line);color:var(--muted)}
+.tocgroup .n.dot{width:20px;height:20px;position:relative}
+.tocgroup .n.dot::after{content:"";width:5px;height:5px;border-radius:50%;
+  background:var(--line);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+
+/* ---------- 直接下載 IPA ---------- */
+.dlcard{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.dlmeta{display:flex;flex-direction:column;gap:2px}
+.dlbtn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;
+  text-decoration:none;font-weight:700;font-size:.95rem;padding:11px 20px;border-radius:10px;
+  transition:background .15s ease;white-space:nowrap}
+.dlbtn:hover{background:#255d99}
+.dlbtn:focus-visible{outline:3px solid var(--accent-soft);outline-offset:2px}
+
+/* ---------- 尊重「減少動態效果」 ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .fline{animation:none}
+  .fpulse{animation:none;opacity:1}
+  .fab{transition:none}
+}
+
 /* ---------- floating buttons ---------- */
 .fab{position:fixed;right:18px;z-index:60;width:46px;height:46px;border-radius:50%;
   border:1px solid var(--line);background:var(--paper);color:var(--accent);
@@ -173,9 +228,33 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
 #tocSheet a{display:block;padding:9px 10px;border-radius:9px;color:var(--ink);
   text-decoration:none;font-size:.95rem}
 #tocSheet a.active{background:var(--accent-soft);color:var(--accent);font-weight:700}
+
+/* ---------- 畫面上看到的字（照抄比對用） ---------- */
+.ui{display:inline-block;background:var(--paper);border:1.5px solid var(--accent);
+  color:var(--accent);border-radius:7px;padding:0 8px;font-weight:700;
+  font-size:.92em;line-height:1.7;white-space:nowrap}
+.ui.en{border-color:#cbdcee;color:var(--muted);font-weight:600;
+  font-family:"SF Mono",Consolas,monospace;font-size:.82em;margin-left:4px}
+td .ui,li .ui{margin-bottom:2px}
+
+/* ---------- 建議選項 ---------- */
+.pick{background:var(--ok-soft);border:1.6px solid #9fd4ba;border-radius:13px;
+  padding:16px 19px;margin:14px 0}
+.pick .tag{display:inline-block;background:var(--ok);color:#fff;border-radius:999px;
+  padding:2px 12px;font-size:.75rem;font-weight:700;letter-spacing:.08em;margin-bottom:9px}
+.pick h4{font-size:1.03rem;margin-bottom:5px}
+.pick p{font-size:.93rem}
+tr.hl td{background:var(--ok-soft)}
+
+/* ---------- 兩欄卡片 ---------- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+@media(max-width:720px){.two{grid-template-columns:1fr}}
+.two .card{margin:0;height:100%}
+.two .card h3{margin-top:0}
 </style>
 </head>
 <body>
+
 
 <div class="hero">
   <div class="pig">
@@ -184,10 +263,10 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
   <h1>GFlyer iOS 安裝與使用教學</h1>
   <p class="sub">由零開始，一步一步把 GFlyer 裝進你的 iPhone。完全不需要懂「側載」是什麼——照著每一步做即可。設定一次之後，日常使用與更新都不再需要電腦。</p>
   <div class="badges">
-    <span class="badge">SideStore 版</span>
-    <span class="badge">文件版本 2026-09-04</span>
-    <span class="badge">Windows 電腦適用</span>
-    <span class="badge">不需要 Mac</span>
+    <span class="badge">SideStore 夜晚版</span>
+    <span class="badge">對應 App 0.6.1</span>
+    <span class="badge">Windows 適用 · 不需要 Mac</span>
+    <span class="badge">文件版本 2026-09-09</span>
   </div>
 </div>
 
@@ -195,20 +274,36 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
 
 <nav class="sidenav" aria-label="章節導覽">
   <div class="snbox">
-    <h4>章節導覽</h4>
+    <div class="navgroup ref">
+      <h4>開始之前<em>讀一讀就好，不用動手</em></h4>
       <a href="#faq" data-nav="faq">先看結論</a>
       <a href="#gloss" data-nav="gloss">名詞解釋</a>
       <a href="#flow" data-nav="flow">流程圖</a>
-      <a href="#p1" data-nav="p1">P1 · 準備清單</a>
-      <a href="#p2" data-nav="p2">P2 · 電腦端設定</a>
-      <a href="#p3" data-nav="p3">P3 · iPhone 端設定</a>
-      <a href="#p4" data-nav="p4">P4 · 安裝 GFlyer</a>
-      <a href="#p5" data-nav="p5">P5 · 首次設定</a>
-      <a href="#p6" data-nav="p6">P6 · 日常使用</a>
-      <a href="#p7" data-nav="p7">P7 · 更新與重簽</a>
-      <a href="#p8" data-nav="p8">P8 · 疑難排解</a>
-      <a href="#p9" data-nav="p9">P9 · 規則與限制</a>
-      <a href="#p10" data-nav="p10">P10 · 檢查表</a>
+    </div>
+    <div class="navgroup act">
+      <h4>安裝<em>跟著做 · 只做一次</em></h4>
+      <a href="#p1" data-nav="p1"><span class="n">1</span>準備清單</a>
+      <a href="#p2" data-nav="p2"><span class="n">2</span>電腦端設定</a>
+      <a href="#p3" data-nav="p3"><span class="n">3</span>iPhone 端設定</a>
+      <a href="#p4" data-nav="p4"><span class="n">4</span>安裝 GFlyer</a>
+      <a href="#p5" data-nav="p5"><span class="n">5</span>首次設定</a>
+      <a href="#p6" data-nav="p6"><span class="n">6</span>完成檢查表</a>
+    </div>
+    <div class="navgroup act">
+      <h4>使用<em>裝好之後每次這樣用</em></h4>
+      <a href="#p7" data-nav="p7"><span class="n">7</span>日常使用</a>
+      <a href="#p8" data-nav="p8"><span class="n">8</span>收藏與路線</a>
+    </div>
+    <div class="navgroup act">
+      <h4>選用功能<em>想要才做，不做也不影響</em></h4>
+      <a href="#p9" data-nav="p9"><span class="n">9</span>兩個捷徑</a>
+    </div>
+    <div class="navgroup ref">
+      <h4>需要時再查<em>出問題或想確認時才翻</em></h4>
+      <a href="#p10" data-nav="p10"><span class="n">10</span>更新與重簽</a>
+      <a href="#p11" data-nav="p11"><span class="n">11</span>疑難排解</a>
+      <a href="#p12" data-nav="p12"><span class="n">12</span>規則與限制</a>
+    </div>
   </div>
 </nav>
 
@@ -216,23 +311,50 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
 
 <div class="toc rv">
   <h2>目錄</h2>
-  <ol>
-    <li><a href="#faq">先看結論（常見疑問）</a></li>
-    <li><a href="#gloss">名詞解釋：這些工具是什麼</a></li>
-    <li><a href="#flow">整體流程一張圖</a></li>
-    <li><a href="#p1">Part 1 準備清單</a></li>
-    <li><a href="#p2">Part 2 電腦端：裝好 Apple 元件與 SideStore（只做一次）</a></li>
-    <li><a href="#p3">Part 3 iPhone 端：開發者模式、信任、LocalDevVPN（只做一次）</a></li>
-    <li><a href="#p4">Part 4 安裝 GFlyer</a></li>
-    <li><a href="#p5">Part 5 GFlyer 首次設定：配對檔與第一次定位測試</a></li>
-    <li><a href="#p6">Part 6 日常使用</a></li>
-    <li><a href="#p7">Part 7 更新與 7 天重簽（自動）</a></li>
-    <li><a href="#p8">Part 8 疑難排解</a></li>
-    <li><a href="#p9">Part 9 安全規則與已知限制</a></li>
-    <li><a href="#p10">Part 10 完成檢查表</a></li>
-  </ol>
+  <p class="small">藍色圓圈的是<b>要你動手做</b>的步驟，照編號順序走；灰色的是需要時再查的補充資料。</p>
+  <div class="tocgrid">
+    <div class="tocgroup ref">
+      <h3>開始之前<em>讀一讀就好，不用動手</em></h3>
+      <ul>
+      <li><span class="n dot"></span><a href="#faq">先看結論（常見疑問）</a></li>
+      <li><span class="n dot"></span><a href="#gloss">名詞解釋：這些工具是什麼</a></li>
+      <li><span class="n dot"></span><a href="#flow">整體流程一張圖</a></li>
+      </ul>
+    </div>
+    <div class="tocgroup act">
+      <h3>安裝<em>跟著做 · 只做一次</em></h3>
+      <ul>
+      <li><span class="n">1</span><a href="#p1">準備清單</a></li>
+      <li><span class="n">2</span><a href="#p2">電腦端：Apple 元件與 SideStore（夜晚版）</a></li>
+      <li><span class="n">3</span><a href="#p3">iPhone 端：開發者模式、信任、LocalDevVPN</a></li>
+      <li><span class="n">4</span><a href="#p4">安裝 GFlyer</a></li>
+      <li><span class="n">5</span><a href="#p5">首次設定：配對檔與第一次定位測試</a></li>
+      <li><span class="n">6</span><a href="#p6">完成檢查表</a></li>
+      </ul>
+    </div>
+    <div class="tocgroup act">
+      <h3>使用<em>裝好之後每次這樣用</em></h3>
+      <ul>
+      <li><span class="n">7</span><a href="#p7">日常使用：四種模式與收工還原</a></li>
+      <li><span class="n">8</span><a href="#p8">收藏、路線與資料</a></li>
+      </ul>
+    </div>
+    <div class="tocgroup act">
+      <h3>選用功能<em>想要才做，不做也不影響</em></h3>
+      <ul>
+      <li><span class="n">9</span><a href="#p9">兩個選用捷徑：補錄步數與飛航模式</a></li>
+      </ul>
+    </div>
+    <div class="tocgroup ref">
+      <h3>需要時再查<em>出問題或想確認時才翻</em></h3>
+      <ul>
+      <li><span class="n">10</span><a href="#p10">更新與 7 天重簽（自動）</a></li>
+      <li><span class="n">11</span><a href="#p11">疑難排解</a></li>
+      <li><span class="n">12</span><a href="#p12">安全規則與已知限制</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
-
 <!-- ============ FAQ ============ -->
 <section id="faq" class="rv">
   <div class="sec-head">
@@ -248,6 +370,8 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <tr><td>免費 Apple ID 可以用嗎？</td><td>可以。簽名約 7 天到期，但 SideStore 會在 iPhone 上<b>自動重簽</b>，你不需要做任何事。</td></tr>
     <tr><td>GFlyer 會自動更新嗎？</td><td>會。有新版時 App 會自己跳出提示，按一下交給 SideStore 安裝。</td></tr>
     <tr><td>要付錢嗎？</td><td>不用。所有工具（SideStore、iloader、LocalDevVPN）都是免費的。</td></tr>
+    <tr><td>為什麼推薦 SideStore「夜晚版」？</td><td>夜晚版（Nightly）是每日更新的版本，新 iOS 需要的修正通常先進夜晚版，穩定版有時落後幾個月。代價是官方不受理夜晚版的問題回報。兩版都能照本教學使用；夜晚版出狀況時，用同一個 iloader 改裝穩定版即可。</td></tr>
+    <tr><td>一定要建立「捷徑」嗎？</td><td><b>不用。</b>只有兩個選用功能需要：補錄步數、一鍵切換飛行模式。不建捷徑，GFlyer 其他功能完全不受影響（<a href="#p9">Part 9</a>）。</td></tr>
     <tr><td>停止模擬後，其他 App 會立刻回到真實位置嗎？</td><td>不一定。iOS 會沿用最後的模擬位置一段時間。要立刻還原，用 GFlyer 設定內的「完整清除模擬定位」，然後<b>開關一次飛行模式</b>（實測必要）。</td></tr>
   </table></div>
 </section>
@@ -268,6 +392,8 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <div class="g"><b>LocalDevVPN</b><p>App Store 上的免費 App。它在 iPhone 內部建立一條「本機通道」，讓 SideStore 和 GFlyer 能連到 iPhone 自己的開發服務。<b>它不是翻牆用的 VPN</b>，不會改變你的上網地區。</p></div>
     <div class="g"><b>Pairing File（配對檔）</b><p>這部 iPhone 信任電腦的憑證檔。GFlyer 的全機定位需要它。每部 iPhone 要建立自己的一份，<b>屬於敏感檔案，不可給別人</b>。</p></div>
     <div class="g"><b>DDI（開發者磁碟映像）</b><p>約 16 MB 的 Apple 官方元件。GFlyer 第一次啟動定位時自動下載並驗證，之後保留在機內。</p></div>
+    <div class="g"><b>夜晚版（Nightly）</b><p>SideStore 每日自動建置的最新版本。新 iOS 需要的修正通常先出現在這裡，代價是官方不受理它的問題回報。本教學推薦它。</p></div>
+    <div class="g"><b>捷徑（Shortcuts）</b><p>iOS 內建的自動化 App。GFlyer 有兩件事（寫入健康步數、切換飛行模式）沒有 App 權限可做，改由你自建的捷徑代勞。<b>這是選用的</b>。</p></div>
   </div>
 </section>
 
@@ -299,7 +425,7 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
       <text x="286" y="88" text-anchor="middle" class="fsub">USB 接 iPhone</text>
       <path d="M352 74 H 392" class="fline" stroke="#4a9eff" marker-end="url(#ah1)"/>
       <rect x="396" y="48" width="150" height="52" rx="10" class="fnode" stroke="#4a9eff"/>
-      <text x="471" y="70" text-anchor="middle" class="ftext">SideStore 上機</text>
+      <text x="471" y="70" text-anchor="middle" class="ftext">裝 SideStore 夜晚版</text>
       <text x="471" y="88" text-anchor="middle" class="fsub">之後電腦只剩配對檔用途</text>
 
       <text x="24" y="150" class="flabel" fill="#ff8a4a">PHASE 2 · iPhone（一次）</text>
@@ -362,12 +488,11 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <div><b>安全底線</b>Apple ID 密碼與雙重認證碼只輸入在<b>你自己電腦／手機上</b>的官方流程（iloader / SideStore）。不要把密碼、憑證或配對檔交給任何人。</div>
   </div>
 </section>
-
 <!-- ============ Part 2 ============ -->
 <section id="p2" class="rv">
   <div class="sec-head">
     <div class="sec-num">2</div>
-    <div><span class="part">PART 2 · 只做一次</span><h2>電腦端：裝好 Apple 元件與 SideStore</h2></div>
+    <div><span class="part">PART 2 · 只做一次</span><h2>電腦端：Apple 元件與 SideStore（夜晚版）</h2></div>
   </div>
 
   <h3>2.1 安裝 Apple 的 Windows 元件</h3>
@@ -383,19 +508,43 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <div><b>檢查點：</b>iTunes 能看見你的 iPhone 才繼續。看不見的話，換一個 USB 插口或換一條線再試。</div>
   </div>
 
-  <h3>2.2 用 iloader 安裝 SideStore</h3>
+  <h3>2.2 先決定裝哪一個版本</h3>
+  <p>iloader 的「安裝程式」區會列出<b>四個</b>可以裝的版本。本教學推薦其中的<b>夜晚版</b>。</p>
+  <div class="pick">
+    <span class="tag">本教學推薦</span>
+    <h4><span class="ui">SideStore（夜晚版）</span><span class="ui en">SideStore (Nightly)</span></h4>
+    <p>夜晚版是 SideStore 每日自動建置的最新版本。新 iOS 版本需要的修正通常<b>先進夜晚版</b>，穩定版有時要等幾個月才跟上——這對側載工具很關鍵，因為 Apple 每次系統更新都可能改動它依賴的介面。</p>
+  </div>
+  <div class="tablewrap"><table>
+    <tr><th style="width:33%">iloader 的中文字樣</th><th style="width:33%">英文介面</th><th>要不要選</th></tr>
+    <tr><td>SideStore（穩定版）</td><td>SideStore (Stable)</td><td>可以用，但更新較慢</td></tr>
+    <tr class="hl"><td><b>SideStore（夜晚版）</b></td><td>SideStore (Nightly)</td><td><b>選這個</b></td></tr>
+    <tr><td>LiveContainer + SideStore（穩定版）</td><td>LiveContainer + SideStore (Stable)</td><td>不需要</td></tr>
+    <tr><td>LiveContainer + SideStore（夜晚版）</td><td>LiveContainer + SideStore (Nightly)</td><td>不需要</td></tr>
+  </table></div>
+  <p class="small">LiveContainer 是另一個工具，讓你在一個側載名額裡跑多個 App。GFlyer 用不到它，少一層東西比較容易排查問題。你如果為了別的 App 想省名額而選了帶 LiveContainer 的版本，本教學其餘步驟一樣適用。</p>
+  <div class="box warn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b3691f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+    <div><b>夜晚版的代價，先說清楚</b>SideStore 官方對一般使用者的建議是穩定版，<b>夜晚版遇到的問題官方不受理</b>。如果夜晚版在你的機上不穩，用同一個 iloader 改揀「SideStore（穩定版）」重裝一次即可，資料一般會保留（官方不保證，重要資料先在 GFlyer 匯出備份檔）。</div>
+  </div>
+
+  <h3>2.3 用 iloader 安裝</h3>
+  <p>iloader 只有兩個官方下載渠道：GitHub 的 <code>nab138/iloader</code> releases 頁，以及 <code>iloader.app</code>。Homebrew、AUR 等是社群維護，非官方。</p>
   <ol class="steps">
-    <li>從 SideStore 官方渠道下載 <b>iloader</b>（Windows 版）並開啟。</li>
-    <li>在 iloader <b class="act">登入你自己的 Apple ID</b>（含雙重認證）。</li>
-    <li>在裝置清單選擇你的 iPhone。</li>
-    <li>選 <b class="act">Install SideStore (Stable)</b>，等待安裝完成。</li>
+    <li>開啟 iloader。介面語言可以自己切換；下面每一步都同時列出中文與英文字樣，你看到哪一種都對得上。</li>
+    <li>在「帳戶」<span class="ui en">Account</span> 區<b class="act">登入你自己的 Apple ID</b>，照提示輸入雙重認證碼。</li>
+    <li>iPhone 用 USB 接上電腦並<b>解鎖</b>。在「管理」區按 <span class="ui">重新整理裝置</span><span class="ui en">Refresh Devices</span>，再從 <span class="ui">揀裝置</span><span class="ui en">Select a device</span> 選你的 iPhone。</li>
+    <li>捲到「安裝程式」<span class="ui en">Installers</span> 區，在 <span class="ui">揀版本</span><span class="ui en">Choose a build</span> 選 <b class="act">SideStore（夜晚版）</b>。</li>
+    <li>iloader 會依序跑三個步驟，畫面上看得到進度：<b>下載 SideStore</b> → <b>簽署同安裝 SideStore</b> → <b>放入配對檔案</b>。
+      <span class="small">最後一步是 iloader 自動把配對檔寫進 SideStore 的容器裡——這正是日後最常見那個 UDID 故障的預防針，不用你動手。</span>
+    </li>
+    <li>看到 <span class="ui">SideStore 安裝成功！</span> 就完成了。它會提示你「開啟 SideStore 再重新整理一次」，那一步在 3.4 做。</li>
   </ol>
   <div class="check">
     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1e8e5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
     <div><b>檢查點：</b>iPhone 主畫面出現 SideStore 圖示。先別急著打開——要先完成 Part 3 的信任設定。</div>
   </div>
 </section>
-
 <!-- ============ Part 3 ============ -->
 <section id="p3" class="rv">
   <div class="sec-head">
@@ -408,6 +557,7 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <li>iPhone 開啟「設定」→「一般」→「<b>VPN 與裝置管理</b>」。</li>
     <li>在「開發者 App」下面，點選對應你 Apple ID 的項目。</li>
     <li>按<b class="act">信任</b>，再確認一次。<span class="small">（這裡會顯示簽名帳號的電郵，只有你自己看得到。）</span></li>
+    <li><b>iOS 18 或以上：</b>確認的按鈕會順帶要求重新啟動 iPhone。按下去、輸入鎖機密碼，等它重開機再繼續。</li>
   </ol>
 
   <h3>3.2 開啟開發者模式</h3>
@@ -423,8 +573,8 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
 
   <h3>3.3 安裝 LocalDevVPN</h3>
   <ol class="steps">
-    <li>在 iPhone 的 <b>App Store</b> 搜尋並安裝 <b>LocalDevVPN</b>（免費）。</li>
-    <li>開啟它，首次會要求「加入 VPN 設定」→ 允許。</li>
+    <li>在 iPhone 的 <b>App Store</b> 搜尋並安裝 <b>LocalDevVPN</b>（免費）。<span class="small">它從 App Store 安裝，不佔側載名額。</span></li>
+    <li>開啟它，首次會要求「加入 VPN 設定」→ 允許，輸入鎖機密碼。</li>
     <li>裝置／目標 IP 保持預設 <code>10.7.0.1</code>，按連接。</li>
   </ol>
   <div class="check">
@@ -438,12 +588,15 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <li>登入你的 Apple ID（和 iloader 用的同一個）。</li>
     <li>點畫面上的 <b class="act">7 DAYS</b> 計數器做一次重簽，確認流程正常。</li>
   </ol>
+  <div class="box info">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fb3" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
+    <div><b>讓夜晚版自己更新</b>SideStore 的設定裡有 beta 更新的選項，選 <code>nightly</code> 之後，新的夜晚版就會直接在 SideStore 內出現，不用再接電腦。</div>
+  </div>
   <div class="box warn">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b3691f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
     <div><b>登入出錯？</b>多數是 anisette 伺服器暫時故障：到 SideStore 設定換一個 <b>Anisette Server</b> 再試。</div>
   </div>
 </section>
-
 <!-- ============ Part 4 ============ -->
 <section id="p4" class="rv">
   <div class="sec-head">
@@ -462,8 +615,34 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1e8e5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
     <div><b>檢查點：</b>開啟 GFlyer，畫面<b>左上角顯示「裝置模式」</b>；再到 App 的「設定 → 關於」看 App 版本。若顯示「預覽模式」代表裝到了不能控制全機定位的版本，請從上面的來源重新安裝。</div>
   </div>
-</section>
 
+  <h3>備用：直接下載 IPA 手動安裝</h3>
+  <p>來源加不進去、或想把安裝檔自己留一份時用這個。裝出來的 App
+  和上面完全一樣，<b>差別只在於以後每次更新都要再手動來一次</b>，所以能用
+  來源就用來源。</p>
+  <div class="card dlcard">
+    <div class="dlmeta">
+      <b>GFlyer iOS <span id="ipaVersion">0.6.1</span></b>
+      <span class="small" id="ipaMeta">未簽名 IPA · 9.4 MB</span>
+    </div>
+    <a class="dlbtn" id="ipaLink"
+       href="https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.1/GFlyerIOS-0.6.1-unsigned.ipa">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>
+      下載 IPA
+    </a>
+  </div>
+  <ol class="steps">
+    <li>在 iPhone 用 <b>Safari</b> 開上面的連結，檔案會存進「檔案」App 的「下載項目」。</li>
+    <li>開啟 SideStore → <b>My Apps</b> → 右上角 <b class="act">＋</b>。</li>
+    <li>選剛下載的 <code>GFlyerIOS-版本-unsigned.ipa</code>，保持 LocalDevVPN 連線，
+      SideStore 會用你的 Apple ID 簽名安裝。</li>
+  </ol>
+  <div class="box info">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fb3" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
+    <div><b>「未簽名」是正常的</b>這份 IPA 本來就不帶任何人的簽名，所以不能直接點開安裝。
+    簽名是 SideStore 用<b>你自己的 Apple ID</b> 在手機上完成的，作者的簽名身分不在裡面。</div>
+  </div>
+</section>
 <!-- ============ Part 5 ============ -->
 <section id="p5" class="rv">
   <div class="sec-head">
@@ -471,6 +650,10 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <div><span class="part">PART 5 · 只做一次</span><h2>GFlyer 首次設定：配對檔與第一次定位測試</h2></div>
   </div>
   <p>全機定位模擬需要一份這部 iPhone 專屬的<b>配對檔（Pairing File）</b>。這是整個教學唯一比較「技術」的一步，跟著做即可。</p>
+  <div class="box info">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fb3" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
+    <div><b>兩份配對檔，不要混淆</b>iloader 安裝 SideStore 時已經自動放好<b>給 SideStore 用的那一份</b>，你不用管。下面做的是<b>給 GFlyer 用的另一份</b>。兩者互不影響：日後 SideStore 出現 UDID 錯誤是它那一份的事，見 <a href="#p11">Part 11</a>。</div>
+  </div>
 
   <h3>5.1 在電腦上建立配對檔</h3>
   <ol class="steps">
@@ -493,11 +676,11 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <li>在檔案選擇器選剛傳入的檔案，狀態變成「<b>已匯入</b>」。</li>
   </ol>
 
-  <h3>5.3 第一次定位測試（單點）</h3>
+  <h3>5.3 第一次定位測試</h3>
   <ol class="steps">
     <li>確認 <b>LocalDevVPN 已連接</b>。</li>
     <li>GFlyer「設定」→ LocalDevVPN 區 → 按<b class="act">測試 LocalDevVPN 通道</b>，應顯示「連線成功」。</li>
-    <li>回到地圖，模式選「<b>傳送</b>」，在地圖點一個容易辨認的位置，按<b class="act">開始</b>。</li>
+    <li>回到地圖，模式選 <b class="act">傳送</b>，在地圖點一個容易辨認的位置，按<b class="act">開始</b>。</li>
     <li>首次會下載約 16 MB 的 DDI 並驗證——保持 GFlyer 在前景、不要斷網或關 VPN，等它完成。</li>
     <li>顯示「裝置定位模擬中」後，打開 <b>Apple 地圖</b>：藍點應移到你選的位置。</li>
     <li>回 GFlyer 再選<b>另一個位置</b>、再按開始 → Apple 地圖的藍點應跟著移動（證明連線可重用）。</li>
@@ -505,15 +688,49 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
   </ol>
   <div class="box info">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fb3" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
-    <div><b>停止後 Apple 地圖還停在模擬位置？</b>這是 iOS 的行為：它會沿用最後已知位置直到取得新的真實定位。要立刻還原見 Part 6 的「完整清除」。</div>
+    <div><b>停止後 Apple 地圖還停在模擬位置？</b>這是 iOS 的行為：它會沿用最後已知位置直到取得新的真實定位。要立刻還原見 Part 7 的「完整清除」。</div>
+  </div>
+  <div class="box warn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b3691f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+    <div><b>用行動網絡（不是 Wi-Fi）的人</b>建立第一條通道時，<b>先開飛行模式再按開始</b>成功率明顯較高，通道建立後再把飛行模式關掉。GFlyer 有一個畫面專門引導這串操作，見 <a href="#p9">Part 9</a>。</div>
   </div>
 </section>
-
 <!-- ============ Part 6 ============ -->
 <section id="p6" class="rv">
   <div class="sec-head">
     <div class="sec-num">6</div>
-    <div><span class="part">PART 6</span><h2>日常使用</h2></div>
+    <div><span class="part">CHECKLIST</span><h2>完成檢查表</h2></div>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">必要項目</h3>
+    <ul class="plain">
+      <li>iTunes（Apple 網站版）能看見 iPhone</li>
+      <li>iloader 已用 <b>SideStore（夜晚版）</b> 把 SideStore 裝上 iPhone</li>
+      <li>已信任開發者憑證、已開啟開發者模式</li>
+      <li>LocalDevVPN 已安裝並能連接（IP <code>10.7.0.1</code>）</li>
+      <li>SideStore 能登入，點 7 DAYS 重簽成功</li>
+      <li>已加入 GFlyer 來源並安裝，App 顯示「裝置模式」</li>
+      <li>配對檔 Validate 成功、已匯入 GFlyer（顯示「已匯入」）</li>
+      <li>「測試 LocalDevVPN 通道」顯示連線成功</li>
+      <li>Apple 地圖驗證過：第一點 → 第二點 → 停止</li>
+      <li>知道「完整清除模擬定位」＋開關飛行模式的還原方法</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">選用項目</h3>
+    <ul class="plain">
+      <li>捷徑 <code>GFlyer 補錄步數</code> 已建立，並在 GFlyer 成功補錄過一次（步行圖示不再是灰色）</li>
+      <li>捷徑 <code>GFlyer 飛航開</code>、<code>GFlyer 飛航關</code> 已建立，並填進飛航模式輔助的兩個欄位</li>
+      <li>已在「設定 → 資料匯入與匯出」匯出過一次備份檔</li>
+    </ul>
+    <p class="small">必要項目全部打勾＝設定完成。之後日常使用只需要：開 VPN → 選點 → 開始 → 停止。</p>
+  </div>
+</section>
+<!-- ============ Part 7 ============ -->
+<section id="p7" class="rv">
+  <div class="sec-head">
+    <div class="sec-num">7</div>
+    <div><span class="part">PART 7</span><h2>日常使用：四種模式與收工還原</h2></div>
   </div>
 
   <h3>每次使用的順序（口訣）</h3>
@@ -528,73 +745,246 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
   </div>
   <p class="small">重點：先開 VPN 才開始；先停止才關 VPN（清除定位需要通道還在）。</p>
 
-  <h3>傳送模式</h3>
-  <p>模式選「傳送」→ 點地圖 → 按「開始」。要換位置就點另一處再按開始。</p>
+  <h3>四種模式</h3>
+  <p>地圖下方的模式選擇器有四個選項。先選模式，再在地圖上點位置，最後按<b>開始</b>。</p>
+  <div class="tablewrap"><table>
+    <tr><th style="width:16%">模式</th><th style="width:34%">它做什麼</th><th>怎樣選點</th></tr>
+    <tr><td><b>傳送</b></td><td>直接跳到一個定點，不移動。</td><td>點一個位置。要換地方就點另一處再按開始。</td></tr>
+    <tr><td><b>單點</b></td><td>由目前位置走到一個目標點。</td><td>點一個目標位置。</td></tr>
+    <tr><td><b>多點</b></td><td>沿你排的路線逐段走完，可循環。</td><td>依行走次序在地圖點多個位置。</td></tr>
+    <tr><td><b>探索</b></td><td>以選取位置為中心，持續螺旋式繞行。</td><td>點一個中心位置。</td></tr>
+  </table></div>
 
-  <h3>路線模式</h3>
+  <h3>速度、循環與進階選項</h3>
   <ul class="plain">
-    <li>模式選「單點」或「多點」，依行走次序在地圖點選位置。</li>
-    <li>設定速度（1.8–900 km/h）；可開「循環路線」，選「走回起點」或「直接返回」。</li>
+    <li><b>速度</b>：1.8–900 km/h。速度高於 20 km/h 時 App 會提醒你，部分遊戲會忽略太快的定位更新。</li>
+    <li><b>循環路線</b>：走完後自動再走一次。可選<b>走回起點</b>（沿路走回去）或<b>直接返回</b>（瞬移回起點）。</li>
+    <li><b>進階播放選項</b>（多點模式）：逐點傳送、每點停留秒數、到點繞圈、手動按「下一點」前進、開始前倒數、自動停止時間。倒數方便你先切回遊戲畫面。</li>
     <li>首次按開始時 iOS 會問定位權限，選「<b>允許使用 App 期間</b>」後再按一次開始。</li>
-    <li>路線進行中可切去其他 App；iOS 會顯示背景定位指示。多點模式另有進階選項（逐點傳送、到點停留、繞圈、手動前進等）。</li>
   </ul>
 
+  <h3>搖桿</h3>
+  <p>按地圖右側工具列的<b>遊戲手掣圖示</b>叫出搖桿，用手指推動位置。推得越遠走得越快，推到底會持續加速到上限。搖桿有自己的速度上限，和路線速度分開設定。</p>
+
+  <h3>切到別的 App 也會繼續</h3>
+  <p>路線與探索進行中可以切去其他 App，iOS 會顯示背景定位指示；按停止後 GFlyer 會立即結束背景活動。若 App 被系統中斷，下次開啟時會問你要不要<b>恢復</b>剛才的模擬（10 分鐘內有效）。</p>
+
   <h3>想讓其他 App 回到真實位置（完整清除）</h3>
+  <p>一般的「停止」會保留通道方便下次快速開始，<b>不保證</b>其他 App 立刻看到真實位置。要真正還原用這個：</p>
   <ol class="steps">
     <li>GFlyer「設定」→「恢復」→ 按<b class="act">完整清除模擬定位</b>。</li>
     <li>App 會清除、關閉模擬通道，然後<b>自動驗證</b>並告訴你結果（真實位置／仍是模擬座標／取不到定位）。</li>
     <li>若顯示仍是模擬座標：關閉 LocalDevVPN，然後<b class="act">開關一次飛行模式</b>。實機測試確認這一步之後其他 App 就會回到真實位置。</li>
   </ol>
 </section>
-
-<!-- ============ Part 7 ============ -->
-<section id="p7" class="rv">
+<!-- ============ Part 8 ============ -->
+<section id="p8" class="rv">
   <div class="sec-head">
-    <div class="sec-num">7</div>
-    <div><span class="part">PART 7 · 全自動</span><h2>更新與 7 天重簽</h2></div>
+    <div class="sec-num">8</div>
+    <div><span class="part">PART 8</span><h2>收藏、路線與資料</h2></div>
+  </div>
+
+  <h3>地圖右側工具列</h3>
+  <p>常用功能都在地圖右側那一排按鈕裡。由上而下：</p>
+  <div class="tablewrap"><table>
+    <tr><th style="width:30%">圖示</th><th>做什麼</th></tr>
+    <tr><td><b>＋ / －</b></td><td>放大、縮小地圖。</td></tr>
+    <tr><td><b>箭頭</b></td><td>前往目前位置（需要定位權限）。</td></tr>
+    <tr><td><b>遊戲手掣</b></td><td>叫出／收起搖桿。</td></tr>
+    <tr><td><b>星星</b></td><td>收藏目前選取的位置；已收藏時會變成實心。</td></tr>
+    <tr><td><b>星星＋圓圈</b></td><td>開啟收藏與歷史清單。</td></tr>
+    <tr><td><b>路線點</b></td><td>開啟已儲存路線。</td></tr>
+    <tr><td><b>分享</b></td><td>把目前座標或路線分享到留言板。</td></tr>
+    <tr><td><b>書本</b></td><td>開啟座標圖鑑。</td></tr>
+    <tr><td><b>步行的人</b></td><td>一鍵補錄步數（見 <a href="#p9">Part 9</a>）。未設定捷徑時是灰色的。</td></tr>
+    <tr><td><b>飛機</b></td><td>開啟飛航模式輔助（見 <a href="#p9">Part 9</a>）。偵測到行動網絡時會變成橙色。</td></tr>
+  </table></div>
+
+  <h3>收藏、歷史與資料夾</h3>
+  <ul class="plain">
+    <li>點<b>星星</b>把目前位置加入收藏；到<b>收藏與歷史</b>可以改名、分資料夾、直接選用。</li>
+    <li>去過的位置會自動進歷史，不用手動記。</li>
+  </ul>
+
+  <h3>儲存與重用路線</h3>
+  <ul class="plain">
+    <li>多點模式排好路線點後，按路線列上的<b>儲存</b>圖示，替它取個名字。</li>
+    <li>之後從<b>已儲存路線</b>直接叫出來再走一次。</li>
+    <li>路線草稿在 App 意外關閉後會保留，下次開啟可以接回去。</li>
+  </ul>
+
+  <h3>座標圖鑑與留言板</h3>
+  <ul class="plain">
+    <li><b>座標圖鑑</b>是線上收錄的座標清單，第一次載入需要網絡。可以加入收藏、設定造訪提醒，發現資料過期也可以匿名回報。</li>
+    <li><b>留言板</b>與 GFlyer Android 共用，可以分享座標、路線、公告與回覆。首次加入需要管理員給的邀請碼。分享過來的座標與路線可以預覽、直接開始，或存進自己的清單。</li>
+  </ul>
+
+  <h3>匯入、匯出與備份（設定頁）</h3>
+  <div class="tablewrap"><table>
+    <tr><th style="width:36%">設定 → 資料匯入與匯出</th><th>用途</th></tr>
+    <tr><td><b>匯入 GPX 路線</b></td><td>讀入 GPX 1.1 的軌跡、路線與航點。</td></tr>
+    <tr><td><b>匯出全部路線（GPX）</b></td><td>把所有已儲存路線輸出成一個 GPX 檔。</td></tr>
+    <tr><td><b>匯出備份檔</b></td><td>收藏、歷史、資料夾、路線、速度預設一次打包，格式與 GFlyer Android 互通。</td></tr>
+    <tr><td><b>還原備份檔</b></td><td>用備份取代現有資料。留言板登入與配對檔不受影響，也不會包含在備份裡。</td></tr>
+  </table></div>
+  <div class="box warn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b3691f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+    <div><b>換簽名身分之前，先匯出備份檔</b>簽名的 Apple ID 一改，iOS 會把它當成另一個 App，舊資料不會保留：配對檔要重新匯入，留言板也要用邀請碼重新加入。</div>
+  </div>
+</section>
+<!-- ============ Part 9 ============ -->
+<section id="p9" class="rv">
+  <div class="sec-head">
+    <div class="sec-num">9</div>
+    <div><span class="part">PART 9 · 選用</span><h2>兩個選用捷徑：補錄步數與飛航模式</h2></div>
+  </div>
+  <p>有兩件事 GFlyer 自己做不到，必須借用 iOS 內建的「<b>捷徑</b>」App，由捷徑用<b>它自己的權限</b>去做。<b>全部都是選用的</b>——不建捷徑一樣可以用 GFlyer，只是那兩件事要自己手動做。</p>
+  <div class="tablewrap"><table>
+    <tr><th style="width:30%">功能</th><th>為什麼要捷徑</th></tr>
+    <tr><td>補錄步數</td><td>寫入「健康」App 需要 HealthKit 權限，免費 Apple ID 拿不到，SideStore 重簽時也會把它剝離。</td></tr>
+    <tr><td>切換飛行模式</td><td>iOS <b>完全沒有</b>讓 App 切換飛行模式的公開介面。</td></tr>
+  </table></div>
+  <p class="small">總共三個捷徑：補錄步數一個，飛航開與飛航關各一個。</p>
+
+  <h3>8.1 捷徑「GFlyer 補錄步數」</h3>
+  <ol class="steps">
+    <li>開啟「捷徑」App，按右上角 <b class="act">＋</b> 新增捷徑。</li>
+    <li>搜尋並加入動作「<b>記錄健康樣本</b>」。</li>
+    <li>把類型改成「<b>步數</b>」。</li>
+    <li>點數值欄位，選「<b class="act">捷徑輸入</b>」。<b>這一步最容易漏</b>——漏了就會每次都寫入同一個固定值。</li>
+    <li>把捷徑命名為 <code>GFlyer 補錄步數</code>。</li>
+    <li>在捷徑的詳細資料裡關閉「<b>執行前先詢問</b>」，否則每次補錄都要多按一次確認。</li>
+    <li>回到 GFlyer →「設定」→「<b>補錄步數</b>」→「捷徑設定」，確認名稱和你剛才取的<b>完全一致</b>（連空格都要一樣）。</li>
+  </ol>
+  <div class="card">
+    <h3 style="margin-top:0">怎樣用</h3>
+    <ul class="plain">
+      <li><b>設定 → 補錄步數</b>：1000／3000／5000 或自訂步數，也看得到最近七天的紀錄。</li>
+      <li><b>地圖工具列的步行圖示</b>：一鍵補錄預設步數。要改這個數字，到「設定 → 補錄步數 → 地圖上的一鍵補錄」。</li>
+    </ul>
+    <p class="small">一鍵按鈕在捷徑<b>成功回報過一次之前是灰色的</b>，按下去會開啟設定頁而不是直接送出——這樣捷徑名稱打錯時，你會被帶到能修的地方，而不是跳去「捷徑」App 看一個找不到的錯誤。成功一次之後就永久解鎖。</p>
+  </div>
+
+  <h3>8.2 捷徑「GFlyer 飛航開」與「GFlyer 飛航關」</h3>
+  <p>實測在<b>行動網絡</b>下，先進飛行模式再建立模擬明顯比較穩定。完整順序是：</p>
+  <div class="order">
+    <span class="chip">開飛行模式</span>
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5b6b7c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    <span class="chip">開始模擬</span>
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5b6b7c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    <span class="chip">關飛行模式</span>
+  </div>
+  <p class="small">已經建立的通道可以從飛行模式延續到行動網絡回來之後，所以第 3 步不會中斷模擬。Wi-Fi 下通常不需要這串操作。</p>
+  <p>飛行模式只有開和關兩種，所以<b>建兩個捷徑、各自只有一個動作</b>，不需要「如果」判斷，也不需要選任何變數。</p>
+  <div class="two">
+    <div class="card">
+      <h3>捷徑一：開啟</h3>
+      <ol class="steps">
+        <li>「捷徑」App → 右上角 <b class="act">＋</b>。</li>
+        <li>加入動作「<b>設定飛航模式</b>」。</li>
+        <li>確認它顯示的是「<b>開啟</b>」（預設就是）。</li>
+        <li>命名為 <code>GFlyer 飛航開</code>。</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>捷徑二：關閉</h3>
+      <ol class="steps">
+        <li>再新增一個捷徑。</li>
+        <li>同樣加入「<b>設定飛航模式</b>」。</li>
+        <li>點動作上的「開啟」，改成「<b class="act">關閉</b>」。</li>
+        <li>命名為 <code>GFlyer 飛航關</code>。</li>
+      </ol>
+    </div>
+  </div>
+  <p>最後把<b>兩個捷徑</b>的「執行前先詢問」都關掉。</p>
+  <div class="card">
+    <h3 style="margin-top:0">在 GFlyer 裡怎樣用</h3>
+    <ol class="steps">
+      <li>點地圖右側工具列的<b>飛機圖示</b>，開啟「<b>飛航模式輔助</b>」。</li>
+      <li>開啟「<b>用捷徑切換飛行模式</b>」，把兩個名稱分別填進「<b>開啟用</b>」與「<b>關閉用</b>」。<span class="small">兩個都要填，少一個一鍵按鈕就不會亮。</span></li>
+      <li>畫面上三個步驟會<b>自己推進</b>：GFlyer 看得到網絡的實際狀態，所以你從控制中心手動切換飛行模式，畫面一樣會跟著跳。你不用再猜「現在可以關掉飛行模式了嗎」。</li>
+    </ol>
+    <p class="small">沒建捷徑的人這個畫面照樣可用，只是第 1、3 步要自己去控制中心切。</p>
+  </div>
+  <div class="box info">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fb3" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
+    <div><b>只有「關閉」會自動執行</b>「模擬開始後自動關閉」預設開啟，但只作用在<b>關閉</b>方向。自動<b>開啟</b>飛行模式刻意不做：那一步中途失敗（捷徑被改名、你按了取消）會把你留在完全斷網的狀態而且不一定馬上發現；關閉方向失敗就只是維持現狀，自己關掉即可。</div>
+  </div>
+  <div class="box warn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b3691f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+    <div><b>名稱必須完全一致</b>GFlyer 是用名稱呼叫捷徑的。改了捷徑名稱就要同步改 GFlyer 裡的設定，反之亦然。特別留意全形空格和前後多餘的空白。</div>
+  </div>
+</section>
+<!-- ============ Part 10 ============ -->
+<section id="p10" class="rv">
+  <div class="sec-head">
+    <div class="sec-num">10</div>
+    <div><span class="part">PART 10 · 全自動</span><h2>更新與 7 天重簽</h2></div>
   </div>
   <div class="card">
     <h3 style="margin-top:0">App 更新（自動提示）</h3>
-    <p>GFlyer 有新版時會自己跳出「有新版本」提示——按<b>「用 SideStore 更新」</b>即可，安裝時記得 LocalDevVPN 要連著。也可在「設定 → 軟體更新」手動檢查。</p>
+    <p>GFlyer 有新版時會自己跳出「有新版本」提示——按<b>「用 SideStore 更新」</b>即可，安裝時記得 LocalDevVPN 要連著。也可在「設定 → 軟體更新」手動檢查，那裡還有一個按鈕可以一鍵把更新來源加進 SideStore。</p>
     <p class="small">小知識：按更新後 SideStore 的清單可能不會顯示「有更新」，它是直接在背景安裝——回到 GFlyer 的「設定 → 關於」看到版本變了就是成功。</p>
   </div>
   <div class="card">
     <h3 style="margin-top:0">7 天簽名（自動重簽）</h3>
     <p>免費 Apple ID 的簽名約 7 天到期，但 <b>SideStore 會在 iPhone 上自動重簽</b>，正常情況你完全不用理會。若 App 突然打不開，開啟 LocalDevVPN → 開 SideStore → 點 7 DAYS 手動重簽一次即可。</p>
   </div>
+  <div class="card">
+    <h3 style="margin-top:0">SideStore 自己的更新</h3>
+    <p>裝了夜晚版之後，在 SideStore 設定開啟 beta 更新並選 <code>nightly</code>，新的夜晚版就會直接在 SideStore 內出現，不用再接電腦。想改回穩定版才需要重新用 iloader。</p>
+  </div>
 </section>
-
-<!-- ============ Part 8 ============ -->
-<section id="p8" class="rv">
+<!-- ============ Part 11 ============ -->
+<section id="p11" class="rv">
   <div class="sec-head">
-    <div class="sec-num">8</div>
+    <div class="sec-num">11</div>
     <div><span class="part">TROUBLESHOOTING</span><h2>疑難排解</h2></div>
   </div>
+
+  <h3>安裝與 SideStore</h3>
   <div class="tablewrap"><table>
     <tr><th style="width:38%">症狀</th><th>處理</th></tr>
     <tr><td>SideStore 安裝／更新一直轉圈</td><td>幾乎都是 <b>LocalDevVPN 斷線</b>（iOS 會自行終止 VPN，且不會報錯）。重新連接 VPN 再試；也可先切回主畫面等 30 秒——有時只是畫面凍結，其實已裝好。</td></tr>
-    <tr><td><b>SideStore 說「could not determine device UDID」</b><br>或 Health Check 顯示 <code>RPPairing UDID not found</code></td><td>SideStore 讀的是它自己容器裡那份配對檔，不是你手動匯入的檔案。用 iloader 重新配對後，一定要點 <b>Manage Pairing File → Place in All Apps</b>（或指定放到 SideStore 旁邊），只按 Load／Install 不會更新到容器裡的舊檔案。實測就是這一步才修好的。</td></tr>
+    <tr><td><b>SideStore 說「could not determine device UDID」</b><br>或 Health Check 顯示 <code>RPPairing UDID not found</code></td><td>SideStore 讀的是它<b>自己容器裡</b>那份配對檔，不是你匯入 GFlyer 的那一份。用 iloader 重新配對後，一定要在 <span class="ui">管理配對檔案</span><span class="ui en">Manage Pairing File</span> 裡，按 SideStore 那一行的 <span class="ui">放入</span><span class="ui en">Place</span>，或用 <span class="ui en">Place In All Apps</span>（這個字串未有中文，畫面上可能顯示英文）。只按安裝不會更新容器裡的舊檔案——實測就是這一步才修好的。</td></tr>
     <tr><td>更新 LocalDevVPN 後突然無法重新整理</td><td>LocalDevVPN 1.3 把 Tunnel IP 從 <code>10.7.0.0/32</code> 改成 <code>10.7.1.1/32</code>，和 SideStore 對不上。把 Tunnel IP 改回 <code>10.7.0.0/32</code>，或直接刪除 LocalDevVPN 重新安裝讓它帶入正確設定。</td></tr>
-    <tr><td>Health Check 顯示 <code>Loaded (Connection down)</code></td><td>配對檔本身沒問題，壞的是通道：先確認 LocalDevVPN 真的連著、沒有其他 VPN 搶佔，再檢查上一列的 Tunnel IP 問題。</td></tr>
+    <tr><td>Health Check 顯示 <code>Loaded (Connection down)</code></td><td>配對檔本身沒問題，壞的是通道：先確認 LocalDevVPN 真的連著、沒有其他 VPN 搶佔，再檢查上一列的 Tunnel IP 問題。<span class="small">看到 UDID 字樣不要直接去重新產生配對檔，那通常不是原因。</span></td></tr>
+    <tr><td>夜晚版怪怪的，想換回穩定版</td><td>用同一個 iloader，在 <span class="ui">揀版本</span> 改選 <span class="ui">SideStore（穩定版）</span> 重裝一次。資料一般會保留，但官方不保證——換之前先在 GFlyer 匯出備份檔。</td></tr>
     <tr><td>加入來源顯示錯誤／看不到 GFlyer</td><td>把來源移除，重新加入一次（SideStore 會快取來源內容）。</td></tr>
     <tr><td>SideStore 登入失敗</td><td>換一個 Anisette Server；不行就在伺服器設定重設 adi.pb，登出再登入。</td></tr>
-    <tr><td>GFlyer 顯示「預覽模式」</td><td>裝到了預覽版。從本教學的來源重新安裝。</td></tr>
-    <tr><td>iTunes／iloader 看不到 iPhone</td><td>換 USB 插口或線；確認裝的是 Apple 網站版 iTunes；重新按「信任」。</td></tr>
+    <tr><td>iTunes／iloader 看不到 iPhone</td><td>換 USB 插口或線；確認裝的是 Apple 網站版 iTunes；iPhone 解鎖後重新按「信任」。</td></tr>
+    <tr><td>7 天後 App 打不開</td><td>開 LocalDevVPN → 開 SideStore → 點 7 DAYS 重簽。</td></tr>
+  </table></div>
+
+  <h3>GFlyer 與定位</h3>
+  <div class="tablewrap"><table>
+    <tr><th style="width:38%">症狀</th><th>處理</th></tr>
+    <tr><td>GFlyer 顯示「預覽模式」</td><td>裝到了不能控制全機定位的版本。從本教學的來源重新安裝。</td></tr>
     <tr><td>配對檔 Create／Validate 失敗</td><td>iPhone 保持解鎖並在主畫面；拔插 USB 重新信任；關閉其他佔用 USB 的工具；重新建立新檔案。</td></tr>
     <tr><td>配對檔匯入失敗</td><td>確認檔案是 idevice_pair 產生的原檔、副檔名沒被改掉（例如被改成 .txt）。</td></tr>
-    <tr><td>按開始後顯示通道／連線錯誤</td><td>確認 LocalDevVPN 已連接、目標 IP 是 <code>10.7.0.1</code>；暫停其他 VPN；用設定內「測試 LocalDevVPN 通道」檢查。</td></tr>
+    <tr><td>按開始後顯示通道／連線錯誤</td><td>確認 LocalDevVPN 已連接、目標 IP 是 <code>10.7.0.1</code>；暫停其他 VPN；用設定內「測試 LocalDevVPN 通道」檢查。行動網絡下先開飛行模式再開始（<a href="#p9">Part 9</a>）。</td></tr>
     <tr><td>切去其他 App 後出現 BrokenPipe／Channel closed</td><td>GFlyer 會自動清理並重連一次；再失敗就停止後重新開始。</td></tr>
     <tr><td>停止後其他 App 仍顯示模擬位置</td><td>正常現象。要立刻還原：「設定 → 恢復 → 完整清除模擬定位」，照結果指引關 VPN 並<b>開關一次飛行模式</b>。</td></tr>
     <tr><td>按「定位」說等不到新定位</td><td>剛清除模擬後 iOS 需要時間取得真實定位。開關飛行模式、到收訊好的位置，或稍後再試。</td></tr>
-    <tr><td>7 天後 App 打不開</td><td>開 LocalDevVPN → 開 SideStore → 點 7 DAYS 重簽。</td></tr>
     <tr><td>DDI 下載或驗證失敗</td><td>確認網絡正常後重按開始；App 會重新下載並以 SHA-256 驗證。</td></tr>
   </table></div>
-</section>
 
-<!-- ============ Part 9 ============ -->
-<section id="p9" class="rv">
+  <h3>捷徑（Part 8 的兩個選用功能）</h3>
+  <div class="tablewrap"><table>
+    <tr><th style="width:38%">症狀</th><th>原因</th></tr>
+    <tr><td>跳到「捷徑」App 顯示找不到捷徑</td><td>名稱不一致。注意全形空格與前後空白。</td></tr>
+    <tr><td>每次都要多按一次確認</td><td>捷徑詳細資料裡的「執行前先詢問」沒關。</td></tr>
+    <tr><td>補錄後步數不對</td><td>數值欄位沒設成「捷徑輸入」，變成每次寫入同一個固定值。</td></tr>
+    <tr><td>補錄紀錄一直停在「未確認」</td><td>捷徑跑完沒回到 GFlyer。要用 GFlyer 的按鈕啟動，不是在「捷徑」App 裡手動執行。</td></tr>
+    <tr><td>步行圖示是灰色的</td><td>捷徑還沒成功跑過一次。按下去會開設定頁，先在那裡補錄成功一次。</td></tr>
+    <tr><td>飛航的一鍵切換按鈕是灰色的</td><td>「開啟用」「關閉用」兩個名稱都要填，少一個就不算設定完成。</td></tr>
+    <tr><td>飛航輔助顯示「偵測中」</td><td>只剩 VPN 之類的介面，判斷不出底層連線。三個步驟仍然可以直接按。</td></tr>
+  </table></div>
+</section>
+<!-- ============ Part 12 ============ -->
+<section id="p12" class="rv">
   <div class="sec-head">
-    <div class="sec-num">9</div>
+    <div class="sec-num">12</div>
     <div><span class="part">RULES &amp; LIMITS</span><h2>安全規則與已知限制</h2></div>
   </div>
   <div class="box danger">
@@ -612,7 +1002,8 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
     <div><b>已知限制</b>
       <ul class="plain">
         <li>GFlyer 是個人研究用途的側載 App，不在 App Store，也<b>沒有任何反偵測功能</b>——第三方 App 可以拒絕模擬位置；使用前留意該服務的條款與當地法律。</li>
-        <li>免費 Apple ID 同時最多側載 3 個 App（SideStore 本身佔一個）。</li>
+        <li>免費 Apple ID 同時最多側載 <b>3 個</b> App：SideStore 佔一個、GFlyer 佔一個。LocalDevVPN 從 App Store 安裝，不佔名額。</li>
+        <li>夜晚版是官方不提供支援的版本；遇到 SideStore 本身的問題時，先換回穩定版再判斷是不是夜晚版造成的。</li>
         <li>iOS 大版本更新可能令配對檔或開發協定失效，屆時需要重新配對或等 App 更新。</li>
         <li>背景路線會增加耗電；iOS 在記憶體不足或 VPN 中斷時仍可能終止背景活動。</li>
       </ul>
@@ -620,33 +1011,10 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
   </div>
 </section>
 
-<!-- ============ Part 10 ============ -->
-<section id="p10" class="rv">
-  <div class="sec-head">
-    <div class="sec-num">10</div>
-    <div><span class="part">CHECKLIST</span><h2>完成檢查表</h2></div>
-  </div>
-  <div class="card">
-    <ul class="plain">
-      <li>iTunes（Apple 網站版）能看見 iPhone</li>
-      <li>iloader 已把 SideStore 裝上 iPhone</li>
-      <li>已信任開發者憑證、已開啟開發者模式</li>
-      <li>LocalDevVPN 已安裝並能連接（IP <code>10.7.0.1</code>）</li>
-      <li>SideStore 能登入，點 7 DAYS 重簽成功</li>
-      <li>已加入 GFlyer 來源並安裝，App 顯示「裝置模式」</li>
-      <li>配對檔 Validate 成功、已匯入 GFlyer（顯示「已匯入」）</li>
-      <li>「測試 LocalDevVPN 通道」顯示連線成功</li>
-      <li>Apple 地圖驗證過：第一點 → 第二點 → 停止</li>
-      <li>知道「完整清除模擬定位」＋開關飛行模式的還原方法</li>
-    </ul>
-    <p class="small">全部打勾＝設定完成。之後日常使用只需要：開 VPN → 選點 → 開始 → 停止。</p>
-  </div>
-</section>
-
 <footer>
   GFlyer iOS · 個人側載研究用途 · 不含反偵測、不修改第三方 App<br>
   更新來源：<code>https://michaelcheung0125-svg.github.io/GFlyer-updates/altstore.json</code><br>
-  文件版本 2026-09-04（SideStore 版，取代 2026-08-14 的 Sideloadly 版）
+  文件版本 2026-09-09（SideStore 夜晚版 · 對應 GFlyer iOS 0.6.1）
 </footer>
 
 </div>
@@ -663,20 +1031,36 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
 <div id="tocSheet" role="dialog" aria-label="目錄">
   <div class="scrim"></div>
   <div class="panel">
-    <h4>章節導覽</h4>
-    <a href="#faq" data-nav="faq">先看結論</a>
-    <a href="#gloss" data-nav="gloss">名詞解釋</a>
-    <a href="#flow" data-nav="flow">流程圖</a>
-    <a href="#p1" data-nav="p1">P1 · 準備清單</a>
-    <a href="#p2" data-nav="p2">P2 · 電腦端設定</a>
-    <a href="#p3" data-nav="p3">P3 · iPhone 端設定</a>
-    <a href="#p4" data-nav="p4">P4 · 安裝 GFlyer</a>
-    <a href="#p5" data-nav="p5">P5 · 首次設定</a>
-    <a href="#p6" data-nav="p6">P6 · 日常使用</a>
-    <a href="#p7" data-nav="p7">P7 · 更新與重簽</a>
-    <a href="#p8" data-nav="p8">P8 · 疑難排解</a>
-    <a href="#p9" data-nav="p9">P9 · 規則與限制</a>
-    <a href="#p10" data-nav="p10">P10 · 檢查表</a>
+    <div class="navgroup ref">
+      <h4>開始之前<em>讀一讀就好，不用動手</em></h4>
+      <a href="#faq" data-nav="faq">先看結論</a>
+      <a href="#gloss" data-nav="gloss">名詞解釋</a>
+      <a href="#flow" data-nav="flow">流程圖</a>
+    </div>
+    <div class="navgroup act">
+      <h4>安裝<em>跟著做 · 只做一次</em></h4>
+      <a href="#p1" data-nav="p1"><span class="n">1</span>準備清單</a>
+      <a href="#p2" data-nav="p2"><span class="n">2</span>電腦端設定</a>
+      <a href="#p3" data-nav="p3"><span class="n">3</span>iPhone 端設定</a>
+      <a href="#p4" data-nav="p4"><span class="n">4</span>安裝 GFlyer</a>
+      <a href="#p5" data-nav="p5"><span class="n">5</span>首次設定</a>
+      <a href="#p6" data-nav="p6"><span class="n">6</span>完成檢查表</a>
+    </div>
+    <div class="navgroup act">
+      <h4>使用<em>裝好之後每次這樣用</em></h4>
+      <a href="#p7" data-nav="p7"><span class="n">7</span>日常使用</a>
+      <a href="#p8" data-nav="p8"><span class="n">8</span>收藏與路線</a>
+    </div>
+    <div class="navgroup act">
+      <h4>選用功能<em>想要才做，不做也不影響</em></h4>
+      <a href="#p9" data-nav="p9"><span class="n">9</span>兩個捷徑</a>
+    </div>
+    <div class="navgroup ref">
+      <h4>需要時再查<em>出問題或想確認時才翻</em></h4>
+      <a href="#p10" data-nav="p10"><span class="n">10</span>更新與重簽</a>
+      <a href="#p11" data-nav="p11"><span class="n">11</span>疑難排解</a>
+      <a href="#p12" data-nav="p12"><span class="n">12</span>規則與限制</a>
+    </div>
   </div>
 </div>
 
@@ -695,9 +1079,30 @@ footer{margin-top:70px;text-align:center;color:var(--muted);font-size:.84rem;lin
   items.forEach(function(el){ io.observe(el); });
 })();
 
+/* 下載連結讀同一目錄的 altstore.json，所以發新版不用回來改這一頁。
+   抓不到（例如用 file:// 開本機檔案）就維持 HTML 裡寫死的那一版。 */
+(function(){
+  var link = document.getElementById('ipaLink');
+  if (!link || typeof window.fetch !== 'function') return;
+  fetch('altstore.json', {cache: 'no-store'}).then(function(res){
+    if (!res.ok) throw new Error(res.status);
+    return res.json();
+  }).then(function(data){
+    var app = data && data.apps && data.apps[0];
+    if (!app || !app.downloadURL) return;
+    link.href = app.downloadURL;
+    var version = document.getElementById('ipaVersion');
+    if (version && app.version) version.textContent = app.version;
+    var meta = document.getElementById('ipaMeta');
+    if (meta && app.size) {
+      meta.textContent = '未簽名 IPA · ' + (app.size / 1048576).toFixed(1) + ' MB';
+    }
+  }).catch(function(){});
+})();
+
 /* 章節導覽：高亮目前章節、置頂鍵、手機目錄面板 */
 (function(){
-  var ids = ["faq","gloss","flow","p1","p2","p3","p4","p5","p6","p7","p8","p9","p10"];
+  var ids = ["faq","gloss","flow","p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12"];
   var links = document.querySelectorAll('[data-nav]');
   function setActive(id){
     links.forEach(function(a){
