@@ -418,7 +418,7 @@ tr.hl td{background:var(--ok-soft)}
       <text x="24" y="34" class="flabel" fill="#4a9eff">PHASE 1 · 電腦（一次）</text>
       <rect x="24" y="48" width="152" height="52" rx="10" class="fnode" stroke="#4a9eff"/>
       <text x="100" y="70" text-anchor="middle" class="ftext">安裝 Apple 元件</text>
-      <text x="100" y="88" text-anchor="middle" class="fsub">iTunes + iCloud（網頁版）</text>
+      <text x="100" y="88" text-anchor="middle" class="fsub">iTunes（Apple 網站版）</text>
       <path d="M176 74 H 216" class="fline" stroke="#4a9eff" marker-end="url(#ah1)"/>
       <rect x="220" y="48" width="132" height="52" rx="10" class="fnode" stroke="#4a9eff"/>
       <text x="286" y="70" text-anchor="middle" class="ftext">iloader</text>
@@ -491,8 +491,6 @@ tr.hl td{background:var(--ok-soft)}
     <tr><td><b>iTunes</b></td><td>電腦</td>
       <td><a href="https://www.apple.com/itunes/download/win64" target="_blank" rel="noopener">Apple 網站版（64 位元）</a>
       ——<b>不要</b>用 Microsoft Store 版，那一版不會帶入 iloader 需要的 USB 驅動。</td></tr>
-    <tr><td><b>iCloud</b></td><td>電腦</td>
-      <td><a href="https://support.apple.com/zh-hk/103232" target="_blank" rel="noopener">Apple 的官方下載說明頁</a>，照該頁指示安裝。</td></tr>
     <tr><td><b>iloader</b></td><td>電腦</td>
       <td><a href="https://github.com/nab138/iloader/releases" target="_blank" rel="noopener">GitHub releases</a>
       或 <a href="https://iloader.app" target="_blank" rel="noopener">iloader.app</a>——<b>只有這兩個是官方</b>。</td></tr>
@@ -518,10 +516,10 @@ tr.hl td{background:var(--ok-soft)}
   </div>
 
   <h3>2.1 安裝 Apple 的 Windows 元件</h3>
-  <p>iloader 依賴 Apple 的 USB 驅動程式，而驅動要靠 iTunes／iCloud 帶進來。注意：要用 <b>Apple 網站版</b>，不是 Microsoft Store 版。</p>
+  <p>iloader 依賴 Apple 的 USB 驅動程式，而驅動要靠 <b>iTunes</b> 帶進來。注意：要用 <b>Apple 網站版</b>，不是 Microsoft Store 版——後者不會安裝這組驅動。</p>
   <ol class="steps">
-    <li>如果電腦已裝了 <b>Microsoft Store 版</b>的 iTunes 或 iCloud，先到 Windows「已安裝的應用程式」把它們移除。</li>
-    <li>下載並安裝 <a href="https://www.apple.com/itunes/download/win64" target="_blank" rel="noopener"><b>Apple 網站版 iTunes</b></a>，以及 <a href="https://support.apple.com/zh-hk/103232" target="_blank" rel="noopener"><b>Windows 版 iCloud</b></a>（照 Apple 該頁的指示），然後重新啟動電腦。</li>
+    <li>如果電腦已裝了 <b>Microsoft Store 版</b>的 iTunes，先到 Windows「已安裝的應用程式」把它移除。</li>
+    <li>下載並安裝 <a href="https://www.apple.com/itunes/download/win64" target="_blank" rel="noopener"><b>Apple 網站版 iTunes</b></a>，然後重新啟動電腦。</li>
     <li>開啟 iTunes，用 USB 線把 iPhone 接上電腦。</li>
     <li>iPhone 出現「信任此電腦？」→ 按<b class="act">信任</b>，輸入 iPhone 密碼。</li>
   </ol>
