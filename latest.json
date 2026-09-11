@@ -1,7 +1,7 @@
 {
-  "versionCode": 35,
-  "versionName": "0.8.4",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.4/GFlyer-v0.8.4.apk",
-  "sha256": "A28B645E9794AD5231A046DE98A7FCFB0338FBE4BE4C1815E58126AA66F906BD",
-  "releaseNotes": "新增「座標模式」：本機 DNS 過濾讓皮克敏新點開的卡片顯示座標而非地名，收皮克敏、看卡片前先開著即可。新增「座標快拍」：懸浮鈕一點即擷取畫面辨識座標，確認距離後一鍵前往。另有剪貼簿偵測改為展開懸浮面板即讀取並直接列出，螢幕擷取授權改為獨立的共用狀態列。"
+  "versionCode": 36,
+  "versionName": "0.8.5",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.5/GFlyer-v0.8.5.apk",
+  "sha256": "2C0A78876AED1241BD675E7AA8498E12838F615933FDAF7DCEBF79323615009C",
+  "releaseNotes": "修正座標快拍常拍到自家狀態列座標的問題，現在只擷取畫面本身。修正主程式關閉後座標快拍懸浮鈕關不掉、重開又多出一顆的問題。另新增「定位來源診斷」與「高頻推送」兩個設定開關（預設關），供雲手機定位被外部來源拉扯時排查與抑制。"
 }
