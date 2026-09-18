@@ -1,7 +1,7 @@
 {
-  "versionCode": 36,
-  "versionName": "0.8.5",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.5/GFlyer-v0.8.5.apk",
-  "sha256": "2C0A78876AED1241BD675E7AA8498E12838F615933FDAF7DCEBF79323615009C",
-  "releaseNotes": "修正座標快拍常拍到自家狀態列座標的問題，現在只擷取畫面本身。修正主程式關閉後座標快拍懸浮鈕關不掉、重開又多出一顆的問題。另新增「定位來源診斷」與「高頻推送」兩個設定開關（預設關），供雲手機定位被外部來源拉扯時排查與抑制。"
+  "versionCode": 37,
+  "versionName": "0.8.6",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.6/GFlyer-v0.8.6.apk",
+  "sha256": "B53AFE1545FB5BDF0F66288D7285BC9BF52704238637551EA3A4F0D018B6251D",
+  "releaseNotes": "座標圖鑑新增前往紀錄：按「前往」會記下時間，並可用「隱藏已前往」過濾掉去過的點，App 內與懸浮圖鑑都適用。明信片資料更新至 435 張，並移除已結束的西雅圖水族館與 IKEA 活動。另修正更新 App 後圖鑑可能仍顯示舊資料的問題。"
 }
