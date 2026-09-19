@@ -264,9 +264,9 @@ tr.hl td{background:var(--ok-soft)}
   <p class="sub">由零開始，一步一步把 GFlyer 裝進你的 iPhone。完全不需要懂「側載」是什麼——照著每一步做即可。設定一次之後，日常使用與更新都不再需要電腦。</p>
   <div class="badges">
     <span class="badge">SideStore 夜晚版</span>
-    <span class="badge">對應 App 0.6.1</span>
+    <span class="badge">對應 App 0.6.3</span>
     <span class="badge">Windows 適用 · 不需要 Mac</span>
-    <span class="badge">文件版本 2026-09-09</span>
+    <span class="badge">文件版本 2026-09-20</span>
   </div>
 </div>
 
@@ -372,6 +372,7 @@ tr.hl td{background:var(--ok-soft)}
     <tr><td>要付錢嗎？</td><td>不用。所有工具（SideStore、iloader、LocalDevVPN）都是免費的。</td></tr>
     <tr><td>為什麼推薦 SideStore「夜晚版」？</td><td>夜晚版（Nightly）是每日更新的版本，新 iOS 需要的修正通常先進夜晚版，穩定版有時落後幾個月。代價是官方不受理夜晚版的問題回報。兩版都能照本教學使用；夜晚版出狀況時，用同一個 iloader 改裝穩定版即可。</td></tr>
     <tr><td>一定要建立「捷徑」嗎？</td><td><b>不用。</b>只有兩個選用功能需要：補錄步數、一鍵切換飛行模式。不建捷徑，GFlyer 其他功能完全不受影響（<a href="#p9">Part 9</a>）。</td></tr>
+    <tr><td>每次用都要先開 LocalDevVPN 嗎？</td><td><b>不用。</b>按開始時如果它未連線，GFlyer 會自動切換過去開啟，約 1 秒後回來繼續。只有 SideStore 安裝或重簽時要自己開（<a href="#p10">Part 10</a>）。</td></tr>
     <tr><td>停止模擬後，其他 App 會立刻回到真實位置嗎？</td><td>不一定。iOS 會沿用最後的模擬位置一段時間。要立刻還原，用 GFlyer 設定內的「完整清除模擬定位」，然後<b>開關一次飛行模式</b>（實測必要）。</td></tr>
   </table></div>
 </section>
@@ -447,8 +448,8 @@ tr.hl td{background:var(--ok-soft)}
 
       <text x="24" y="272" class="flabel" fill="#37d0a0">PHASE 3 · 日常（不用電腦）</text>
       <rect x="24" y="288" width="140" height="52" rx="10" class="fnode fpulse" stroke="#37d0a0"/>
-      <text x="94" y="310" text-anchor="middle" class="ftext">開 LocalDevVPN</text>
-      <text x="94" y="328" text-anchor="middle" class="fsub">先開通道</text>
+      <text x="94" y="310" text-anchor="middle" class="ftext">打開 GFlyer</text>
+      <text x="94" y="328" text-anchor="middle" class="fsub">VPN 由它自動開</text>
       <path d="M164 314 H 204" class="fline" stroke="#37d0a0" marker-end="url(#ah3)"/>
       <rect x="208" y="288" width="140" height="52" rx="10" class="fnode fpulse" stroke="#37d0a0"/>
       <text x="278" y="310" text-anchor="middle" class="ftext">GFlyer 選點</text>
@@ -656,11 +657,11 @@ tr.hl td{background:var(--ok-soft)}
   來源就用來源。</p>
   <div class="card dlcard">
     <div class="dlmeta">
-      <b>GFlyer iOS <span id="ipaVersion">0.6.1</span></b>
+      <b>GFlyer iOS <span id="ipaVersion">0.6.3</span></b>
       <span class="small" id="ipaMeta">未簽名 IPA · 9.4 MB</span>
     </div>
     <a class="dlbtn" id="ipaLink"
-       href="https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.1/GFlyerIOS-0.6.1-unsigned.ipa">
+       href="https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.3/GFlyerIOS-0.6.3-unsigned.ipa">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>
       下載 IPA
     </a>
@@ -712,9 +713,8 @@ tr.hl td{background:var(--ok-soft)}
 
   <h3>5.3 第一次定位測試</h3>
   <ol class="steps">
-    <li>確認 <b>LocalDevVPN 已連接</b>。</li>
-    <li>GFlyer「設定」→ LocalDevVPN 區 → 按<b class="act">測試 LocalDevVPN 通道</b>，應顯示「連線成功」。</li>
     <li>回到地圖，模式選 <b class="act">傳送</b>，在地圖點一個容易辨認的位置，按<b class="act">開始</b>。</li>
+    <li>如果 LocalDevVPN 未連線，畫面會切換到 LocalDevVPN，約 1 秒後自動回到 GFlyer 繼續，<b>你不用按任何東西</b>。<span class="small">如 iPhone 問是否打開「LocalDevVPN」，按「打開」。若停在 LocalDevVPN 沒有回來，在那裡按<b>連線</b>（英文介面為 Connect），再自己切回 GFlyer。</span></li>
     <li>首次會下載約 16 MB 的 DDI 並驗證——保持 GFlyer 在前景、不要斷網或關 VPN，等它完成。</li>
     <li>顯示「裝置定位模擬中」後，打開 <b>Apple 地圖</b>：藍點應移到你選的位置。</li>
     <li>回 GFlyer 再選<b>另一個位置</b>、再按開始 → Apple 地圖的藍點應跟著移動（證明連線可重用）。</li>
@@ -745,7 +745,7 @@ tr.hl td{background:var(--ok-soft)}
       <li>SideStore 能登入，點 7 DAYS 重簽成功</li>
       <li>已加入 GFlyer 來源並安裝，App 顯示「裝置模式」</li>
       <li>配對檔 Validate 成功、已匯入 GFlyer（顯示「已匯入」）</li>
-      <li>「測試 LocalDevVPN 通道」顯示連線成功</li>
+      <li>按開始時，GFlyer 會自動開啟 LocalDevVPN（「設定 → LocalDevVPN」的「VPN 狀態」顯示「已連線」）</li>
       <li>Apple 地圖驗證過：第一點 → 第二點 → 停止</li>
       <li>知道「完整清除模擬定位」＋開關飛行模式的還原方法</li>
     </ul>
@@ -757,7 +757,7 @@ tr.hl td{background:var(--ok-soft)}
       <li>捷徑 <code>GFlyer 飛航開</code>、<code>GFlyer 飛航關</code> 已建立，並填進飛航模式輔助的兩個欄位</li>
       <li>已在「設定 → 資料匯入與匯出」匯出過一次備份檔</li>
     </ul>
-    <p class="small">必要項目全部打勾＝設定完成。之後日常使用只需要：開 VPN → 選點 → 開始 → 停止。</p>
+    <p class="small">必要項目全部打勾＝設定完成。之後日常使用只需要：選點 → 開始 → 停止（VPN 由 GFlyer 自動開啟）。</p>
   </div>
 </section>
 <!-- ============ Part 7 ============ -->
@@ -769,15 +769,21 @@ tr.hl td{background:var(--ok-soft)}
 
   <h3>每次使用的順序（口訣）</h3>
   <div class="order">
-    <span class="chip">開 LocalDevVPN</span>
+    <span class="chip">GFlyer 選點</span>
     <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5b6b7c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    <span class="chip">GFlyer 開始</span>
+    <span class="chip">開始</span>
     <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5b6b7c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    <span class="chip">GFlyer 停止</span>
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5b6b7c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    <span class="chip">關 LocalDevVPN</span>
+    <span class="chip">停止</span>
   </div>
-  <p class="small">重點：先開 VPN 才開始；先停止才關 VPN（清除定位需要通道還在）。</p>
+  <p class="small">不用自己先開 LocalDevVPN：按開始時如果它未連線，GFlyer 會切換過去開啟，約 1 秒後自動回來繼續。</p>
+
+  <h3>LocalDevVPN 要不要關？</h3>
+  <p>不關也可以。LocalDevVPN 只處理 iPhone 自己的開發服務，<b>不經過你的上網流量</b>，一直開著不影響網速。想關的話有兩個方法，都在 GFlyer「設定」裡：</p>
+  <ul class="plain">
+    <li>「LocalDevVPN」區：看「<b>VPN 狀態</b>」，按<b class="act">關閉 LocalDevVPN</b>（未連線時這個按鈕會變成「開啟 LocalDevVPN」）。模擬進行中不能關，要先按停止。</li>
+    <li>「恢復」區：開啟「<b>清除後同時關閉 LocalDevVPN</b>」，之後按「完整清除模擬定位」時會一併關掉（見下面）。</li>
+  </ul>
+  <p class="small">按了之後畫面會切換到 LocalDevVPN，約 1 秒後自動回來。不想按開始時自動開 VPN，可在「LocalDevVPN」區關掉「按開始時自動開啟」。</p>
 
   <h3>四種模式</h3>
   <p>地圖下方的模式選擇器有四個選項。先選模式，再在地圖上點位置，最後按<b>開始</b>。</p>
@@ -806,9 +812,9 @@ tr.hl td{background:var(--ok-soft)}
   <h3>想讓其他 App 回到真實位置（完整清除）</h3>
   <p>一般的「停止」會保留通道方便下次快速開始，<b>不保證</b>其他 App 立刻看到真實位置。要真正還原用這個：</p>
   <ol class="steps">
-    <li>GFlyer「設定」→「恢復」→ 按<b class="act">完整清除模擬定位</b>。</li>
+    <li>GFlyer「設定」→「恢復」→ 按<b class="act">完整清除模擬定位</b>。<span class="small">若同時開了「清除後同時關閉 LocalDevVPN」，清除成功後畫面會切換到 LocalDevVPN 關閉 VPN，再自動回來；清除失敗時會保留 VPN，方便你再按一次。</span></li>
     <li>App 會清除、關閉模擬通道，然後<b>自動驗證</b>並告訴你結果（真實位置／仍是模擬座標／取不到定位）。</li>
-    <li>若顯示仍是模擬座標：關閉 LocalDevVPN，然後<b class="act">開關一次飛行模式</b>。實機測試確認這一步之後其他 App 就會回到真實位置。</li>
+    <li>若顯示仍是模擬座標或取不到定位：<b class="act">開關一次飛行模式</b>（LocalDevVPN 若還開著，先在「設定 → LocalDevVPN」按「關閉 LocalDevVPN」）。實機測試確認這一步之後其他 App 就會回到真實位置。</li>
   </ol>
 </section>
 <!-- ============ Part 8 ============ -->
@@ -996,9 +1002,12 @@ tr.hl td{background:var(--ok-soft)}
     <tr><td>GFlyer 顯示「預覽模式」</td><td>裝到了不能控制全機定位的版本。從本教學的來源重新安裝。</td></tr>
     <tr><td>配對檔 Create／Validate 失敗</td><td>iPhone 保持解鎖並在主畫面；拔插 USB 重新信任；關閉其他佔用 USB 的工具；重新建立新檔案。</td></tr>
     <tr><td>配對檔匯入失敗</td><td>確認檔案是 idevice_pair 產生的原檔、副檔名沒被改掉（例如被改成 .txt）。</td></tr>
-    <tr><td>按開始後顯示通道／連線錯誤</td><td>確認 LocalDevVPN 已連接、目標 IP 是 <code>10.7.0.1</code>；暫停其他 VPN；用設定內「測試 LocalDevVPN 通道」檢查。行動網絡下先開飛行模式再開始（<a href="#p9">Part 9</a>）。</td></tr>
+    <tr><td>按開始後切到 LocalDevVPN，沒有自動回來</td><td>在 LocalDevVPN 按<b>連線</b>（英文介面為 Connect），然後自己切回 GFlyer，模擬會自動繼續。</td></tr>
+    <tr><td>提示「LocalDevVPN 仍未連線」</td><td>GFlyer 回來後等了約 10 秒，VPN 仍未連上。打開 LocalDevVPN 按<b>連線</b>，看到「已連線」後回 GFlyer 再按開始。若你有其他 VPN（廣告攔截、公司 VPN 等），先暫停它們。</td></tr>
+    <tr><td>「VPN 狀態」顯示「未安裝 LocalDevVPN」</td><td>從 <a href="https://apps.apple.com/app/id6755608044" target="_blank" rel="noopener">App Store</a> 安裝 LocalDevVPN（見 <a href="#p3">Part 3</a> 的 3.3）。</td></tr>
+    <tr><td>按開始後顯示通道／連線錯誤</td><td>看「設定 → LocalDevVPN」的「VPN 狀態」是否「已連線」、目標 IP 是否 <code>10.7.0.1</code>；暫停其他 VPN；再用同一區的「測試 LocalDevVPN 通道」檢查。行動網絡下先開飛行模式再開始（<a href="#p9">Part 9</a>）。</td></tr>
     <tr><td>切去其他 App 後出現 BrokenPipe／Channel closed</td><td>GFlyer 會自動清理並重連一次；再失敗就停止後重新開始。</td></tr>
-    <tr><td>停止後其他 App 仍顯示模擬位置</td><td>正常現象。要立刻還原：「設定 → 恢復 → 完整清除模擬定位」，照結果指引關 VPN 並<b>開關一次飛行模式</b>。</td></tr>
+    <tr><td>停止後其他 App 仍顯示模擬位置</td><td>正常現象。要立刻還原：「設定 → 恢復 → 完整清除模擬定位」，照結果指引關閉 LocalDevVPN 並<b>開關一次飛行模式</b>（<a href="#p7">Part 7</a>）。</td></tr>
     <tr><td>按「定位」說等不到新定位</td><td>剛清除模擬後 iOS 需要時間取得真實定位。開關飛行模式、到收訊好的位置，或稍後再試。</td></tr>
     <tr><td>DDI 下載或驗證失敗</td><td>確認網絡正常後重按開始；App 會重新下載並以 SHA-256 驗證。</td></tr>
   </table></div>
@@ -1048,7 +1057,7 @@ tr.hl td{background:var(--ok-soft)}
 <footer>
   GFlyer iOS · 個人側載研究用途 · 不含反偵測、不修改第三方 App<br>
   更新來源：<code>https://michaelcheung0125-svg.github.io/GFlyer-updates/altstore.json</code><br>
-  文件版本 2026-09-09（SideStore 夜晚版 · 對應 GFlyer iOS 0.6.1）
+  文件版本 2026-09-20（SideStore 夜晚版 · 對應 GFlyer iOS 0.6.3）
 </footer>
 
 </div>
