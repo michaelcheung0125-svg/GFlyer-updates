@@ -264,7 +264,7 @@ tr.hl td{background:var(--ok-soft)}
   <p class="sub">由零開始，一步一步把 GFlyer 裝進你的 iPhone。完全不需要懂「側載」是什麼——照著每一步做即可。設定一次之後，日常使用與更新都不再需要電腦。</p>
   <div class="badges">
     <span class="badge">SideStore 夜晚版</span>
-    <span class="badge">對應 App 0.6.3</span>
+    <span class="badge">對應 App 0.6.4</span>
     <span class="badge">Windows 適用 · 不需要 Mac</span>
     <span class="badge">文件版本 2026-09-20</span>
   </div>
@@ -657,11 +657,11 @@ tr.hl td{background:var(--ok-soft)}
   來源就用來源。</p>
   <div class="card dlcard">
     <div class="dlmeta">
-      <b>GFlyer iOS <span id="ipaVersion">0.6.3</span></b>
+      <b>GFlyer iOS <span id="ipaVersion">0.6.4</span></b>
       <span class="small" id="ipaMeta">未簽名 IPA · 9.4 MB</span>
     </div>
     <a class="dlbtn" id="ipaLink"
-       href="https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.3/GFlyerIOS-0.6.3-unsigned.ipa">
+       href="https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.4/GFlyerIOS-0.6.4-unsigned.ipa">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>
       下載 IPA
     </a>
@@ -791,7 +791,7 @@ tr.hl td{background:var(--ok-soft)}
     <tr><th style="width:16%">模式</th><th style="width:34%">它做什麼</th><th>怎樣選點</th></tr>
     <tr><td><b>傳送</b></td><td>直接跳到一個定點，不移動。</td><td>點一個位置。要換地方就點另一處再按開始。</td></tr>
     <tr><td><b>單點</b></td><td>由目前位置走到一個目標點。</td><td>點一個目標位置。</td></tr>
-    <tr><td><b>多點</b></td><td>沿你排的路線逐段走完，可循環。</td><td>依行走次序在地圖點多個位置。</td></tr>
+    <tr><td><b>多點</b></td><td>沿你排的路線逐段走完，可循環。</td><td>依行走次序在地圖點多個位置，第一下點的就是第 1 點。點錯了按撤回（↶）逐點刪除，或按垃圾桶全部清除。</td></tr>
     <tr><td><b>探索</b></td><td>以選取位置為中心，持續螺旋式繞行。</td><td>點一個中心位置。</td></tr>
   </table></div>
 
@@ -813,7 +813,7 @@ tr.hl td{background:var(--ok-soft)}
   <p>一般的「停止」會保留通道方便下次快速開始，<b>不保證</b>其他 App 立刻看到真實位置。要真正還原用這個：</p>
   <ol class="steps">
     <li>GFlyer「設定」→「恢復」→ 按<b class="act">完整清除模擬定位</b>。<span class="small">若同時開了「清除後同時關閉 LocalDevVPN」，清除成功後畫面會切換到 LocalDevVPN 關閉 VPN，再自動回來；清除失敗時會保留 VPN，方便你再按一次。</span></li>
-    <li>App 會清除、關閉模擬通道，然後<b>自動驗證</b>並告訴你結果（真實位置／仍是模擬座標／取不到定位）。</li>
+    <li>App 會先把位置移回你上次的真實位置附近（畫面顯示「已移回真實位置附近，準備清除…」，約 2 秒），再清除、關閉模擬通道，然後<b>自動驗證</b>並告訴你結果（真實位置／仍是模擬座標／取不到定位）。<span class="small">先移回真實位置附近，是為了讓 Google 地圖等 App 較快回到真實位置，不會長時間停在遠方的模擬位置。</span></li>
     <li>若顯示仍是模擬座標或取不到定位：<b class="act">開關一次飛行模式</b>（LocalDevVPN 若還開著，先在「設定 → LocalDevVPN」按「關閉 LocalDevVPN」）。實機測試確認這一步之後其他 App 就會回到真實位置。</li>
   </ol>
 </section>
@@ -1057,7 +1057,7 @@ tr.hl td{background:var(--ok-soft)}
 <footer>
   GFlyer iOS · 個人側載研究用途 · 不含反偵測、不修改第三方 App<br>
   更新來源：<code>https://michaelcheung0125-svg.github.io/GFlyer-updates/altstore.json</code><br>
-  文件版本 2026-09-20（SideStore 夜晚版 · 對應 GFlyer iOS 0.6.3）
+  文件版本 2026-09-20（SideStore 夜晚版 · 對應 GFlyer iOS 0.6.4）
 </footer>
 
 </div>
