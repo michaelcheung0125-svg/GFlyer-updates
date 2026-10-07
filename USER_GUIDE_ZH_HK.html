@@ -264,9 +264,9 @@ tr.hl td{background:var(--ok-soft)}
   <p class="sub">由零開始，一步一步把 GFlyer 裝進你的 iPhone。完全不需要懂「側載」是什麼——照著每一步做即可。設定一次之後，日常使用與更新都不再需要電腦。</p>
   <div class="badges">
     <span class="badge">SideStore 夜晚版</span>
-    <span class="badge">對應 App 0.6.10</span>
+    <span class="badge">對應 App 0.6.11</span>
     <span class="badge">Windows 適用 · 不需要 Mac</span>
-    <span class="badge">文件版本 2026-10-03</span>
+    <span class="badge">文件版本 2026-10-08</span>
   </div>
 </div>
 
@@ -657,11 +657,11 @@ tr.hl td{background:var(--ok-soft)}
   來源就用來源。</p>
   <div class="card dlcard">
     <div class="dlmeta">
-      <b>GFlyer iOS <span id="ipaVersion">0.6.10</span></b>
+      <b>GFlyer iOS <span id="ipaVersion">0.6.11</span></b>
       <span class="small" id="ipaMeta">未簽名 IPA · 9.7 MB</span>
     </div>
     <a class="dlbtn" id="ipaLink"
-       href="https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.10/GFlyerIOS-0.6.10-unsigned.ipa">
+       href="https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.11/GFlyerIOS-0.6.11-unsigned.ipa">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>
       下載 IPA
     </a>
@@ -866,16 +866,16 @@ tr.hl td{background:var(--ok-soft)}
 
   <h3>收藏、歷史與資料夾</h3>
   <ul class="plain">
-    <li>點<b>星星</b>會跳出 <span class="ui">收藏位置</span>，下面是要收藏的座標。輸入名稱後按「收藏」；這個位置已經查到「國家 · 城市」時會先幫你填好，欄位留空就用「收藏」加座標當名稱。成功時顯示「收藏成功」。</li>
+    <li>點<b>星星</b>會從下方打開 <span class="ui">收藏位置</span>，上面是要收藏的座標。輸入名稱後按「收藏」；這個位置已經查到「國家 · 城市」時會先幫你填好。還沒查過的地方會立刻查詢，名稱欄下方顯示 <span class="ui">正在查詢地名…</span>，查到後自動填入（你已經開始打字就不會蓋掉，最多等 10 秒）。欄位留空就用「收藏」加座標當名稱。成功時顯示「收藏成功」。</li>
     <li>沒有在模擬時，收藏的是地圖上選取的位置；<b>模擬移動中</b>收藏的是按星星那一刻的模擬位置。同一個座標已經收藏過時會顯示 <span class="ui">此座標已經收藏過</span>，不會取代原本那一筆。</li>
     <li>到<b>收藏與歷史</b>（畫面標題「地點」，分「收藏」「歷史」兩頁）可以改名、分資料夾、直接選用。</li>
     <li>去過的位置會自動進歷史，不用手動記。</li>
-    <li>清單每一列有三行：名稱；座標，後面接<b>「國家 · 城市」</b>（例如「臺灣 · 臺北市」）；最後一行小字是「收藏於」或「定位於」加日期時間。</li>
+    <li>清單每一列有三行：名稱；座標；最後一行小字是「收藏於」或「定位於」加日期時間，後面接<b>「國家 · 城市」</b>（例如「收藏於 2026年10月8日 下午1:40 · 臺灣 · 臺北市」，太長時換成兩行）。</li>
   </ul>
   <div class="box info">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fb3" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
-    <div><b>「國家 · 城市」從哪裡來</b>App 開啟時、以及收藏有變動時，GFlyer 會自動向 OpenStreetMap 的 Nominatim 服務反查（<strong>需要網絡</strong>，不用按任何按鈕），清單開著時查到就即時補上。還沒查到或查不到時那一段不顯示，也不會報錯；沒有網絡時下次開 App 會再試。查到的結果存在本機，之後不會再查。定位歷史本身不送出查詢，只有剛好和某個收藏落在同一小格（約 1 公里）時才會顯示。
-    <span class="small">收藏位置與收藏路線第一點的座標，會在 App 開啟或收藏變動時送往 OpenStreetMap 的 Nominatim 服務，反查所在的國家與城市；查到的結果只存在本機，不會放進備份檔。</span></div>
+    <div><b>「國家 · 城市」從哪裡來</b>App 開啟時、以及收藏有變動時，GFlyer 會自動向 OpenStreetMap 的 Nominatim 服務反查（<strong>需要網絡</strong>，不用按任何按鈕），清單開著時查到就即時補上；按星星收藏還沒查過的地方時，也會立刻查一次來預填名稱。還沒查到或查不到時那一段不顯示，也不會報錯；沒有網絡時下次開 App 會再試。查到的結果存在本機，之後不會再查。定位歷史本身不送出查詢，只有剛好和某個收藏落在同一小格（約 1 公里）時才會顯示。
+    <span class="small">收藏位置與收藏路線第一點的座標，會在 App 開啟或收藏變動時送往 OpenStreetMap 的 Nominatim 服務，反查所在的國家與城市；查到的結果只存在本機，不會放進備份檔。按 ☆ 收藏一個所在地區還沒查過的地點時，它的座標會立刻送去反查、預先填入名稱，之後按取消也一樣。</span></div>
   </div>
 
   <h3>儲存與重用路線</h3>
@@ -1110,7 +1110,7 @@ tr.hl td{background:var(--ok-soft)}
 <footer>
   GFlyer iOS · 個人側載研究用途 · 不含反偵測、不修改第三方 App<br>
   更新來源：<code>https://michaelcheung0125-svg.github.io/GFlyer-updates/altstore.json</code><br>
-  文件版本 2026-10-03（SideStore 夜晚版 · 對應 GFlyer iOS 0.6.10）
+  文件版本 2026-10-08（SideStore 夜晚版 · 對應 GFlyer iOS 0.6.11）
 </footer>
 
 </div>
