@@ -1,0 +1,72 @@
+# 每天從 pikmin.talllkai.com 重新產生座標圖鑑 coordinates/coordinates.json。
+# 內容有變才 revision +1、commit 並推送；GitHub Pages 更新後，兩個 App 下次開啟就會拿到新資料，不用發新版。
+# 說明見 tools/coordinates/README.md。
+name: 同步座標圖鑑
+
+on:
+  schedule:
+    # 每天香港時間 04:17（UTC 20:17）。避開整點：GitHub 的排程在整點最擁擠、最容易延遲或被略過
+    - cron: "17 20 * * *"
+  workflow_dispatch:
+    inputs:
+      allow_shrink:
+        description: 純點或明信片比線上版少超過 10% 也照樣發布（確定是官網真的大量下架時才勾）
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    # 改了活動座標或產生腳本就馬上重新產生，不用等到隔天
+    paths:
+      - tools/coordinates/**
+      - .github/workflows/sync-coordinates.yml
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: sync-coordinates
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 測試產生腳本
+        run: python3 -m unittest discover -s tools/coordinates -v
+
+      - name: 抓官網並產生 coordinates.json
+        id: sync
+        env:
+          ALLOW_SHRINK: ${{ inputs.allow_shrink && '--allow-shrink' || '' }}
+        run: python3 tools/coordinates/sync_coordinates.py $ALLOW_SHRINK --commit-message "$RUNNER_TEMP/commit-message.txt"
+
+      - name: Commit 並推送
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add coordinates/coordinates.json
+          git commit -F "$RUNNER_TEMP/commit-message.txt"
+          # 執行途中有人推了別的檔案（發版更新 altstore.json 等）就接到最新的 main 後面再推
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull --rebase origin main
+          done
+          exit 1
+
+      - name: 等 GitHub Pages 回傳新的 revision
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVISION: ${{ steps.sync.outputs.revision }}
+        run: |
+          if python3 tools/coordinates/sync_coordinates.py --wait-pages "$REVISION" --timeout 300; then exit 0; fi
+          echo "GitHub Pages 五分鐘內沒有更新，要求重新建置一次"
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+          python3 tools/coordinates/sync_coordinates.py --wait-pages "$REVISION" --timeout 600

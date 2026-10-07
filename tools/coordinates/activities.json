@@ -1,0 +1,14 @@
+{
+  "_comment": "活動座標來源檔：由作者手動維護，tools/coordinates/sync_coordinates.py 會把它併進 coordinates/coordinates.json（推送這個檔案就會自動重新產生並發布）。id＝座標固定識別（使用者的最愛、標記、前往紀錄都綁在 id 上，一旦發布就不可改、不可重複使用；新增請接續最大編號）；remindDays＝提醒天數（天）；startDate/endDate＝活動期間（可有可無）。已刪除：evt-001～009 西雅圖水族館活動（2026-09-08 止）、evt-016～023 IKEA 合作活動（2026-08-31 止）。",
+  "subcategories": [
+    { "id": "gold-pot", "name": "皮克敏特殊地點金盆" }
+  ],
+  "coordinates": [
+    { "id": "evt-010", "subcategoryId": "gold-pot", "name": "宮島服務區 Pikmin Terrace（日本）", "lat": 34.3653190, "lng": 132.3180220, "remindDays": null, "note": "神社／金色禮物貼紙飾品・活動延長中，可在任務中獲得" },
+    { "id": "evt-011", "subcategoryId": "gold-pot", "name": "香港海港城", "lat": 22.29482, "lng": 114.16581, "remindDays": 1, "note": "禮物飾品・每天 1 次" },
+    { "id": "evt-012", "subcategoryId": "gold-pot", "name": "日本 Niantic Park", "lat": 35.675424, "lng": 139.71291, "remindDays": 30, "note": "金色禮物飾品・每 30 天 1 次" },
+    { "id": "evt-013", "subcategoryId": "gold-pot", "name": "台北車站", "lat": 25.04852, "lng": 121.51419, "remindDays": 30, "note": "禮物飾品・每 30 天 1 次" },
+    { "id": "evt-014", "subcategoryId": "gold-pot", "name": "香港 nsew K11 Musea", "lat": 22.294558, "lng": 114.174111, "remindDays": 1, "note": "紅色照片鈕扣飾品・每天 1 次" },
+    { "id": "evt-015", "subcategoryId": "gold-pot", "name": "香港 LBuy", "lat": 22.323930, "lng": 114.172349, "remindDays": 1, "note": "紅色照片鈕扣飾品・每天 1 次" }
+  ]
+}
