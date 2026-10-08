@@ -1,7 +1,7 @@
 {
-  "versionCode": 37,
-  "versionName": "0.8.6",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.6/GFlyer-v0.8.6.apk",
-  "sha256": "B53AFE1545FB5BDF0F66288D7285BC9BF52704238637551EA3A4F0D018B6251D",
-  "releaseNotes": "座標圖鑑新增前往紀錄：按「前往」會記下時間，並可用「隱藏已前往」過濾掉去過的點，App 內與懸浮圖鑑都適用。明信片資料更新至 435 張，並移除已結束的西雅圖水族館與 IKEA 活動。另修正更新 App 後圖鑑可能仍顯示舊資料的問題。"
+  "versionCode": 38,
+  "versionName": "0.8.7",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.7/GFlyer-v0.8.7.apk",
+  "sha256": "9953192ae7704a417af675e18188afbeb79384c674718469d950f2b2968eec2f",
+  "releaseNotes": "新增「自動找菇」：邊走邊辨識畫面上指定的菇，找到的菇可從清單直接前往。座標圖鑑改成每天自動更新，有新座標時側欄與懸浮列的「座標圖鑑」旁會出現紅色「NEW」，打開圖鑑後消失。另有懸浮列改版、設定新增「聯絡我們」、收藏時自動填入地名，以及多項修正。"
 }
