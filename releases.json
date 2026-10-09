@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-09T23:05:45Z",
+  "generatedAt": "2026-10-09T23:10:48Z",
   "releases": {
     "android": {
       "schemaVersion": 1,
@@ -18,13 +18,13 @@
     "ios": {
       "schemaVersion": 1,
       "platform": "ios",
-      "versionName": "0.6.12",
-      "buildNumber": 25,
-      "downloadUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.12/GFlyerIOS-0.6.12-unsigned.ipa",
-      "sha256": "117fec1863c6eab32f674b6476f0d82a185b3c660340ba00e5d666fa4f43c885",
-      "sizeBytes": 10263057,
-      "publishedAt": "2026-10-08T00:03:46Z",
-      "releaseNotes": "這一版讓座標圖鑑有新座標時會提示，App 一直開著也會每天檢查新資料。這一版還沒經過實機驗證，遇到問題請回報。\n\n座標圖鑑\n- 線上有新座標時，地圖工具列「座標圖鑑」按鈕的右上角會出現紅色「NEW」，打開圖鑑後消失\n- App 一直開著沒有關掉時，回到 App 會每天自動再檢查一次座標圖鑑的新資料\n- 座標圖鑑的資料現在每天自動更新，不用更新 App 也會拿到新的明信片與純點\n\n請順便測這幾條\n- 打開過一次圖鑑後，隔天沒有關掉 App 直接回到前景，圖鑑是否出現前一晚新增的明信片\n- 線上新增座標後，工具列「座標圖鑑」按鈕是否出現「NEW」，打開圖鑑後是否消失",
+      "versionName": "0.6.13",
+      "buildNumber": 26,
+      "downloadUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/ios-v0.6.13/GFlyerIOS-0.6.13-unsigned.ipa",
+      "sha256": "d2168375ad0fceb222a94630a23990e856de98eff18b0d1dfda77c4244c4980b",
+      "sizeBytes": 10271513,
+      "publishedAt": "2026-10-09T23:10:48Z",
+      "releaseNotes": "這一版讓座標圖鑑看得出有在檢查新資料。這一版還沒經過實機驗證，遇到問題請回報。\n\n座標圖鑑\n- 圖鑑頂端多兩行小字：資料的 revision、更新日期與筆數，以及「最後檢查」的時間\n- 官網沒有新座標時，「更新」的日期不會變，但「最後檢查」會是最近一次檢查的時間\n- 線上的座標圖鑑改成每 6 小時檢查一次官網\n\n請順便測這幾條\n- 打開圖鑑，頂端第二行是不是剛剛的時間\n- 關掉網路後按重新整理，第二行不會變；重開 App 仍顯示上一次的時間",
       "minOsVersion": "17.4",
       "bundleIdentifier": "com.geopilot.gflyer.ios"
     }
