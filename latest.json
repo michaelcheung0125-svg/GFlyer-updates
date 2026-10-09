@@ -1,7 +1,7 @@
 {
-  "versionCode": 38,
-  "versionName": "0.8.7",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.7/GFlyer-v0.8.7.apk",
-  "sha256": "9953192ae7704a417af675e18188afbeb79384c674718469d950f2b2968eec2f",
-  "releaseNotes": "新增「自動找菇」：邊走邊辨識畫面上指定的菇，找到的菇可從清單直接前往。座標圖鑑改成每天自動更新，有新座標時側欄與懸浮列的「座標圖鑑」旁會出現紅色「NEW」，打開圖鑑後消失。另有懸浮列改版、設定新增「聯絡我們」、收藏時自動填入地名，以及多項修正。"
+  "versionCode": 39,
+  "versionName": "0.8.8",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.8/GFlyer-v0.8.8.apk",
+  "sha256": "394fecb42eb55864ccfb2b22c5ebc53bcbe94ca066004727b95ef805b90923ea",
+  "releaseNotes": "座標圖鑑頂端多一行「最後檢查」時間，官網沒有新座標時也看得出 App 有在檢查。懸浮列的剪貼簿清單按「前往」後只拿掉那一個地點，其他的留著，收合再展開也還在。另有自動找菇跳點更快，並修正幾種菇被誤判成大菇。"
 }
