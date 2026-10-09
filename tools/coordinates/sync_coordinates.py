@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """從 pikmin.talllkai.com 重新產生座標圖鑑 coordinates/coordinates.json。
 
-GitHub Actions（.github/workflows/sync-coordinates.yml）每天跑一次，也可以在本機手動跑。
+GitHub Actions（.github/workflows/sync-coordinates.yml）每 6 小時跑一次，也可以在本機手動跑。
 
 來源：
     明信片  https://pikmin.talllkai.com/Postcard（伺服器端渲染的卡片列表，每頁 20 張，逐頁解析）
@@ -57,7 +57,7 @@ POSTCARD_SCRAPE_ATTEMPTS = 3
 POSTCARD_TYPES = {"flower": "花", "mushroom": "菇", "hidden": "隱藏"}
 
 SOURCE_NOTE = "皮克敏純點明信片地圖 pikmin.talllkai.com"
-# 排程在香港時間清晨跑，runner 卻是 UTC；updatedAt 用香港時間的日期
+# runner 是 UTC；updatedAt 用香港時間的日期（香港時間 02:17 那一次在 UTC 還是前一天）
 LOCAL_TIMEZONE = timezone(timedelta(hours=8))
 # 活動座標的 updatedAt 一律是這個日期（沿用 GFlyer 原本的 tools/build_coordinate_library.py）
 EVENT_UPDATED_AT = "2026-08-24"

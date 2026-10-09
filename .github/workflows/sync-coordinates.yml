@@ -1,12 +1,14 @@
-# 每天從 pikmin.talllkai.com 重新產生座標圖鑑 coordinates/coordinates.json。
+# 每 6 小時從 pikmin.talllkai.com 重新產生座標圖鑑 coordinates/coordinates.json。
 # 內容有變才 revision +1、commit 並推送；GitHub Pages 更新後，兩個 App 下次開啟就會拿到新資料，不用發新版。
 # 說明見 tools/coordinates/README.md。
 name: 同步座標圖鑑
 
 on:
   schedule:
-    # 每天香港時間 04:17（UTC 20:17）。避開整點：GitHub 的排程在整點最擁擠、最容易延遲或被略過
-    - cron: "17 20 * * *"
+    # 每 6 小時，香港時間 02:17、08:17、14:17、20:17（UTC 18:17、00:17、06:17、12:17）。
+    # 避開整點：GitHub 的排程在整點最擁擠、最容易延遲或被略過。原本一天一次，實際上第一次晚了約 4 小時、
+    # 第二天那次過了兩個半小時都還沒跑；一天跑四次，延遲或略過一兩次也不影響。官網沒變就不發布，App 不會多下載
+    - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       allow_shrink:

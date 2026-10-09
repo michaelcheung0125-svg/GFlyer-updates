@@ -2,16 +2,16 @@
 
 `coordinates/coordinates.json` 是兩個 GFlyer App 讀的座標圖鑑（GitHub Pages 網址
 `https://michaelcheung0125-svg.github.io/GFlyer-updates/coordinates/coordinates.json`）。
-它由這個目錄的 `sync_coordinates.py` 產生，**每天由 GitHub Actions 自動執行**，不用手動更新，也不用發新版 App。
+它由這個目錄的 `sync_coordinates.py` 產生，**每 6 小時由 GitHub Actions 自動執行**，不用手動更新，也不用發新版 App。
 
 | 檔案 | 內容 |
 |---|---|
 | `sync_coordinates.py` | 抓 pikmin.talllkai.com 的明信片與純點，併入活動座標，產生 `coordinates/coordinates.json` |
 | `activities.json` | 活動座標，**作者手動維護** |
 | `test_sync_coordinates.py` | 產生腳本的測試，每次同步前先跑 |
-| `../../.github/workflows/sync-coordinates.yml` | 排程：每天香港時間 04:17，另外改了這個目錄的檔案推上來時也會跑 |
+| `../../.github/workflows/sync-coordinates.yml` | 排程：每 6 小時（香港時間 02:17、08:17、14:17、20:17），另外改了這個目錄的檔案推上來時也會跑 |
 
-## 每天發生的事
+## 每次執行發生的事
 
 1. 抓明信片（`/Postcard`，每頁 20 張，請求之間間隔 1 秒）與純點（`/PureSpot/Map`，一次請求）。
 2. 照 App 的規則轉成座標庫格式，和現在的 `coordinates/coordinates.json` 比較。
@@ -55,9 +55,9 @@ revision，`coordinates/coordinates.json` 是 revision 唯一的基準。
 
 - **這個 repo 每天可能有機器人的 commit**，本機的 clone 推送前先 `git pull --rebase origin main`
   （兩個 App 的發版流程本來就有這一步）。機器人只改 `coordinates/coordinates.json`，不會有衝突。
-- GitHub 的排程可能延遲幾分鐘到幾十分鐘。public repo **連續 60 天沒有任何活動**（包括機器人的 commit）時，
+- GitHub 的排程可能延遲幾分鐘到幾小時，忙的時候甚至會略過（2026-10-08 改成一天一次時，第一次晚了約 4 小時，第二天那次過了兩個半小時都還沒跑），所以一天排四次。官網沒有變就不發布，App 不會因為多跑幾次而多下載。public repo **連續 60 天沒有任何活動**（包括機器人的 commit）時，
   GitHub 會自動停用排程並寄信通知；到 Actions 頁面按「Enable workflow」即可。
 - Android APK 內建的種子是線上版的快照：發版前在 GFlyer repo 跑 `python tools/update_coordinate_seed.py`
   把種子更新到線上的最新 revision（不跑也可以，App 開啟後會自己抓線上版）。
 - 資料來源是凱哥（TalllKai）社群網站的公開內容，App 內圖鑑頁尾標示「皮克敏純點明信片地圖 pikmin.talllkai.com」。
-  User-Agent 是 `GFlyer-coordinate-sync/1.0`，每天約 28 次請求。
+  User-Agent 是 `GFlyer-coordinate-sync/1.0`，每次約 28 次請求、間隔 1 秒，一天四次約 112 次。
