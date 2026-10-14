@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "revision": 7,
- "updatedAt": "2026-10-13",
+ "revision": 8,
+ "updatedAt": "2026-10-14",
  "source": "皮克敏純點明信片地圖 pikmin.talllkai.com",
  "categories": [
   {
@@ -100655,6 +100655,62 @@
    "icon": "💊",
    "enabled": true,
    "updatedAt": "2026-10-13"
+  },
+  {
+   "id": "pc-648",
+   "categoryId": "postcard",
+   "subcategoryId": "隱藏",
+   "name": "Harry Potter Shop HARAJUKU",
+   "lat": 35.668499,
+   "lng": 139.705874,
+   "note": "日本；哈利波特商店",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/2c8b31ba97194410bc6dbf310d96a88a.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-14"
+  },
+  {
+   "id": "pc-647",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "兔兔倒彩虹",
+   "lat": 25.0384,
+   "lng": 121.5637,
+   "note": "台灣；可愛的兔兔(兔子)",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/e9ed5caa4d8341bb81c5ac9da5b554c4.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-14"
+  },
+  {
+   "id": "pc-646",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "God of door 2",
+   "lat": 25.03298,
+   "lng": 121.552974,
+   "note": "台灣；門神",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/337a9d789deb4c3e9abd40a439d43d3d.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-14"
+  },
+  {
+   "id": "pc-645",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "南韓愛寶樂園皇家禧年旋轉木馬",
+   "lat": 37.291129,
+   "lng": 127.20364,
+   "note": "韩国 / 南韓；新版的旋轉木馬依舊絢爛奪目",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/3e0eb52f74b74c0f900dfe7a9b135fe3.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-14"
   },
   {
    "id": "pc-644",
