@@ -1,7 +1,7 @@
 {
-  "versionCode": 39,
-  "versionName": "0.8.8",
-  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.8/GFlyer-v0.8.8.apk",
-  "sha256": "394fecb42eb55864ccfb2b22c5ebc53bcbe94ca066004727b95ef805b90923ea",
-  "releaseNotes": "座標圖鑑頂端多一行「最後檢查」時間，官網沒有新座標時也看得出 App 有在檢查。懸浮列的剪貼簿清單按「前往」後只拿掉那一個地點，其他的留著，收合再展開也還在。另有自動找菇跳點更快，並修正幾種菇被誤判成大菇。"
+  "versionCode": 40,
+  "versionName": "0.8.9",
+  "apkUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.9/GFlyer-v0.8.9.apk",
+  "sha256": "2be88390439cca0feaa797f5028ff94ce71223f39b550a3e3d4aac38123c1edc",
+  "releaseNotes": "App 圖示、懸浮把手和地圖上的定位針換成新的飛豬。自動找菇改成從所在地點挑行政區，可以排好幾區成序列連續掃，能暫停、繼續和收藏，剩餘時間照手機實際的速度倒數。另有新增「定位檢查」和「開放原始碼授權」頁，OpenStreetMap 的標記和路線改得和 Google 地圖一致。"
 }
