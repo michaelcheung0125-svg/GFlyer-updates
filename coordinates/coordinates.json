@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "revision": 12,
- "updatedAt": "2026-10-20",
+ "revision": 13,
+ "updatedAt": "2026-10-22",
  "source": "皮克敏純點明信片地圖 pikmin.talllkai.com",
  "categories": [
   {
@@ -101193,6 +101193,62 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🛣️",
+   "enabled": true,
+   "updatedAt": "2026-10-20"
+  },
+  {
+   "id": "pc-1667",
+   "categoryId": "postcard",
+   "subcategoryId": "隱藏",
+   "name": "奧蘭多環球影城度假村",
+   "lat": 28.478827,
+   "lng": -81.466627,
+   "note": "美國；夢工廠樂園（DreamWorks Land）裡的波比公主與小布",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/445d0f1c16244cee95ed6c7e4eee037c.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-20"
+  },
+  {
+   "id": "pc-1666",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "泳池旁餐廳",
+   "lat": 3.494992,
+   "lng": 72.892626,
+   "note": "马尔代夫/馬爾地夫",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/03a45127ba9c4f839703f2cc97023aaa.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-20"
+  },
+  {
+   "id": "pc-1665",
+   "categoryId": "postcard",
+   "subcategoryId": "菇",
+   "name": "石樓鐘塔",
+   "lat": 42.49363,
+   "lng": 18.75887,
+   "note": "黑山 / 蒙特內哥羅",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/2ba848abd68147d3a45c2fc26ffae3c6.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-20"
+  },
+  {
+   "id": "pc-1664",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "HELLO KITTY",
+   "lat": 33.289794,
+   "lng": 126.35209,
+   "note": "韩国 / 南韓",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/45ad625cd6ef4c8e8b7159194c1cfdec.jpg",
    "enabled": true,
    "updatedAt": "2026-10-20"
   },
