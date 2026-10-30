@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "revision": 14,
- "updatedAt": "2026-10-27",
+ "revision": 15,
+ "updatedAt": "2026-10-30",
  "source": "皮克敏純點明信片地圖 pikmin.talllkai.com",
  "categories": [
   {
@@ -519,7 +519,7 @@
   {
    "id": "pure-39596",
    "categoryId": "pure",
-   "subcategoryId": "壽司",
+   "subcategoryId": "路邊",
    "name": "廣東路744-786",
    "lat": 22.687265,
    "lng": 120.492261,
@@ -527,9 +527,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🍣",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-49788",
@@ -560,21 +560,6 @@
    "icon": "👕",
    "enabled": true,
    "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-101039",
-   "categoryId": "pure",
-   "subcategoryId": "墨西哥餐廳",
-   "name": "大同路一段",
-   "lat": 25.058754,
-   "lng": 121.636381,
-   "note": "新北市·汐止區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🌮",
-   "enabled": true,
-   "updatedAt": "2026-06-29"
   },
   {
    "id": "pure-126088",
@@ -1070,21 +1055,6 @@
    "icon": "🌳",
    "enabled": true,
    "updatedAt": "2026-05-28"
-  },
-  {
-   "id": "pure-180595",
-   "categoryId": "pure",
-   "subcategoryId": "咖哩",
-   "name": "昌平路三段50巷11",
-   "lat": 24.20239,
-   "lng": 120.675855,
-   "note": "臺中市·北屯區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍛",
-   "enabled": true,
-   "updatedAt": "2026-06-24"
   },
   {
    "id": "pure-180599",
@@ -1775,21 +1745,6 @@
    "icon": "🍴",
    "enabled": true,
    "updatedAt": "2026-06-23"
-  },
-  {
-   "id": "pure-180694",
-   "categoryId": "pure",
-   "subcategoryId": "義式餐廳",
-   "name": "富林路三段",
-   "lat": 24.775676,
-   "lng": 121.073143,
-   "note": "新竹縣·新竹縣芎林鄉",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍝",
-   "enabled": true,
-   "updatedAt": "2026-06-22"
   },
   {
    "id": "pure-180695",
@@ -3339,7 +3294,7 @@
   {
    "id": "pure-180891",
    "categoryId": "pure",
-   "subcategoryId": "美容院",
+   "subcategoryId": "路邊",
    "name": "廣州街12-14號",
    "lat": 23.462263,
    "lng": 120.435561,
@@ -3347,9 +3302,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "💅",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-06-23"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-180895",
@@ -5467,21 +5422,6 @@
    "updatedAt": "2026-06-21"
   },
   {
-   "id": "pure-181146",
-   "categoryId": "pure",
-   "subcategoryId": "電影院",
-   "name": "臺北",
-   "lat": 25.044496,
-   "lng": 121.55871,
-   "note": "臺北市·信義區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🎬",
-   "enabled": true,
-   "updatedAt": "2026-05-21"
-  },
-  {
    "id": "pure-181147",
    "categoryId": "pure",
    "subcategoryId": "超市",
@@ -6830,21 +6770,6 @@
    "icon": "👕",
    "enabled": true,
    "updatedAt": "2026-05-26"
-  },
-  {
-   "id": "pure-181315",
-   "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
-   "name": "寶中路97巷",
-   "lat": 24.980747,
-   "lng": 121.549674,
-   "note": "新北市·新店區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥘",
-   "enabled": true,
-   "updatedAt": "2026-05-28"
   },
   {
    "id": "pure-181316",
@@ -9174,7 +9099,7 @@
   {
    "id": "pure-181636",
    "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
+   "subcategoryId": "拉麵店",
    "name": "民有三街540-61",
    "lat": 25.014811,
    "lng": 121.313328,
@@ -9182,9 +9107,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🥘",
+   "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-06-21"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-181637",
@@ -9710,21 +9635,6 @@
    "icon": "🏪",
    "enabled": true,
    "updatedAt": "2026-05-29"
-  },
-  {
-   "id": "pure-181703",
-   "categoryId": "pure",
-   "subcategoryId": "服裝店",
-   "name": "集和街51-25號",
-   "lat": 24.804836,
-   "lng": 120.961768,
-   "note": "新竹市·北區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "👕",
-   "enabled": true,
-   "updatedAt": "2026-06-24"
   },
   {
    "id": "pure-181704",
@@ -11150,21 +11060,6 @@
    "icon": "👕",
    "enabled": true,
    "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-181930",
-   "categoryId": "pure",
-   "subcategoryId": "甜點店",
-   "name": "光復路一段385巷1",
-   "lat": 24.782544,
-   "lng": 121.016495,
-   "note": "新竹市·東區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍰",
-   "enabled": true,
-   "updatedAt": "2026-06-02"
   },
   {
    "id": "pure-181933",
@@ -13237,21 +13132,6 @@
    "updatedAt": "2026-05-22"
   },
   {
-   "id": "pure-182380",
-   "categoryId": "pure",
-   "subcategoryId": "自助洗衣店&乾洗店",
-   "name": "五甲二路3號",
-   "lat": 22.604752,
-   "lng": 120.345726,
-   "note": "高雄市·中崙里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🧺",
-   "enabled": true,
-   "updatedAt": "2026-05-22"
-  },
-  {
    "id": "pure-182382",
    "categoryId": "pure",
    "subcategoryId": "自助洗衣店&乾洗店",
@@ -13749,7 +13629,7 @@
   {
    "id": "pure-182485",
    "categoryId": "pure",
-   "subcategoryId": "超市",
+   "subcategoryId": "拉麵店",
    "name": "廣州一街81-69號",
    "lat": 22.620807,
    "lng": 120.318233,
@@ -13757,9 +13637,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🛒",
+   "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-182486",
@@ -15592,21 +15472,6 @@
    "updatedAt": "2026-05-23"
   },
   {
-   "id": "pure-182695",
-   "categoryId": "pure",
-   "subcategoryId": "麵包店",
-   "name": "臺北",
-   "lat": 25.039834,
-   "lng": 121.570214,
-   "note": "臺北市·廣居里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥐",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
    "id": "pure-182696",
    "categoryId": "pure",
    "subcategoryId": "麵包店",
@@ -15624,7 +15489,7 @@
   {
    "id": "pure-182699",
    "categoryId": "pure",
-   "subcategoryId": "麵包店",
+   "subcategoryId": "路邊",
    "name": "文化路135巷28-",
    "lat": 25.014214,
    "lng": 121.510764,
@@ -15632,9 +15497,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🥐",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-182701",
@@ -16569,7 +16434,7 @@
   {
    "id": "pure-182796",
    "categoryId": "pure",
-   "subcategoryId": "電器行",
+   "subcategoryId": "拉麵店",
    "name": "景新街91-71號",
    "lat": 24.998556,
    "lng": 121.505,
@@ -16577,24 +16442,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🔌",
+   "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-182798",
-   "categoryId": "pure",
-   "subcategoryId": "電器行",
-   "name": "西園路二段111巷2",
-   "lat": 25.030103,
-   "lng": 121.497281,
-   "note": "臺北市·雙園里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🔌",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-182800",
@@ -16629,7 +16479,7 @@
   {
    "id": "pure-182805",
    "categoryId": "pure",
-   "subcategoryId": "電器行",
+   "subcategoryId": "咖啡杯",
    "name": "瑞光路358巷54-",
    "lat": 25.076711,
    "lng": 121.571882,
@@ -16637,9 +16487,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🔌",
+   "icon": "☕",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-182811",
@@ -16687,21 +16537,6 @@
    "updatedAt": "2026-05-23"
   },
   {
-   "id": "pure-182820",
-   "categoryId": "pure",
-   "subcategoryId": "自助洗衣店&乾洗店",
-   "name": "竹林路119巷22弄",
-   "lat": 25.011238,
-   "lng": 121.522267,
-   "note": "新北市·桂林里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🧺",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
    "id": "pure-182821",
    "categoryId": "pure",
    "subcategoryId": "自助洗衣店&乾洗店",
@@ -16728,21 +16563,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🧺",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-182826",
-   "categoryId": "pure",
-   "subcategoryId": "電影院",
-   "name": "臺北",
-   "lat": 25.19957,
-   "lng": 121.438141,
-   "note": "新北市·崁頂里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🎬",
    "enabled": true,
    "updatedAt": "2026-05-23"
   },
@@ -16850,21 +16670,6 @@
    "icon": "💅",
    "enabled": true,
    "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-182834",
-   "categoryId": "pure",
-   "subcategoryId": "美容院",
-   "name": "長樂路56巷",
-   "lat": 25.086681,
-   "lng": 121.463889,
-   "note": "新北市·正義里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💅",
-   "enabled": true,
-   "updatedAt": "2026-08-05"
   },
   {
    "id": "pure-182837",
@@ -17174,21 +16979,6 @@
    "lat": 24.984223,
    "lng": 121.429621,
    "note": "新北市·溪福里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🛒",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-182862",
-   "categoryId": "pure",
-   "subcategoryId": "超市",
-   "name": "大業路65巷38-5",
-   "lat": 25.12306,
-   "lng": 121.497128,
-   "note": "臺北市·八仙里",
    "period": "",
    "remindDays": null,
    "thumbnail": null,
@@ -17647,21 +17437,6 @@
    "updatedAt": "2026-05-23"
   },
   {
-   "id": "pure-182902",
-   "categoryId": "pure",
-   "subcategoryId": "郵局",
-   "name": "北63-1鄉道253",
-   "lat": 25.043182,
-   "lng": 121.454205,
-   "note": "新北市·中美里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "📮",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
    "id": "pure-182903",
    "categoryId": "pure",
    "subcategoryId": "郵局",
@@ -17994,7 +17769,7 @@
   {
    "id": "pure-182935",
    "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
+   "subcategoryId": "拉麵店",
    "name": "民安街22巷14-2",
    "lat": 25.001402,
    "lng": 121.479701,
@@ -18002,9 +17777,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🥘",
+   "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-06-14"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-182938",
@@ -18024,7 +17799,7 @@
   {
    "id": "pure-182939",
    "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
+   "subcategoryId": "拉麵店",
    "name": "三民路21-19號",
    "lat": 24.971741,
    "lng": 121.539218,
@@ -18032,24 +17807,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🥘",
+   "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-182943",
-   "categoryId": "pure",
-   "subcategoryId": "甜點店",
-   "name": "四川路一段286巷1",
-   "lat": 25.000953,
-   "lng": 121.458358,
-   "note": "新北市·鄉雲里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍰",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-182945",
@@ -18350,51 +18110,6 @@
    "icon": "🚉",
    "enabled": true,
    "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-182977",
-   "categoryId": "pure",
-   "subcategoryId": "車站",
-   "name": "立功街79巷13-1",
-   "lat": 25.126747,
-   "lng": 121.468608,
-   "note": "臺北市·一德里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🚉",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-182980",
-   "categoryId": "pure",
-   "subcategoryId": "車站",
-   "name": "中央路",
-   "lat": 25.058757,
-   "lng": 121.448555,
-   "note": "新北市·中原里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🚉",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
-   "id": "pure-182982",
-   "categoryId": "pure",
-   "subcategoryId": "飯店",
-   "name": "建康路6-10號",
-   "lat": 25.00033,
-   "lng": 121.48636,
-   "note": "新北市·中和區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🏨",
-   "enabled": true,
-   "updatedAt": "2026-09-08"
   },
   {
    "id": "pure-182983",
@@ -18804,7 +18519,7 @@
   {
    "id": "pure-183018",
    "categoryId": "pure",
-   "subcategoryId": "路邊",
+   "subcategoryId": "餐廳",
    "name": "松勇路15號",
    "lat": 25.039929,
    "lng": 121.569878,
@@ -18812,9 +18527,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🛣️",
+   "icon": "🍴",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-183019",
@@ -21249,7 +20964,7 @@
   {
    "id": "pure-183290",
    "categoryId": "pure",
-   "subcategoryId": "甜點店",
+   "subcategoryId": "咖啡杯",
    "name": "建平十一街327-2",
    "lat": 22.99536,
    "lng": 120.176381,
@@ -21257,9 +20972,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🍰",
+   "icon": "☕",
    "enabled": true,
-   "updatedAt": "2026-06-02"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-183292",
@@ -21459,7 +21174,7 @@
   {
    "id": "pure-183318",
    "categoryId": "pure",
-   "subcategoryId": "麵包店",
+   "subcategoryId": "路邊",
    "name": "國民路270巷6弄2",
    "lat": 22.972065,
    "lng": 120.210293,
@@ -21467,9 +21182,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🥐",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-05-27"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-183319",
@@ -21654,7 +21369,7 @@
   {
    "id": "pure-183333",
    "categoryId": "pure",
-   "subcategoryId": "麵包店",
+   "subcategoryId": "路邊",
    "name": "國民路",
    "lat": 22.967333,
    "lng": 120.214234,
@@ -21662,9 +21377,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🥐",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-05-27"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-183337",
@@ -23212,21 +22927,6 @@
    "updatedAt": "2026-06-10"
   },
   {
-   "id": "pure-183997",
-   "categoryId": "pure",
-   "subcategoryId": "美術館",
-   "name": "136縣道1072-",
-   "lat": 24.147886,
-   "lng": 120.628786,
-   "note": "臺中市·新生里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🖼️",
-   "enabled": true,
-   "updatedAt": "2026-06-10"
-  },
-  {
    "id": "pure-184003",
    "categoryId": "pure",
    "subcategoryId": "水邊",
@@ -23887,21 +23587,6 @@
    "updatedAt": "2026-06-10"
   },
   {
-   "id": "pure-184201",
-   "categoryId": "pure",
-   "subcategoryId": "咖哩",
-   "name": "安樂路143巷20",
-   "lat": 24.996928,
-   "lng": 121.513355,
-   "note": "新北市·宜安里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍛",
-   "enabled": true,
-   "updatedAt": "2026-06-24"
-  },
-  {
    "id": "pure-184209",
    "categoryId": "pure",
    "subcategoryId": "路邊",
@@ -24292,21 +23977,6 @@
    "updatedAt": "2026-06-09"
   },
   {
-   "id": "pure-184356",
-   "categoryId": "pure",
-   "subcategoryId": "麵包店",
-   "name": "旺盛街",
-   "lat": 22.630549,
-   "lng": 120.290405,
-   "note": "高雄市·新生里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥐",
-   "enabled": true,
-   "updatedAt": "2026-06-10"
-  },
-  {
    "id": "pure-184371",
    "categoryId": "pure",
    "subcategoryId": "車站",
@@ -24663,21 +24333,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🌉",
-   "enabled": true,
-   "updatedAt": "2026-06-10"
-  },
-  {
-   "id": "pure-184492",
-   "categoryId": "pure",
-   "subcategoryId": "漢堡",
-   "name": "義昌路",
-   "lat": 22.641468,
-   "lng": 120.333178,
-   "note": "高雄市·寶泰里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍔",
    "enabled": true,
    "updatedAt": "2026-06-10"
   },
@@ -25447,21 +25102,6 @@
    "updatedAt": "2026-06-09"
   },
   {
-   "id": "pure-184633",
-   "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
-   "name": "立志街31巷15-1",
-   "lat": 22.6518,
-   "lng": 120.326506,
-   "note": "高雄市·灣利里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥘",
-   "enabled": true,
-   "updatedAt": "2026-06-10"
-  },
-  {
    "id": "pure-184636",
    "categoryId": "pure",
    "subcategoryId": "電器行",
@@ -25927,21 +25567,6 @@
    "updatedAt": "2026-05-27"
   },
   {
-   "id": "pure-184710",
-   "categoryId": "pure",
-   "subcategoryId": "電影院",
-   "name": "豐樂停車場",
-   "lat": 24.130333,
-   "lng": 120.644972,
-   "note": "臺中市·南屯區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🎬",
-   "enabled": true,
-   "updatedAt": "2026-06-01"
-  },
-  {
    "id": "pure-184712",
    "categoryId": "pure",
    "subcategoryId": "體育館",
@@ -26240,21 +25865,6 @@
    "icon": "🎓",
    "enabled": true,
    "updatedAt": "2026-05-28"
-  },
-  {
-   "id": "pure-184756",
-   "categoryId": "pure",
-   "subcategoryId": "電影院",
-   "name": "和昌街",
-   "lat": 24.123887,
-   "lng": 120.667438,
-   "note": "臺中市·南區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🎬",
-   "enabled": true,
-   "updatedAt": "2026-06-01"
   },
   {
    "id": "pure-184757",
@@ -29467,21 +29077,6 @@
    "updatedAt": "2026-06-01"
   },
   {
-   "id": "pure-185055",
-   "categoryId": "pure",
-   "subcategoryId": "美容院",
-   "name": "大墩七街",
-   "lat": 24.14375,
-   "lng": 120.6475,
-   "note": "臺中市·南屯區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💅",
-   "enabled": true,
-   "updatedAt": "2026-05-29"
-  },
-  {
    "id": "pure-185057",
    "categoryId": "pure",
    "subcategoryId": "美容院",
@@ -31132,21 +30727,6 @@
    "updatedAt": "2026-05-27"
   },
   {
-   "id": "pure-185227",
-   "categoryId": "pure",
-   "subcategoryId": "麵包店",
-   "name": "民權路",
-   "lat": 24.161,
-   "lng": 120.6705,
-   "note": "臺中市·北區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥐",
-   "enabled": true,
-   "updatedAt": "2026-05-28"
-  },
-  {
    "id": "pure-185229",
    "categoryId": "pure",
    "subcategoryId": "超市",
@@ -31325,21 +30905,6 @@
    "icon": "🛒",
    "enabled": true,
    "updatedAt": "2026-05-27"
-  },
-  {
-   "id": "pure-185245",
-   "categoryId": "pure",
-   "subcategoryId": "麵包店",
-   "name": "惠中路",
-   "lat": 24.166778,
-   "lng": 120.647722,
-   "note": "臺中市·西屯區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥐",
-   "enabled": true,
-   "updatedAt": "2026-05-28"
   },
   {
    "id": "pure-185246",
@@ -31629,7 +31194,7 @@
   {
    "id": "pure-185270",
    "categoryId": "pure",
-   "subcategoryId": "甜點店",
+   "subcategoryId": "拉麵店",
    "name": "經貿五路",
    "lat": 24.190944,
    "lng": 120.65975,
@@ -31637,9 +31202,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🍰",
+   "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-05-27"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-185271",
@@ -31959,7 +31524,7 @@
   {
    "id": "pure-185300",
    "categoryId": "pure",
-   "subcategoryId": "咖啡杯",
+   "subcategoryId": "壽司",
    "name": "國泰街",
    "lat": 24.159861,
    "lng": 120.695889,
@@ -31967,9 +31532,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "☕",
+   "icon": "🍣",
    "enabled": true,
-   "updatedAt": "2026-05-28"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-185303",
@@ -35092,21 +34657,6 @@
    "updatedAt": "2026-06-10"
   },
   {
-   "id": "pure-187791",
-   "categoryId": "pure",
-   "subcategoryId": "咖哩",
-   "name": "蝦皮店到店",
-   "lat": 25.084404,
-   "lng": 121.379448,
-   "note": "新北市·林口區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍛",
-   "enabled": true,
-   "updatedAt": "2026-06-10"
-  },
-  {
    "id": "pure-187969",
    "categoryId": "pure",
    "subcategoryId": "餐廳",
@@ -35373,21 +34923,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🎓",
-   "enabled": true,
-   "updatedAt": "2026-06-10"
-  },
-  {
-   "id": "pure-189671",
-   "categoryId": "pure",
-   "subcategoryId": "義式餐廳",
-   "name": "臺灣聖公會友誼之家",
-   "lat": 25.036443,
-   "lng": 121.525885,
-   "note": "臺北市·中正區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍝",
    "enabled": true,
    "updatedAt": "2026-06-10"
   },
@@ -42828,21 +42363,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🧺",
-   "enabled": true,
-   "updatedAt": "2026-06-15"
-  },
-  {
-   "id": "pure-192610",
-   "categoryId": "pure",
-   "subcategoryId": "化妝品",
-   "name": "停車場內",
-   "lat": 25.084728,
-   "lng": 121.552607,
-   "note": "臺北市·中山區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💄",
    "enabled": true,
    "updatedAt": "2026-06-15"
   },
@@ -51577,21 +51097,6 @@
    "updatedAt": "2026-06-24"
   },
   {
-   "id": "pure-193849",
-   "categoryId": "pure",
-   "subcategoryId": "麵包店",
-   "name": "昌平國小",
-   "lat": 25.055712,
-   "lng": 121.455648,
-   "note": "新北市·新莊區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥐",
-   "enabled": true,
-   "updatedAt": "2026-06-24"
-  },
-  {
    "id": "pure-193850",
    "categoryId": "pure",
    "subcategoryId": "路邊",
@@ -53722,21 +53227,6 @@
    "updatedAt": "2026-06-26"
   },
   {
-   "id": "pure-194005",
-   "categoryId": "pure",
-   "subcategoryId": "美容院",
-   "name": "巷弄內美容院純點",
-   "lat": 22.765921,
-   "lng": 121.137786,
-   "note": "臺東縣·馬蘭里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💅",
-   "enabled": true,
-   "updatedAt": "2026-06-26"
-  },
-  {
    "id": "pure-194006",
    "categoryId": "pure",
    "subcategoryId": "自助洗衣店&乾洗店",
@@ -54039,7 +53529,7 @@
   {
    "id": "pure-194070",
    "categoryId": "pure",
-   "subcategoryId": "義式餐廳",
+   "subcategoryId": "公園",
    "name": "新富路",
    "lat": 22.617741,
    "lng": 120.350938,
@@ -54047,9 +53537,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🍝",
+   "icon": "🌳",
    "enabled": true,
-   "updatedAt": "2026-06-27"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-194071",
@@ -58057,21 +57547,6 @@
    "updatedAt": "2026-06-29"
   },
   {
-   "id": "pure-195875",
-   "categoryId": "pure",
-   "subcategoryId": "美容院",
-   "name": "綏平路",
-   "lat": 22.61899,
-   "lng": 120.561837,
-   "note": "屏東縣·東寧村",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💅",
-   "enabled": true,
-   "updatedAt": "2026-06-29"
-  },
-  {
    "id": "pure-195876",
    "categoryId": "pure",
    "subcategoryId": "拉麵店",
@@ -59463,21 +58938,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🍴",
-   "enabled": true,
-   "updatedAt": "2026-06-29"
-  },
-  {
-   "id": "pure-197499",
-   "categoryId": "pure",
-   "subcategoryId": "美容院",
-   "name": "成功路",
-   "lat": 22.652518,
-   "lng": 120.525672,
-   "note": "屏東縣·麟蹄村",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💅",
    "enabled": true,
    "updatedAt": "2026-06-29"
   },
@@ -76687,21 +76147,6 @@
    "updatedAt": "2026-07-08"
   },
   {
-   "id": "pure-205599",
-   "categoryId": "pure",
-   "subcategoryId": "漢堡",
-   "name": "四維三路",
-   "lat": 22.618408,
-   "lng": 120.307083,
-   "note": "高雄市·苓雅區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍔",
-   "enabled": true,
-   "updatedAt": "2026-07-08"
-  },
-  {
    "id": "pure-205605",
    "categoryId": "pure",
    "subcategoryId": "咖啡杯",
@@ -77122,21 +76567,6 @@
    "updatedAt": "2026-07-08"
   },
   {
-   "id": "pure-205675",
-   "categoryId": "pure",
-   "subcategoryId": "咖啡杯",
-   "name": "新康街151巷",
-   "lat": 22.609085,
-   "lng": 120.34426,
-   "note": "高雄市·鳳山區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "☕",
-   "enabled": true,
-   "updatedAt": "2026-07-08"
-  },
-  {
    "id": "pure-205679",
    "categoryId": "pure",
    "subcategoryId": "咖啡杯",
@@ -77298,21 +76728,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🛒",
-   "enabled": true,
-   "updatedAt": "2026-07-09"
-  },
-  {
-   "id": "pure-205762",
-   "categoryId": "pure",
-   "subcategoryId": "郵局",
-   "name": "大園菜市場 忠孝三街",
-   "lat": 25.065344,
-   "lng": 121.198385,
-   "note": "桃園市·大園里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "📮",
    "enabled": true,
    "updatedAt": "2026-07-09"
   },
@@ -77915,21 +77330,6 @@
    "icon": "🛒",
    "enabled": true,
    "updatedAt": "2026-07-11"
-  },
-  {
-   "id": "pure-206226",
-   "categoryId": "pure",
-   "subcategoryId": "公園",
-   "name": "宜見川辛",
-   "lat": 24.655421,
-   "lng": 121.579658,
-   "note": "宜蘭縣·松羅村",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🌳",
-   "enabled": true,
-   "updatedAt": "2026-07-12"
   },
   {
    "id": "pure-206227",
@@ -81530,36 +80930,6 @@
    "icon": "📮",
    "enabled": true,
    "updatedAt": "2026-07-17"
-  },
-  {
-   "id": "pure-207007",
-   "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
-   "name": "居仁國中",
-   "lat": 24.136961,
-   "lng": 120.678723,
-   "note": "臺中市·西區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥘",
-   "enabled": true,
-   "updatedAt": "2026-07-17"
-  },
-  {
-   "id": "pure-207008",
-   "categoryId": "pure",
-   "subcategoryId": "神社和寺廟",
-   "name": "鳩谷八幡神社",
-   "lat": 36.265372,
-   "lng": 136.900917,
-   "note": "",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "⛩️",
-   "enabled": true,
-   "updatedAt": "2026-07-18"
   },
   {
    "id": "pure-207009",
@@ -85447,21 +84817,6 @@
    "updatedAt": "2026-07-19"
   },
   {
-   "id": "pure-210467",
-   "categoryId": "pure",
-   "subcategoryId": "自助洗衣店&乾洗店",
-   "name": "楠梓西巷27弄",
-   "lat": 22.729128,
-   "lng": 120.32851,
-   "note": "高雄市·楠梓區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🧺",
-   "enabled": true,
-   "updatedAt": "2026-07-19"
-  },
-  {
    "id": "pure-210492",
    "categoryId": "pure",
    "subcategoryId": "餐廳",
@@ -86032,36 +85387,6 @@
    "updatedAt": "2026-10-27"
   },
   {
-   "id": "pure-211488",
-   "categoryId": "pure",
-   "subcategoryId": "甜點店",
-   "name": "南園街127巷",
-   "lat": 23.007097,
-   "lng": 120.226829,
-   "note": "臺南市·北區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍰",
-   "enabled": true,
-   "updatedAt": "2026-07-21"
-  },
-  {
-   "id": "pure-211500",
-   "categoryId": "pure",
-   "subcategoryId": "美術館",
-   "name": "延平路",
-   "lat": 23.173672,
-   "lng": 120.178532,
-   "note": "臺南市·六安里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🖼️",
-   "enabled": true,
-   "updatedAt": "2026-07-27"
-  },
-  {
    "id": "pure-211502",
    "categoryId": "pure",
    "subcategoryId": "文具店",
@@ -86212,21 +85537,6 @@
    "updatedAt": "2026-07-27"
   },
   {
-   "id": "pure-212237",
-   "categoryId": "pure",
-   "subcategoryId": "甜點店",
-   "name": "公道五路二段",
-   "lat": 24.803709,
-   "lng": 120.996749,
-   "note": "新竹市·東區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍰",
-   "enabled": true,
-   "updatedAt": "2026-07-21"
-  },
-  {
    "id": "pure-212241",
    "categoryId": "pure",
    "subcategoryId": "美容院",
@@ -86317,51 +85627,6 @@
    "updatedAt": "2026-10-06"
   },
   {
-   "id": "pure-212514",
-   "categoryId": "pure",
-   "subcategoryId": "電影院",
-   "name": "三和路四段203巷",
-   "lat": 25.079787,
-   "lng": 121.483345,
-   "note": "新北市·三重區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🎬",
-   "enabled": true,
-   "updatedAt": "2026-07-27"
-  },
-  {
-   "id": "pure-212517",
-   "categoryId": "pure",
-   "subcategoryId": "電影院",
-   "name": "漳和國中",
-   "lat": 25.000795,
-   "lng": 121.504228,
-   "note": "新北市·中和區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🎬",
-   "enabled": true,
-   "updatedAt": "2026-07-31"
-  },
-  {
-   "id": "pure-212529",
-   "categoryId": "pure",
-   "subcategoryId": "美容院",
-   "name": "德行東路74巷",
-   "lat": 25.106165,
-   "lng": 121.527363,
-   "note": "臺北市·士林區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💅",
-   "enabled": true,
-   "updatedAt": "2026-07-22"
-  },
-  {
    "id": "pure-212573",
    "categoryId": "pure",
    "subcategoryId": "美容院",
@@ -86394,7 +85659,7 @@
   {
    "id": "pure-212633",
    "categoryId": "pure",
-   "subcategoryId": "甜點店",
+   "subcategoryId": "電影院",
    "name": "詔安街",
    "lat": 25.024928,
    "lng": 121.514248,
@@ -86402,9 +85667,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🍰",
+   "icon": "🎬",
    "enabled": true,
-   "updatedAt": "2026-07-21"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-212724",
@@ -87982,21 +87247,6 @@
    "updatedAt": "2026-07-23"
   },
   {
-   "id": "pure-213011",
-   "categoryId": "pure",
-   "subcategoryId": "自助洗衣店&乾洗店",
-   "name": "和真街",
-   "lat": 22.999819,
-   "lng": 120.190142,
-   "note": "臺南市·中西區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🧺",
-   "enabled": true,
-   "updatedAt": "2026-07-23"
-  },
-  {
    "id": "pure-213017",
    "categoryId": "pure",
    "subcategoryId": "車站",
@@ -89212,21 +88462,6 @@
    "updatedAt": "2026-07-25"
   },
   {
-   "id": "pure-213377",
-   "categoryId": "pure",
-   "subcategoryId": "自助洗衣店&乾洗店",
-   "name": "佳帥投幣式洗車",
-   "lat": 22.968413,
-   "lng": 120.280475,
-   "note": "臺南市·南興里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🧺",
-   "enabled": true,
-   "updatedAt": "2026-07-25"
-  },
-  {
    "id": "pure-213378",
    "categoryId": "pure",
    "subcategoryId": "車站",
@@ -89289,7 +88524,7 @@
   {
    "id": "pure-213382",
    "categoryId": "pure",
-   "subcategoryId": "美容院",
+   "subcategoryId": "路邊",
    "name": "新竹市北區武陵路250巷42號",
    "lat": 24.821603,
    "lng": 120.97141,
@@ -89297,9 +88532,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "💅",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-07-25"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-213383",
@@ -89364,7 +88599,7 @@
   {
    "id": "pure-213387",
    "categoryId": "pure",
-   "subcategoryId": "甜點店",
+   "subcategoryId": "路邊",
    "name": "詠宸手工銀絲卷專賣店",
    "lat": 25.042588,
    "lng": 121.243556,
@@ -89372,9 +88607,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🍰",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-07-25"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-213388",
@@ -89465,21 +88700,6 @@
    "icon": "🍰",
    "enabled": true,
    "updatedAt": "2026-07-27"
-  },
-  {
-   "id": "pure-255760",
-   "categoryId": "pure",
-   "subcategoryId": "郵局",
-   "name": "平鎮南勢郵局",
-   "lat": 24.91721,
-   "lng": 121.20925,
-   "note": "桃園市·平安里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "📮",
-   "enabled": true,
-   "updatedAt": "2026-07-28"
   },
   {
    "id": "pure-255761",
@@ -90292,21 +89512,6 @@
    "updatedAt": "2026-07-30"
   },
   {
-   "id": "pure-255868",
-   "categoryId": "pure",
-   "subcategoryId": "五金行",
-   "name": "牛埔東路",
-   "lat": 24.7969,
-   "lng": 120.94647,
-   "note": "新竹市·香山區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🔧",
-   "enabled": true,
-   "updatedAt": "2026-07-30"
-  },
-  {
    "id": "pure-255870",
    "categoryId": "pure",
    "subcategoryId": "五金行",
@@ -90363,21 +89568,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🔧",
-   "enabled": true,
-   "updatedAt": "2026-07-30"
-  },
-  {
-   "id": "pure-255879",
-   "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
-   "name": "復興路",
-   "lat": 23.558501,
-   "lng": 120.425925,
-   "note": "嘉義縣·西安村",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥘",
    "enabled": true,
    "updatedAt": "2026-07-30"
   },
@@ -91747,21 +90937,6 @@
    "updatedAt": "2026-07-30"
   },
   {
-   "id": "pure-256164",
-   "categoryId": "pure",
-   "subcategoryId": "電器行",
-   "name": "南大路808巷",
-   "lat": 24.78855,
-   "lng": 120.965721,
-   "note": "新竹市·東區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🔌",
-   "enabled": true,
-   "updatedAt": "2026-07-30"
-  },
-  {
    "id": "pure-256165",
    "categoryId": "pure",
    "subcategoryId": "電器行",
@@ -92167,21 +91342,6 @@
    "updatedAt": "2026-07-30"
   },
   {
-   "id": "pure-256258",
-   "categoryId": "pure",
-   "subcategoryId": "體育館",
-   "name": "體育館",
-   "lat": 24.430208,
-   "lng": 118.242899,
-   "note": "金門縣·林湖村",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🏋️",
-   "enabled": true,
-   "updatedAt": "2026-07-30"
-  },
-  {
    "id": "pure-256259",
    "categoryId": "pure",
    "subcategoryId": "山丘",
@@ -92409,7 +91569,7 @@
   {
    "id": "pure-256300",
    "categoryId": "pure",
-   "subcategoryId": "主題樂園",
+   "subcategoryId": "動物園",
    "name": "田心國小",
    "lat": 24.880545,
    "lng": 121.292465,
@@ -92417,9 +91577,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🎡",
+   "icon": "🦒",
    "enabled": true,
-   "updatedAt": "2026-07-31"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-256306",
@@ -93804,7 +92964,7 @@
   {
    "id": "pure-257281",
    "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
+   "subcategoryId": "服裝店",
    "name": "南港車站",
    "lat": 25.053771,
    "lng": 121.609742,
@@ -93812,9 +92972,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🥘",
+   "icon": "👕",
    "enabled": true,
-   "updatedAt": "2026-08-03"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-257282",
@@ -94023,21 +93183,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🌊",
-   "enabled": true,
-   "updatedAt": "2026-08-03"
-  },
-  {
-   "id": "pure-257296",
-   "categoryId": "pure",
-   "subcategoryId": "咖哩",
-   "name": "國華國中",
-   "lat": 24.678009,
-   "lng": 121.761125,
-   "note": "宜蘭縣·漢民里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍛",
    "enabled": true,
    "updatedAt": "2026-08-03"
   },
@@ -94522,21 +93667,6 @@
    "updatedAt": "2026-08-07"
   },
   {
-   "id": "pure-257331",
-   "categoryId": "pure",
-   "subcategoryId": "麵包店",
-   "name": "竹東麵包店",
-   "lat": 24.748315,
-   "lng": 121.07929,
-   "note": "新竹縣·竹東鎮",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥐",
-   "enabled": true,
-   "updatedAt": "2026-08-07"
-  },
-  {
    "id": "pure-257332",
    "categoryId": "pure",
    "subcategoryId": "飯店",
@@ -94717,21 +93847,6 @@
    "updatedAt": "2026-08-09"
   },
   {
-   "id": "pure-257344",
-   "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
-   "name": "安平韓國餐廳",
-   "lat": 22.991564,
-   "lng": 120.178461,
-   "note": "臺南市·安平區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥘",
-   "enabled": true,
-   "updatedAt": "2026-08-09"
-  },
-  {
    "id": "pure-257345",
    "categoryId": "pure",
    "subcategoryId": "橋樑",
@@ -94822,21 +93937,6 @@
    "updatedAt": "2026-08-09"
   },
   {
-   "id": "pure-257351",
-   "categoryId": "pure",
-   "subcategoryId": "服裝店",
-   "name": "民生路222巷29號(髮藝美髮工作坊)",
-   "lat": 24.812631,
-   "lng": 120.976783,
-   "note": "新竹市·東區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "👕",
-   "enabled": true,
-   "updatedAt": "2026-08-09"
-  },
-  {
    "id": "pure-257352",
    "categoryId": "pure",
    "subcategoryId": "餐廳",
@@ -94878,21 +93978,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🌲",
-   "enabled": true,
-   "updatedAt": "2026-08-09"
-  },
-  {
-   "id": "pure-257355",
-   "categoryId": "pure",
-   "subcategoryId": "韓國餐廳",
-   "name": "夯臭豆腐",
-   "lat": 24.809643,
-   "lng": 120.955038,
-   "note": "新竹市·北區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥘",
    "enabled": true,
    "updatedAt": "2026-08-09"
   },
@@ -97914,7 +96999,7 @@
   {
    "id": "pure-257562",
    "categoryId": "pure",
-   "subcategoryId": "藥局",
+   "subcategoryId": "便利店",
    "name": "小巷子",
    "lat": 24.840359,
    "lng": 120.931693,
@@ -97922,9 +97007,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "💊",
+   "icon": "🏪",
    "enabled": true,
-   "updatedAt": "2026-09-22"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-257563",
@@ -98238,21 +97323,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🛒",
-   "enabled": true,
-   "updatedAt": "2026-09-22"
-  },
-  {
-   "id": "pure-257585",
-   "categoryId": "pure",
-   "subcategoryId": "電影院",
-   "name": "戲院",
-   "lat": 24.889278,
-   "lng": 120.990837,
-   "note": "新竹縣·新豐鄉",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🎬",
    "enabled": true,
    "updatedAt": "2026-09-22"
   },
@@ -98752,21 +97822,6 @@
    "updatedAt": "2026-09-29"
   },
   {
-   "id": "pure-257620",
-   "categoryId": "pure",
-   "subcategoryId": "麵包店",
-   "name": "溪北路106號",
-   "lat": 24.989157,
-   "lng": 121.428728,
-   "note": "新北市·板橋區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥐",
-   "enabled": true,
-   "updatedAt": "2026-09-29"
-  },
-  {
    "id": "pure-257621",
    "categoryId": "pure",
    "subcategoryId": "拉麵店",
@@ -98964,7 +98019,7 @@
   {
    "id": "pure-257636",
    "categoryId": "pure",
-   "subcategoryId": "美容院",
+   "subcategoryId": "路邊",
    "name": "新竹武陵路271巷剪刀純點",
    "lat": 24.824634,
    "lng": 120.969925,
@@ -98972,9 +98027,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "💅",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-09-29"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-257637",
@@ -99588,21 +98643,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🍴",
-   "enabled": true,
-   "updatedAt": "2026-10-06"
-  },
-  {
-   "id": "pure-257679",
-   "categoryId": "pure",
-   "subcategoryId": "體育館",
-   "name": "台北大巨蛋",
-   "lat": 25.042358,
-   "lng": 121.560789,
-   "note": "臺北市·信義區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🏋️",
    "enabled": true,
    "updatedAt": "2026-10-06"
   },
@@ -100312,21 +99352,6 @@
    "updatedAt": "2026-10-20"
   },
   {
-   "id": "pure-257728",
-   "categoryId": "pure",
-   "subcategoryId": "車站",
-   "name": "南興二街巷內(範圍很小)",
-   "lat": 24.17917,
-   "lng": 120.704666,
-   "note": "臺中市·北屯區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🚉",
-   "enabled": true,
-   "updatedAt": "2026-10-20"
-  },
-  {
    "id": "pure-257729",
    "categoryId": "pure",
    "subcategoryId": "便利店",
@@ -100447,21 +99472,6 @@
    "updatedAt": "2026-10-20"
   },
   {
-   "id": "pure-257737",
-   "categoryId": "pure",
-   "subcategoryId": "公園",
-   "name": "南昌社區活動中心附近",
-   "lat": 24.669083,
-   "lng": 121.772869,
-   "note": "宜蘭縣·南昌里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🌳",
-   "enabled": true,
-   "updatedAt": "2026-10-20"
-  },
-  {
    "id": "pure-257738",
    "categoryId": "pure",
    "subcategoryId": "大學&學院",
@@ -100503,21 +99513,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🚉",
-   "enabled": true,
-   "updatedAt": "2026-10-20"
-  },
-  {
-   "id": "pure-257741",
-   "categoryId": "pure",
-   "subcategoryId": "美術館",
-   "name": "嘉義文創園區停車場",
-   "lat": 23.477732,
-   "lng": 120.440006,
-   "note": "嘉義市·西區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🖼️",
    "enabled": true,
    "updatedAt": "2026-10-20"
   },
@@ -101347,21 +100342,6 @@
    "updatedAt": "2026-10-27"
   },
   {
-   "id": "pure-257799",
-   "categoryId": "pure",
-   "subcategoryId": "墨西哥餐廳",
-   "name": "精誠十二街",
-   "lat": 24.152347,
-   "lng": 120.656368,
-   "note": "臺中市·西區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🌮",
-   "enabled": true,
-   "updatedAt": "2026-10-27"
-  },
-  {
    "id": "pure-257800",
    "categoryId": "pure",
    "subcategoryId": "餐廳",
@@ -101664,7 +100644,7 @@
   {
    "id": "pure-257820",
    "categoryId": "pure",
-   "subcategoryId": "美容院",
+   "subcategoryId": "拉麵店",
    "name": "杞林路51號",
    "lat": 24.73536,
    "lng": 121.091897,
@@ -101672,9 +100652,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "💅",
+   "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-10-27"
+   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-257821",
@@ -101812,17 +100792,460 @@
    "updatedAt": "2026-10-27"
   },
   {
-   "id": "pure-257830",
+   "id": "pure-257831",
+   "categoryId": "pure",
+   "subcategoryId": "橋樑",
+   "name": "上74轉角",
+   "lat": 24.163035,
+   "lng": 120.719013,
+   "note": "臺中市·北屯區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌉",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257832",
    "categoryId": "pure",
    "subcategoryId": "公園",
-   "name": "日新公園",
-   "lat": 24.118176,
-   "lng": 120.692328,
-   "note": "臺中市·大里區",
+   "name": "新安兒童公園",
+   "lat": 24.160111,
+   "lng": 120.711592,
+   "note": "臺中市·太平區",
    "period": "",
    "remindDays": null,
    "thumbnail": null,
    "icon": "🌳",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257833",
+   "categoryId": "pure",
+   "subcategoryId": "便利店",
+   "name": "豐吉路",
+   "lat": 24.926766,
+   "lng": 121.290907,
+   "note": "桃園市·瑞豐里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🏪",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257834",
+   "categoryId": "pure",
+   "subcategoryId": "電影院",
+   "name": "詔安街",
+   "lat": 25.02483,
+   "lng": 121.51506,
+   "note": "臺北市·中正區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🎬",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257835",
+   "categoryId": "pure",
+   "subcategoryId": "超市",
+   "name": "駕訓班旁",
+   "lat": 22.756659,
+   "lng": 120.303987,
+   "note": "高雄市·橋頭區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🛒",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257836",
+   "categoryId": "pure",
+   "subcategoryId": "公園",
+   "name": "社區公園",
+   "lat": 24.002786,
+   "lng": 121.621887,
+   "note": "花蓮縣·民享里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌳",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257837",
+   "categoryId": "pure",
+   "subcategoryId": "橋樑",
+   "name": "自立路上",
+   "lat": 23.980587,
+   "lng": 121.592388,
+   "note": "花蓮縣·勝安村",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌉",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257838",
+   "categoryId": "pure",
+   "subcategoryId": "韓國餐廳",
+   "name": "路口",
+   "lat": 23.985891,
+   "lng": 121.595561,
+   "note": "花蓮縣·北昌村",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🥘",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257839",
+   "categoryId": "pure",
+   "subcategoryId": "大學&學院",
+   "name": "慈濟大學門內",
+   "lat": 23.993523,
+   "lng": 121.590465,
+   "note": "花蓮縣·國慶里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🎓",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257840",
+   "categoryId": "pure",
+   "subcategoryId": "義式餐廳",
+   "name": "小小社區公園",
+   "lat": 23.980965,
+   "lng": 121.591809,
+   "note": "花蓮縣·勝安村",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🍝",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257841",
+   "categoryId": "pure",
+   "subcategoryId": "森林",
+   "name": "瑞山咖啡館附近",
+   "lat": 23.5997,
+   "lng": 120.611866,
+   "note": "雲林縣·桂林村",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌲",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257842",
+   "categoryId": "pure",
+   "subcategoryId": "咖啡杯",
+   "name": "內埔星巴克咖啡純點",
+   "lat": 22.609087,
+   "lng": 120.563408,
+   "note": "屏東縣·內田村",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "☕",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257843",
+   "categoryId": "pure",
+   "subcategoryId": "甜點店",
+   "name": "燉日子、崇德五路",
+   "lat": 24.178914,
+   "lng": 120.688873,
+   "note": "臺中市·北屯區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🍰",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257844",
+   "categoryId": "pure",
+   "subcategoryId": "路邊",
+   "name": "熱河路及崇德三路口",
+   "lat": 24.178136,
+   "lng": 120.688384,
+   "note": "臺中市·北屯區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🛣️",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257845",
+   "categoryId": "pure",
+   "subcategoryId": "路邊",
+   "name": "河北一街停車場旁",
+   "lat": 24.176555,
+   "lng": 120.684452,
+   "note": "臺中市·北屯區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🛣️",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257846",
+   "categoryId": "pure",
+   "subcategoryId": "水邊",
+   "name": "千葉園",
+   "lat": 24.87556,
+   "lng": 121.219666,
+   "note": "桃園市·黃唐里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌊",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257847",
+   "categoryId": "pure",
+   "subcategoryId": "拉麵店",
+   "name": "台中港排骨酥麵",
+   "lat": 24.280115,
+   "lng": 120.540435,
+   "note": "臺中市·清水區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🍜",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257848",
+   "categoryId": "pure",
+   "subcategoryId": "水邊",
+   "name": "集山路",
+   "lat": 23.814395,
+   "lng": 120.749436,
+   "note": "南投縣·富州里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌊",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257849",
+   "categoryId": "pure",
+   "subcategoryId": "義式餐廳",
+   "name": "豐社路75巷",
+   "lat": 24.251808,
+   "lng": 120.710489,
+   "note": "臺中市·豐原區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🍝",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257850",
+   "categoryId": "pure",
+   "subcategoryId": "橋樑",
+   "name": "天化宮對面",
+   "lat": 23.956097,
+   "lng": 120.602907,
+   "note": "彰化縣·振興里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌉",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257851",
+   "categoryId": "pure",
+   "subcategoryId": "海灘",
+   "name": "華宿彰濱快捷商旅",
+   "lat": 24.143328,
+   "lng": 120.444651,
+   "note": "彰化縣·線西村",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🏖️",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257852",
+   "categoryId": "pure",
+   "subcategoryId": "路邊",
+   "name": "日和屋",
+   "lat": 23.952234,
+   "lng": 120.601493,
+   "note": "彰化縣·振興里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🛣️",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257853",
+   "categoryId": "pure",
+   "subcategoryId": "公車站",
+   "name": "天祥街上中段",
+   "lat": 24.160137,
+   "lng": 120.700588,
+   "note": "臺中市·北區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🚌",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pure-257854",
+   "categoryId": "pure",
+   "subcategoryId": "水邊",
+   "name": "擬餌純點",
+   "lat": 22.928356,
+   "lng": 120.290586,
+   "note": "臺南市·沙崙里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌊",
+   "enabled": true,
+   "updatedAt": "2026-10-30"
+  },
+  {
+   "id": "pc-1683",
+   "categoryId": "postcard",
+   "subcategoryId": "隱藏",
+   "name": "大衛雕像復刻版",
+   "lat": 43.769494,
+   "lng": 11.256065,
+   "note": "義大利；義大利佛羅倫斯領主廣場舊宮門口擺放的大衛雕像是復刻版，米開朗基羅創作的《大衛像》真跡，自1873年起已移至室內的佛羅倫斯美術學院，如果在領主廣場閒逛時有機會取得這個明信片",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/a1dec3712840455aba81451cdf49c6d1.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-28"
+  },
+  {
+   "id": "pc-1682",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "Jesus with Children around the World",
+   "lat": 39.855426,
+   "lng": -84.270378,
+   "note": "美國",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/aecb673d66554b3793ab988395678a64.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-28"
+  },
+  {
+   "id": "pc-1681",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "美國國旗",
+   "lat": 39.850888,
+   "lng": -84.204305,
+   "note": "美國",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/34165b6df380415698ee5704f09cdc30.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-28"
+  },
+  {
+   "id": "pc-1680",
+   "categoryId": "postcard",
+   "subcategoryId": "隱藏",
+   "name": "Rose Lady",
+   "lat": 39.763785,
+   "lng": -84.183671,
+   "note": "美國",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/4de3d3b364a9489d80a687aa18057a08.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-28"
+  },
+  {
+   "id": "pc-1679",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "轟町公園櫻花",
+   "lat": 35.629413,
+   "lng": 140.107028,
+   "note": "日本",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/7911127723c442c9a471f566024bd46f.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-27"
+  },
+  {
+   "id": "pc-1678",
+   "categoryId": "postcard",
+   "subcategoryId": "菇",
+   "name": "總統專機 SAM 26000",
+   "lat": 39.779457,
+   "lng": -84.106162,
+   "note": "美國；這架飛機曾服務過美國甘迺迪到柯林頓等八位總統",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/47500a15378c4c3d90d5619c6709fa92.jpg",
+   "enabled": true,
+   "updatedAt": "2026-10-27"
+  },
+  {
+   "id": "pc-1677",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "Flying Ace Car Wash Mural",
+   "lat": 39.697568,
+   "lng": -84.105558,
+   "note": "美國",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/7ed6ffac1d314e78b9b1642548f760e7.jpg",
    "enabled": true,
    "updatedAt": "2026-10-27"
   },
@@ -102359,20 +101782,6 @@
    "updatedAt": "2026-10-15"
   },
   {
-   "id": "pc-661",
-   "categoryId": "postcard",
-   "subcategoryId": "隱藏",
-   "name": "費倫肖像畫",
-   "lat": 19.306446,
-   "lng": -99.041763,
-   "note": "墨西哥",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/c6e988c53d924182a8ccbb9bbeffe8f2.jpg",
-   "enabled": true,
-   "updatedAt": "2026-10-15"
-  },
-  {
    "id": "pc-660",
    "categoryId": "postcard",
    "subcategoryId": "隱藏",
@@ -102537,20 +101946,6 @@
    "period": "",
    "remindDays": null,
    "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/337a9d789deb4c3e9abd40a439d43d3d.jpg",
-   "enabled": true,
-   "updatedAt": "2026-10-14"
-  },
-  {
-   "id": "pc-645",
-   "categoryId": "postcard",
-   "subcategoryId": "花",
-   "name": "南韓愛寶樂園皇家禧年旋轉木馬",
-   "lat": 37.291129,
-   "lng": 127.20364,
-   "note": "韩国 / 南韓；新版的旋轉木馬依舊絢爛奪目",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/3e0eb52f74b74c0f900dfe7a9b135fe3.jpg",
    "enabled": true,
    "updatedAt": "2026-10-14"
   },
@@ -103727,20 +103122,6 @@
    "period": "",
    "remindDays": null,
    "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/139a8932832a49d6a9d609b03ecf43f6.jpg",
-   "enabled": true,
-   "updatedAt": "2026-09-27"
-  },
-  {
-   "id": "pc-542",
-   "categoryId": "postcard",
-   "subcategoryId": "菇",
-   "name": "富士山遙拝所",
-   "lat": 35.534793,
-   "lng": 138.777847,
-   "note": "日本",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/aa92815b88604ad086c450286ff1dc4c.jpg",
    "enabled": true,
    "updatedAt": "2026-09-27"
   },
@@ -105729,20 +105110,6 @@
    "period": "",
    "remindDays": null,
    "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/788a44784910487b8ac300fe466e723a.jpg",
-   "enabled": true,
-   "updatedAt": "2026-08-17"
-  },
-  {
-   "id": "pc-368",
-   "categoryId": "postcard",
-   "subcategoryId": "隱藏",
-   "name": "東京迪士尼",
-   "lat": 35.631985,
-   "lng": 139.880897,
-   "note": "日本",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/043966fc49c54fc4ac989c7668a2615b.jpg",
    "enabled": true,
    "updatedAt": "2026-08-17"
   },
