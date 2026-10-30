@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "revision": 15,
+ "revision": 16,
  "updatedAt": "2026-10-30",
  "source": "皮克敏純點明信片地圖 pikmin.talllkai.com",
  "categories": [
@@ -6230,21 +6230,6 @@
    "icon": "🛒",
    "enabled": true,
    "updatedAt": "2026-06-02"
-  },
-  {
-   "id": "pure-181233",
-   "categoryId": "pure",
-   "subcategoryId": "超市",
-   "name": "通樹路99號",
-   "lat": 22.756347,
-   "lng": 120.304185,
-   "note": "高雄市·橋頭區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🛒",
-   "enabled": true,
-   "updatedAt": "2026-05-28"
   },
   {
    "id": "pure-181234",
@@ -16357,21 +16342,6 @@
    "updatedAt": "2026-05-23"
   },
   {
-   "id": "pure-182783",
-   "categoryId": "pure",
-   "subcategoryId": "拉麵店",
-   "name": "景新街92-94號",
-   "lat": 24.99869,
-   "lng": 121.504851,
-   "note": "新北市·漳和里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍜",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
    "id": "pure-182785",
    "categoryId": "pure",
    "subcategoryId": "體育館",
@@ -24457,21 +24427,6 @@
    "updatedAt": "2026-06-10"
   },
   {
-   "id": "pure-184520",
-   "categoryId": "pure",
-   "subcategoryId": "公園",
-   "name": "國泰路二段",
-   "lat": 22.617597,
-   "lng": 120.350765,
-   "note": "高雄市·國富里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🌳",
-   "enabled": true,
-   "updatedAt": "2026-06-10"
-  },
-  {
    "id": "pure-184522",
    "categoryId": "pure",
    "subcategoryId": "路邊",
@@ -31595,21 +31550,6 @@
    "icon": "🍜",
    "enabled": true,
    "updatedAt": "2026-05-29"
-  },
-  {
-   "id": "pure-185309",
-   "categoryId": "pure",
-   "subcategoryId": "拉麵店",
-   "name": "中清路九段",
-   "lat": 24.280194,
-   "lng": 120.540556,
-   "note": "臺中市·清水區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍜",
-   "enabled": true,
-   "updatedAt": "2026-06-01"
   },
   {
    "id": "pure-185310",
@@ -58244,21 +58184,6 @@
    "lat": 22.604845,
    "lng": 120.611424,
    "note": "屏東縣·泰武村",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "☕",
-   "enabled": true,
-   "updatedAt": "2026-06-29"
-  },
-  {
-   "id": "pure-196113",
-   "categoryId": "pure",
-   "subcategoryId": "咖啡杯",
-   "name": "永光路",
-   "lat": 22.608545,
-   "lng": 120.563286,
-   "note": "屏東縣·內田村",
    "period": "",
    "remindDays": null,
    "thumbnail": null,
@@ -85655,21 +85580,6 @@
    "icon": "💅",
    "enabled": true,
    "updatedAt": "2026-07-22"
-  },
-  {
-   "id": "pure-212633",
-   "categoryId": "pure",
-   "subcategoryId": "電影院",
-   "name": "詔安街",
-   "lat": 25.024928,
-   "lng": 121.514248,
-   "note": "臺北市·中正區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🎬",
-   "enabled": true,
-   "updatedAt": "2026-10-30"
   },
   {
    "id": "pure-212724",
