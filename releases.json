@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T22:37:48Z",
+  "generatedAt": "2026-10-31T22:52:52Z",
   "releases": {
     "android": {
       "schemaVersion": 1,
       "platform": "android",
-      "versionName": "0.8.9",
-      "buildNumber": 40,
-      "downloadUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.9/GFlyer-v0.8.9.apk",
-      "sha256": "2be88390439cca0feaa797f5028ff94ce71223f39b550a3e3d4aac38123c1edc",
-      "sizeBytes": 36694106,
-      "publishedAt": "2026-10-20T22:37:48Z",
-      "releaseNotes": "App 圖示、懸浮把手和地圖上的定位針換成新的飛豬。自動找菇改成從所在地點挑行政區，可以排好幾區成序列連續掃，能暫停、繼續和收藏，剩餘時間照手機實際的速度倒數。另有新增「定位檢查」和「開放原始碼授權」頁，OpenStreetMap 的標記和路線改得和 Google 地圖一致。",
+      "versionName": "0.8.10",
+      "buildNumber": 41,
+      "downloadUrl": "https://github.com/michaelcheung0125-svg/GFlyer-updates/releases/download/v0.8.10/GFlyer-v0.8.10.apk",
+      "sha256": "04856030f1233ccf753f3f33840dbc7052e84291b36bbd7f7d7d4c6eb2967b46",
+      "sizeBytes": 36711818,
+      "publishedAt": "2026-10-31T22:52:52Z",
+      "releaseNotes": "自動找菇改用 11 月的新地圖：認得這期活動的輝煌蘑菇，上下疊在一起的兩顆一般菇不再被記成「大」，巨大菇貼着寬馬路也認得出來。找菇的自動停止新增「掃完區域才停」並設為預設，「找到幾顆就停」的顆數可以直接輸入。另有主畫面與懸浮面板的排版調整，例如控制列的座標放大、工具列放不下時收進「更多」、懸浮面板改成不透明。",
       "minOsVersion": "8.0",
       "bundleIdentifier": "com.geopilot.app"
     },
