@@ -219,6 +219,14 @@ class SyncCommandTest(unittest.TestCase):
             code, library = run([], [card(10), card(11)])
             self.assertEqual((1, 6), (code, library["revision"]), "純點變成 0 筆是官網出問題，不發布")
 
+    def test_help_text_is_well_formed(self):
+        # 說明文字的百分號沒有寫成 %% 時，舊版 Python 只在 --help 出錯，3.14 起每次執行都出錯
+        output = io.StringIO()
+        with redirect_stdout(output), self.assertRaises(SystemExit) as exit_:
+            sync.main(["--help"])
+        self.assertEqual(0, exit_.exception.code)
+        self.assertIn(f"{sync.MAX_SHRINK_RATIO:.0%} 也照樣發布", output.getvalue())
+
 
 if __name__ == "__main__":
     unittest.main()

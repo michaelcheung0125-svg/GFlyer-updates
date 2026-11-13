@@ -767,7 +767,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true", help="只顯示會怎麼變，不寫檔")
     parser.add_argument("--raw-dir", type=Path, help="改用這個目錄裡的 postcards.json、purespots.json，不連網")
     parser.add_argument("--save-raw", type=Path, help="另外存一份抓到的原始資料到這個目錄")
-    parser.add_argument("--allow-shrink", action="store_true", help=f"筆數比線上版少超過 {MAX_SHRINK_RATIO:.0%} 也照樣發布")
+    # argparse 會再用 % 格式化說明文字，百分號要寫成 %%（Python 3.14 起在 add_argument 時就檢查，寫錯整個指令都跑不起來）
+    parser.add_argument("--allow-shrink", action="store_true", help=f"筆數比線上版少超過 {MAX_SHRINK_RATIO * 100:.0f}%% 也照樣發布")
     parser.add_argument("--commit-message", type=Path, help="有更新時把 commit 訊息寫到這個檔案")
     parser.add_argument("--wait-pages", type=int, metavar="REVISION", help="不產生，只等 GitHub Pages 回傳這個 revision 以上")
     parser.add_argument("--timeout", type=float, default=600, help="--wait-pages 最多等幾秒（預設 600）")
