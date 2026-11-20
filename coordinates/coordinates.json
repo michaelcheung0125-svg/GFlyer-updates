@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "revision": 20,
+ "revision": 21,
  "updatedAt": "2026-11-20",
  "source": "皮克敏純點明信片地圖 pikmin.talllkai.com",
  "categories": [
@@ -100488,6 +100488,34 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🌲",
+   "enabled": true,
+   "updatedAt": "2026-11-19"
+  },
+  {
+   "id": "pc-1747",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "steaming kettle大水壺",
+   "lat": 42.359369,
+   "lng": -71.059148,
+   "note": "美國",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/2784624820394151bae90668424a8559.jpg",
+   "enabled": true,
+   "updatedAt": "2026-11-19"
+  },
+  {
+   "id": "pc-1746",
+   "categoryId": "postcard",
+   "subcategoryId": "菇",
+   "name": "虎虎生風",
+   "lat": 23.889005,
+   "lng": 120.49494,
+   "note": "台灣；超真實的壁畫",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/caba28c8bc464f798243ac72c4afc819.jpg",
    "enabled": true,
    "updatedAt": "2026-11-19"
   },
