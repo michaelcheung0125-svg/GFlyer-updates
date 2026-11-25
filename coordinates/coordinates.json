@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "revision": 23,
- "updatedAt": "2026-11-24",
+ "revision": 24,
+ "updatedAt": "2026-11-25",
  "source": "皮克敏純點明信片地圖 pikmin.talllkai.com",
  "categories": [
   {
@@ -304,7 +304,7 @@
    "thumbnail": null,
    "icon": "📮",
    "enabled": true,
-   "updatedAt": "2026-05-29"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-29136",
@@ -319,7 +319,7 @@
    "thumbnail": null,
    "icon": "🚌",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-29160",
@@ -334,7 +334,7 @@
    "thumbnail": null,
    "icon": "🍴",
    "enabled": true,
-   "updatedAt": "2026-06-01"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-29165",
@@ -349,7 +349,7 @@
    "thumbnail": null,
    "icon": "🎓",
    "enabled": true,
-   "updatedAt": "2026-05-28"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-29181",
@@ -364,7 +364,7 @@
    "thumbnail": null,
    "icon": "🌳",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-29872",
@@ -379,7 +379,7 @@
    "thumbnail": null,
    "icon": "🌊",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-29906",
@@ -394,7 +394,7 @@
    "thumbnail": null,
    "icon": "🌉",
    "enabled": true,
-   "updatedAt": "2026-06-04"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-30227",
@@ -409,7 +409,7 @@
    "thumbnail": null,
    "icon": "🏪",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-30849",
@@ -424,7 +424,7 @@
    "thumbnail": null,
    "icon": "🎡",
    "enabled": true,
-   "updatedAt": "2026-06-04"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-32835",
@@ -439,7 +439,7 @@
    "thumbnail": null,
    "icon": "☕",
    "enabled": true,
-   "updatedAt": "2026-06-04"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-34160",
@@ -454,7 +454,7 @@
    "thumbnail": null,
    "icon": "🌲",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-34606",
@@ -469,7 +469,7 @@
    "thumbnail": null,
    "icon": "🏖️",
    "enabled": true,
-   "updatedAt": "2026-08-05"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-35581",
@@ -484,12 +484,12 @@
    "thumbnail": null,
    "icon": "🖼️",
    "enabled": true,
-   "updatedAt": "2026-07-15"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-39573",
    "categoryId": "pure",
-   "subcategoryId": "路邊",
+   "subcategoryId": "拉麵店",
    "name": "屏東",
    "lat": 22.668451,
    "lng": 120.489851,
@@ -497,9 +497,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🛣️",
+   "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-39596",
@@ -529,7 +529,7 @@
    "thumbnail": null,
    "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-06-03"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-89657",
@@ -544,7 +544,7 @@
    "thumbnail": null,
    "icon": "👕",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-126088",
@@ -559,7 +559,7 @@
    "thumbnail": null,
    "icon": "🔧",
    "enabled": true,
-   "updatedAt": "2026-06-04"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-126488",
@@ -589,7 +589,7 @@
    "thumbnail": null,
    "icon": "🧺",
    "enabled": true,
-   "updatedAt": "2026-06-01"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-129210",
@@ -649,7 +649,7 @@
    "thumbnail": null,
    "icon": "✈️",
    "enabled": true,
-   "updatedAt": "2026-05-27"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180531",
@@ -814,7 +814,7 @@
    "thumbnail": null,
    "icon": "🥐",
    "enabled": true,
-   "updatedAt": "2026-06-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180553",
@@ -934,7 +934,7 @@
    "thumbnail": null,
    "icon": "🚉",
    "enabled": true,
-   "updatedAt": "2026-06-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180572",
@@ -1084,7 +1084,7 @@
    "thumbnail": null,
    "icon": "🛒",
    "enabled": true,
-   "updatedAt": "2026-05-27"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180606",
@@ -1159,7 +1159,7 @@
    "thumbnail": null,
    "icon": "🏨",
    "enabled": true,
-   "updatedAt": "2026-05-29"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180620",
@@ -1504,7 +1504,7 @@
    "thumbnail": null,
    "icon": "⛰️",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180678",
@@ -1909,7 +1909,7 @@
    "thumbnail": null,
    "icon": "🍝",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180726",
@@ -1984,7 +1984,7 @@
    "thumbnail": null,
    "icon": "📚",
    "enabled": true,
-   "updatedAt": "2026-06-02"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180738",
@@ -2134,7 +2134,7 @@
    "thumbnail": null,
    "icon": "🔌",
    "enabled": true,
-   "updatedAt": "2026-06-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180756",
@@ -2884,7 +2884,7 @@
    "thumbnail": null,
    "icon": "🍰",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-180859",
@@ -3065,21 +3065,6 @@
    "icon": "🥐",
    "enabled": true,
    "updatedAt": "2026-06-23"
-  },
-  {
-   "id": "pure-180882",
-   "categoryId": "pure",
-   "subcategoryId": "美容院",
-   "name": "福安路261巷55-",
-   "lat": 23.862102,
-   "lng": 120.58728,
-   "note": "彰化縣·田中鎮",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💅",
-   "enabled": true,
-   "updatedAt": "2026-05-27"
   },
   {
    "id": "pure-180883",
@@ -3697,21 +3682,6 @@
    "updatedAt": "2026-06-21"
   },
   {
-   "id": "pure-180941",
-   "categoryId": "pure",
-   "subcategoryId": "麵包店",
-   "name": "宜17鄉道44號",
-   "lat": 24.741463,
-   "lng": 121.746912,
-   "note": "宜蘭縣·宜蘭市",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🥐",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
    "id": "pure-180943",
    "categoryId": "pure",
    "subcategoryId": "飯店",
@@ -4144,7 +4114,7 @@
    "thumbnail": null,
    "icon": "💊",
    "enabled": true,
-   "updatedAt": "2026-06-02"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-181004",
@@ -4714,7 +4684,7 @@
    "thumbnail": null,
    "icon": "🏋️",
    "enabled": true,
-   "updatedAt": "2026-05-27"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-181078",
@@ -6424,7 +6394,7 @@
    "thumbnail": null,
    "icon": "🍣",
    "enabled": true,
-   "updatedAt": "2026-06-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-181302",
@@ -8329,7 +8299,7 @@
    "thumbnail": null,
    "icon": "⛩️",
    "enabled": true,
-   "updatedAt": "2026-06-01"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-181570",
@@ -9379,7 +9349,7 @@
    "thumbnail": null,
    "icon": "💄",
    "enabled": true,
-   "updatedAt": "2026-06-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-181722",
@@ -11809,7 +11779,7 @@
    "thumbnail": null,
    "icon": "🎬",
    "enabled": true,
-   "updatedAt": "2026-07-02"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-182162",
@@ -11919,7 +11889,7 @@
   {
    "id": "pure-182181",
    "categoryId": "pure",
-   "subcategoryId": "漢堡",
+   "subcategoryId": "公園",
    "name": "鳳東路423-385",
    "lat": 22.621484,
    "lng": 120.376945,
@@ -11927,9 +11897,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🍔",
+   "icon": "🌳",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-182186",
@@ -17439,7 +17409,7 @@
   {
    "id": "pure-183002",
    "categoryId": "pure",
-   "subcategoryId": "路邊",
+   "subcategoryId": "壽司",
    "name": "仁愛路三段123巷1",
    "lat": 25.039781,
    "lng": 121.542283,
@@ -17447,9 +17417,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🛣️",
+   "icon": "🍣",
    "enabled": true,
-   "updatedAt": "2026-05-23"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-183003",
@@ -20073,21 +20043,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🔧",
-   "enabled": true,
-   "updatedAt": "2026-06-02"
-  },
-  {
-   "id": "pure-183301",
-   "categoryId": "pure",
-   "subcategoryId": "電器行",
-   "name": "大灣路716-766",
-   "lat": 23.000357,
-   "lng": 120.260636,
-   "note": "臺南市·南灣里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🔌",
    "enabled": true,
    "updatedAt": "2026-06-02"
   },
@@ -29119,7 +29074,7 @@
    "thumbnail": null,
    "icon": "🍛",
    "enabled": true,
-   "updatedAt": "2026-06-01"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-185202",
@@ -29169,7 +29124,7 @@
   {
    "id": "pure-185210",
    "categoryId": "pure",
-   "subcategoryId": "義式餐廳",
+   "subcategoryId": "路邊",
    "name": "遠東街194巷",
    "lat": 24.188806,
    "lng": 120.595139,
@@ -29177,9 +29132,9 @@
    "period": "",
    "remindDays": null,
    "thumbnail": null,
-   "icon": "🍝",
+   "icon": "🛣️",
    "enabled": true,
-   "updatedAt": "2026-06-01"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-185212",
@@ -35974,7 +35929,7 @@
    "thumbnail": null,
    "icon": "🦒",
    "enabled": true,
-   "updatedAt": "2026-06-10"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-192232",
@@ -38389,7 +38344,7 @@
    "thumbnail": null,
    "icon": "✏️",
    "enabled": true,
-   "updatedAt": "2026-06-12"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-192408",
@@ -49402,21 +49357,6 @@
    "updatedAt": "2026-06-24"
   },
   {
-   "id": "pure-193853",
-   "categoryId": "pure",
-   "subcategoryId": "藥局",
-   "name": "信裕藥局",
-   "lat": 23.894569,
-   "lng": 120.368421,
-   "note": "彰化縣·南光里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💊",
-   "enabled": true,
-   "updatedAt": "2026-06-24"
-  },
-  {
    "id": "pure-193854",
    "categoryId": "pure",
    "subcategoryId": "麵包店",
@@ -52384,7 +52324,7 @@
    "thumbnail": null,
    "icon": "🥘",
    "enabled": true,
-   "updatedAt": "2026-06-28"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-194832",
@@ -74854,7 +74794,7 @@
    "thumbnail": null,
    "icon": "💊",
    "enabled": true,
-   "updatedAt": "2026-07-09"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-205775",
@@ -88984,7 +88924,7 @@
    "thumbnail": null,
    "icon": "🌮",
    "enabled": true,
-   "updatedAt": "2026-07-31"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-256281",
@@ -91834,7 +91774,7 @@
    "thumbnail": null,
    "icon": "🖼️",
    "enabled": true,
-   "updatedAt": "2026-08-17"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-257392",
@@ -94807,21 +94747,6 @@
    "updatedAt": "2026-09-29"
   },
   {
-   "id": "pure-257610",
-   "categoryId": "pure",
-   "subcategoryId": "藥局",
-   "name": "牙刷純點",
-   "lat": 22.616269,
-   "lng": 120.481793,
-   "note": "屏東縣·廣安村",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "💊",
-   "enabled": true,
-   "updatedAt": "2026-09-29"
-  },
-  {
    "id": "pure-257611",
    "categoryId": "pure",
    "subcategoryId": "森林",
@@ -96574,7 +96499,7 @@
    "thumbnail": null,
    "icon": "🚉",
    "enabled": true,
-   "updatedAt": "2026-10-20"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-257739",
@@ -100339,7 +100264,7 @@
    "thumbnail": null,
    "icon": "🍜",
    "enabled": true,
-   "updatedAt": "2026-11-24"
+   "updatedAt": "2026-11-25"
   },
   {
    "id": "pure-258006",
@@ -100353,6 +100278,153 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🍰",
+   "enabled": true,
+   "updatedAt": "2026-11-25"
+  },
+  {
+   "id": "pure-258007",
+   "categoryId": "pure",
+   "subcategoryId": "超市",
+   "name": "愛買附近",
+   "lat": 25.001682,
+   "lng": 121.457872,
+   "note": "新北市·板橋區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🛒",
+   "enabled": true,
+   "updatedAt": "2026-11-25"
+  },
+  {
+   "id": "pure-258008",
+   "categoryId": "pure",
+   "subcategoryId": "公園",
+   "name": "重慶公園",
+   "lat": 24.999934,
+   "lng": 121.466113,
+   "note": "新北市·板橋區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌳",
+   "enabled": true,
+   "updatedAt": "2026-11-25"
+  },
+  {
+   "id": "pure-258009",
+   "categoryId": "pure",
+   "subcategoryId": "公園",
+   "name": "遠東通訊公園-香榭大道",
+   "lat": 24.998562,
+   "lng": 121.454723,
+   "note": "新北市·板橋區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌳",
+   "enabled": true,
+   "updatedAt": "2026-11-25"
+  },
+  {
+   "id": "pure-258010",
+   "categoryId": "pure",
+   "subcategoryId": "水邊",
+   "name": "林子頭",
+   "lat": 23.59952,
+   "lng": 120.491445,
+   "note": "嘉義縣·三和里",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🌊",
+   "enabled": true,
+   "updatedAt": "2026-11-25"
+  },
+  {
+   "id": "pure-258011",
+   "categoryId": "pure",
+   "subcategoryId": "義式餐廳",
+   "name": "萬華樂群花園新城i郵箱",
+   "lat": 25.027988,
+   "lng": 121.504011,
+   "note": "臺北市·萬華區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🍝",
+   "enabled": true,
+   "updatedAt": "2026-11-25"
+  },
+  {
+   "id": "pure-258012",
+   "categoryId": "pure",
+   "subcategoryId": "麵包店",
+   "name": "礁溪路一段",
+   "lat": 24.789648,
+   "lng": 121.762027,
+   "note": "宜蘭縣·吳沙村",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🥐",
+   "enabled": true,
+   "updatedAt": "2026-11-25"
+  },
+  {
+   "id": "pure-258013",
+   "categoryId": "pure",
+   "subcategoryId": "美術館",
+   "name": "集雅書廊",
+   "lat": 24.161036,
+   "lng": 120.545008,
+   "note": "臺中市·大肚區",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": null,
+   "icon": "🖼️",
+   "enabled": true,
+   "updatedAt": "2026-11-25"
+  },
+  {
+   "id": "pc-1762",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "Jet Stream",
+   "lat": 36.246745,
+   "lng": -115.04878,
+   "note": "美國",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/d4c71ea7ce0f4b9ebef51a73a4443b35.jpg",
+   "enabled": true,
+   "updatedAt": "2026-11-24"
+  },
+  {
+   "id": "pc-1761",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "麥克·奧卡拉漢軍事醫療中心",
+   "lat": 36.245519,
+   "lng": -115.04994,
+   "note": "美國",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/3d1406f1adb74e1dba5aecd55f7fd3d6.jpg",
+   "enabled": true,
+   "updatedAt": "2026-11-24"
+  },
+  {
+   "id": "pc-1760",
+   "categoryId": "postcard",
+   "subcategoryId": "花",
+   "name": "雷鳥飛行表演隊",
+   "lat": 36.241089,
+   "lng": -115.051646,
+   "note": "美國",
+   "period": "",
+   "remindDays": null,
+   "thumbnail": "https://pikmin.talllkai.com/uploads/postcards/43e80e476ed547d38bdb96da83c55a85.jpg",
    "enabled": true,
    "updatedAt": "2026-11-24"
   },
