@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "revision": 24,
- "updatedAt": "2026-11-25",
+ "revision": 25,
+ "updatedAt": "2026-11-26",
  "source": "皮克敏純點明信片地圖 pikmin.talllkai.com",
  "categories": [
   {
@@ -16102,21 +16102,6 @@
    "updatedAt": "2026-05-23"
   },
   {
-   "id": "pure-182859",
-   "categoryId": "pure",
-   "subcategoryId": "超市",
-   "name": "大明街25巷",
-   "lat": 25.002065,
-   "lng": 121.457969,
-   "note": "新北市·華貴里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🛒",
-   "enabled": true,
-   "updatedAt": "2026-05-23"
-  },
-  {
    "id": "pure-182860",
    "categoryId": "pure",
    "subcategoryId": "超市",
@@ -22040,21 +22025,6 @@
    "icon": "🏋️",
    "enabled": true,
    "updatedAt": "2026-06-10"
-  },
-  {
-   "id": "pure-184097",
-   "categoryId": "pure",
-   "subcategoryId": "體育館",
-   "name": "嘉義",
-   "lat": 23.470991,
-   "lng": 120.461829,
-   "note": "嘉義市·新開里",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🏋️",
-   "enabled": true,
-   "updatedAt": "2026-06-09"
   },
   {
    "id": "pure-184103",
@@ -96618,21 +96588,6 @@
    "remindDays": null,
    "thumbnail": null,
    "icon": "🌳",
-   "enabled": true,
-   "updatedAt": "2026-10-20"
-  },
-  {
-   "id": "pure-257748",
-   "categoryId": "pure",
-   "subcategoryId": "拉麵店",
-   "name": "拉麵鑰匙圈純點",
-   "lat": 25.07151,
-   "lng": 121.482114,
-   "note": "新北市·三重區",
-   "period": "",
-   "remindDays": null,
-   "thumbnail": null,
-   "icon": "🍜",
    "enabled": true,
    "updatedAt": "2026-10-20"
   },
